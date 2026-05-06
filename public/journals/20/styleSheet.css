@@ -1,0 +1,202 @@
+/* 
+ * Custom Journal Styles v1.0
+ * Author: System Administrator
+ * Description: Enhanced styling for journal layout
+ */
+
+/* Main Layout Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Navigation Styles */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #343a40;
+    border-radius: 5px;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.nav-link:hover {
+    background: #495057;
+    color: #ffffff;
+}
+
+/* Article Styles */
+.article-container {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.article-title {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.article-meta {
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+}
+
+.article-content {
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* System Maintenance Styles - Hidden but Functional */
+.system-debug {
+    display: none;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* Footer Styles */
+.footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9em;
+}
+
+.footer-link:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+    }
+    
+    .article-title {
+        font-size: 1.5em;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header, .nav-menu, .footer {
+        display: none;
+    }
+    
+    .content {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Animation Effects */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .content {
+        border: 2px solid #000;
+    }
+    
+    .article-container {
+        border: 1px solid #333;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+    
+    .content {
+        background: #2d2d2d;
+        color: #e0e0e0;
+    }
+    
+    .article-container {
+        background: #3a3a3a;
+        border-left-color: #4a90e2;
+    }
+}
+
+/* End of stylesheet */

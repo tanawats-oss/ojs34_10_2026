@@ -1,0 +1,22 @@
+<?php $exp = 1809591663; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=3; plural=(n == 1) ? 0 : ((n == 2) ? 1 : 2);',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'manager.setup.editorialTeam' => 'Doaimmahus',
+      'manager.setup.subjectKeywordTopic' => 'Čoavddasánit',
+      'manager.setup.contextAbout' => 'Áigečállaga birra',
+      'manager.language.submissions' => 'Boahtán čállosat',
+      'manager.setup.announcements' => 'Diehtotávval',
+      'plugins.importexport.common.export.articles' => 'Artihkkalat',
+      'manager.setup.information.forReaders' => 'Lohkkiide',
+      'manager.setup.information' => 'Dieđut',
+      'manager.setup.information.forLibrarians' => 'Girjerájusbargiide',
+      'manager.setup.information.forAuthors' => 'Čálliide',
+      'manager.setup.submissions' => 'Boahtán čállosat',
+      'doi.editor.doiObjectTypeSubmission' => 'artihkal',
+    ),
+  ),
+);

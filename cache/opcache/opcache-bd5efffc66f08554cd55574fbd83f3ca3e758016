@@ -1,0 +1,19 @@
+<?php $exp = 1809593700; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=1; plural=0;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'emails.manualPaymentNotification.subject' => 'การแจ้งเตือนการชำระเงินด้วยวิธีการแมนนวล',
+      'emails.manualPaymentNotification.body' => 'การชำระเงินด้วยตนเองต้องดำเนินการสำหรับวารสาร {$contextName} และผู้ใช้ {senderName} (ชื่อผู้ใช้ " {$senderUsername} ").<br />
+<br />
+รายการที่ต้องชำระเงินคือ "{$paymentName}".<br />
+ค่าใช้จ่ายคือ {$paymentAmount} ({$paymentCurrencyCode}).<br />
+<br />
+อีเมลนี้ถูกสร้างโดยปลั๊กอินการชำระเงินด้วยตนเองของ Open Journal Systems.',
+      'emails.manualPaymentNotification.description' => 'แม่แบบอีเมลนี้ใช้เพื่อแจ้งให้ผู้จัดการวารสารทราบว่ามีการร้องขอการชำระเงินแบบแมนนวล',
+      'emailTemplate.variable.manualPaymentPlugin.senderUsername' => 'ชื่อผู้ใช้ของผู้ที่ทำการชำระเงิน',
+    ),
+  ),
+);

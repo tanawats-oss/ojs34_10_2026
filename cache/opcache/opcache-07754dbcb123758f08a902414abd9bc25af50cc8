@@ -1,0 +1,15 @@
+<?php $exp = 1809591662; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=2; plural=n != 1;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.generic.recommendBySimilarity.displayName' => 'Vergelijkbare artikelen aanbevelen',
+      'plugins.generic.recommendBySimilarity.description' => 'Deze plugin voegt een lijst van vergelijkbare artikelen toe op de pagina met de samenvatting van het artikel.',
+      'plugins.generic.recommendBySimilarity.heading' => 'Vergelijkbare artikelen',
+      'plugins.generic.recommendBySimilarity.advancedSearchIntro' => 'U kan ook {$advancedSearchLink} voor dit artikel.',
+      'plugins.generic.recommendBySimilarity.advancedSearch' => 'begin een geavanceerde zoekopdracht naar vergelijkbare inhoud',
+    ),
+  ),
+);

@@ -1,0 +1,12 @@
+<?php $exp = 1809591663; $val = array (
+  'domain' => NULL,
+  'plural-forms' => NULL,
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.generic.usageEvent.displayName' => 'Användningshändelse',
+      'plugins.generic.usageEvent.description' => 'Skapar en hook som matar ut användningshändelser i ett definerat format.',
+    ),
+  ),
+);

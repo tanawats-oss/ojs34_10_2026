@@ -1,0 +1,178 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Rufina:ital,wght@0,400..700;1,400..700&family=Rufina:wght@400;700&display=swap');
+
+/* General font style for the entire site */
+body {
+    font-family: 'Rufina', sans-serif; /* Apply the font globally */
+    font-size: 16px; /* Default font size */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Default text color */
+    /* border-color: #bdbdbd !important; Override border colors globally if needed */
+    border-color: #1D3B7C !important;
+
+  }
+  
+  /* Headings (titles across the site) */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rufina', sans-serif;
+    font-weight: 700; /* Bold font for headings */
+    color: #222; /* Optional: Customize color for headings */
+  }
+  
+  /* Article titles (usually links) */
+  .article-title, 
+  .article-title a {
+    font-family: 'Rufina', sans-serif;
+    font-weight: 700; /* Make the title bold */
+    font-size: 1.5em; /* Adjust size as needed */
+    color: #0056b3; /* Optional: Set the link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .article-title a:hover {
+    color: #003d80; /* Optional: Change color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }
+  
+  /* Navigation menu items */
+  .nav-menu, 
+  .nav-menu a, 
+  .primary-navigation, 
+  .primary-navigation a {
+    font-family: 'Rufina', sans-serif;
+    font-weight: 400; /* Regular font weight for navigation items */
+    font-size: 1em; /* Adjust size as needed */
+    color: #333; /* Default color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-menu a:hover, 
+  .primary-navigation a:hover {
+    color: #0056b3; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Sidebar titles (if applicable) */
+  .sidebar-title {
+    font-family: 'Rufina', sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    color: #444;
+  }
+  
+  /* Breadcrumbs (if visible) */
+  .breadcrumbs, 
+  .breadcrumbs a {
+    font-family: 'Rufina', sans-serif;
+    font-size: 0.9em;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .breadcrumbs a:hover {
+    color: #0056b3; /* Optional hover color */
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  button, 
+  input[type="submit"], 
+  a.button {
+    font-family: 'Rufina', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0056b3; /* Button background */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  button:hover, 
+  input[type="submit"]:hover, 
+  a.button:hover {
+    background-color: #003d80; /* Darker background on hover */
+  }
+  
+  /* Footer links */
+  .footer a {
+    font-family: 'Rufina', sans-serif;
+    font-size: 0.9em;
+    color: #888;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+  h1, h2, h3, h4, h5, h6 a {
+    font-family: 'Rufina', sans-serif !important;
+    font-weight: 700; /* Bold for links in h4 */
+    color: #0056b3; /* Optional: Set the link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  h1, h2, h3, h4, h5, h6 a:hover {
+    color: #003d80 !important; /* Change color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }
+
+ /* Titles in .pkp_block */
+.pkp_block .title {
+    font-family: 'Rufina', sans-serif !important;
+    font-weight: 700 !important; /* Make the block title bold */
+    font-size: 1.2em !important; /* Adjust size as needed */
+    color: #333 !important; /* Default color */
+    text-decoration: none !important;
+  }
+  
+  .pkp_block .title a {
+    font-family: 'Rufina', sans-serif !important;
+    color: #0056b3 !important; /* Link color for titles in .pkp_block */
+    text-decoration: none !important;
+  }
+  
+  .pkp_block .title a:hover {
+    color: #003d80 !important; /* Change color on hover */
+    text-decoration: underline !important;
+  }
+
+
+
+/* Optional: Center the logo */
+/* .pkp_structure_head {
+Center the logo in the header
+  text-align: center; 
+} 
+
+*/
+
+/* Default logo size for larger screens (desktop) */
+.pkp_site_name .is_img img {
+  max-width: none !important; /* Remove width restrictions */
+  width: 800px !important; /* Desired width on desktop */
+  max-height: none !important; /* Remove height restriction */
+  height: auto !important; /* Maintain aspect ratio */
+}
+
+/* Adjust the logo size for smaller screens */
+@media (max-width: 768px) {
+  .pkp_site_name .is_img img {
+    width: 100% !important; /* Make it responsive to the header width */
+    max-width: 300px !important; /* Set a maximum width for mobile */
+    height: auto !important; /* Keep the aspect ratio */
+  }
+}
+
+/* Further adjustments for very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  .pkp_site_name .is_img img {
+    max-width: 200px !important; /* Smaller max width for tiny screens */
+    width: 100% !important; /* Fit within the header */
+    height: auto !important; /* Maintain aspect ratio */
+  }
+}

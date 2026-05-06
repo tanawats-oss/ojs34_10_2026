@@ -1,0 +1,23 @@
+<?php $exp = 1809593700; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=1; plural=0;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.importexport.pubmed.export' => 'ส่งออกข้อมูล',
+      'plugins.importexport.pubmed.export.selectIssue' => 'เลือกหมายเลขวารสารที่ต้องการส่งออก.',
+      'plugins.importexport.pubmed.export.articles' => 'ส่งออกบทความ',
+      'plugins.importexport.pubmed.export.selectArticle' => 'เลือกบทความที่ต้องการส่งออก.',
+      'plugins.importexport.pubmed.cliUsage' => 'การใช้งาน:
+{$scriptName} {$pluginName} [xmlFileName] [journal_path] articles [articleId1] [articleId2] ...
+{$scriptName} {$pluginName} [xmlFileName] [journal_path] issue [issueId]
+',
+      'plugins.importexport.pubmed.cliError' => 'ERROR:',
+      'plugins.importexport.pubmed.export.error.issueNotFound' => 'ไม่พบหมายเลขปัญหาที่ตรงกับหมายเลข ID ที่ระบุ "{$issueId}".',
+      'plugins.importexport.pubmed.export.error.articleNotFound' => 'ไม่พบบทความที่ตรงกับหมายเลข ID บทความ "{$articleId}".',
+      'plugins.importexport.pubmed.displayName' => 'ปลั๊กอินการส่งออก PubMed XML',
+      'plugins.importexport.pubmed.description' => 'ส่งออกข้อมูลเมตาดาต้าของบทความในรูปแบบ XML ของ PubMed เพื่อทำดัชนีใน MEDLINE.',
+    ),
+  ),
+);

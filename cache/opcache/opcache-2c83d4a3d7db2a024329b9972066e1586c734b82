@@ -1,0 +1,14 @@
+<?php $exp = 1809593700; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=1; plural=0;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.reports.subscriptions.displayName' => 'รายงานการสมัครสมาชิก',
+      'plugins.reports.subscriptions.description' => 'ปลั๊กอินนี้จะสร้างรายงาน CSV ที่ประกอบด้วยรายการสมาชิกและข้อมูลของพวกเขา.',
+      'plugins.reports.subscriptions.institutionMailingAddress' => 'ที่อยู่ไปรษณีย์ของสถาบัน',
+      'plugins.reports.subscriptions.ipRanges' => 'ช่วง IP',
+    ),
+  ),
+);

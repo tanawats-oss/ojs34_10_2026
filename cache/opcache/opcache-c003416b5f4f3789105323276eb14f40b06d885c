@@ -1,0 +1,22 @@
+<?php $exp = 1809593700; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=1; plural=0;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.reports.counter.description' => 'ปลั๊กอิน COUNTER ช่วยให้สามารถรายงานกิจกรรมของวารสาร โดยใช้ <a href="https://www.projectcounter.org">มาตรฐาน COUNTER</a> รายงานเหล่านี้เพียงอย่างเดียวไม่ทำให้วารสารเป็นไปตามมาตรฐาน COUNTER หากต้องการให้มีความสอดคล้องกับ COUNTER โปรดตรวจสอบข้อกำหนดที่เว็บไซต์ Project COUNTER.',
+      'plugins.reports.counter.error.noXML' => 'ไม่สามารถจัดรูปแบบผลลัพธ์เป็น XML ได้',
+      'plugins.reports.counter.1a.description' => 'รายงานวารสาร COUNTER 1 (R3): การขอบทความแบบเต็มเนื้อหาโดยแยกตามเดือนและวารสาร',
+      'plugins.reports.counter' => 'รายงาน COUNTER',
+      'plugins.reports.counter.release' => 'เวอร์ชัน COUNTER',
+      'plugins.reports.counter.error.badParameters' => 'พารามิเตอร์ของรายงานไม่ถูกต้อง',
+      'plugins.reports.counter.error.badRequest' => 'คำขอรายงานไม่ถูกต้อง',
+      'plugins.reports.counter.error.noResults' => 'ไม่พบผลลัพธ์สำหรับรายงานนี้',
+      'plugins.reports.counter.1a.name' => 'รายงาน COUNTER JR1 (R3)',
+      'plugins.reports.counter.allCustomers' => 'ลูกค้าทั้งหมด',
+      'plugins.reports.counter.ar1.title' => 'รายงานบทความ 1',
+      'plugins.reports.counter.jr1.title' => 'รายงานวารสาร 1',
+    ),
+  ),
+);

@@ -1,0 +1,20 @@
+<?php $exp = 1809593700; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=1; plural=0;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.block.subscription.displayName' => 'บล็อกการสมัครสมาชิก',
+      'plugins.block.subscription.description' => 'ปลั๊กอินนี้ให้ข้อมูลการสมัครสมาชิกในแถบด้านข้าง',
+      'plugins.block.subscription.blockTitle' => 'การสมัครสมาชิก',
+      'plugins.block.subscription.expires' => 'วันหมดอายุ',
+      'plugins.block.subscription.providedBy' => 'การเข้าถึงโดย: {$institutionName}',
+      'plugins.block.subscription.comingFromIP' => 'เข้าถึงจาก: {$ip}',
+      'plugins.block.subscription.about' => 'การสมัครสมาชิก',
+      'plugins.block.subscription.loginToVerifySubscription' => 'เข้าสู่ระบบเพื่อเข้าถึงทรัพยากรที่สงวนไว้สำหรับสมาชิกเท่านั้น',
+      'plugins.block.subscription.subscriptionRequired' => 'ต้องมีการสมัครสมาชิกเพื่อเข้าถึงทรัพยากรบางอย่าง',
+      'plugins.block.subscription.subscriptionRequired.learnMore' => 'เรียนรู้เพิ่มเติม',
+    ),
+  ),
+);

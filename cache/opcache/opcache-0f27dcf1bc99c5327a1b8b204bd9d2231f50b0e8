@@ -1,0 +1,32 @@
+<?php $exp = 1809591663; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=1; plural=0;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'comments.email' => 'อีเมลผู้โพสต์',
+      'comments.anonymous' => 'ผู้ใช้ไม่ประสงค์ออกนาม',
+      'comments.anonymousNamed' => '"{$userName}"',
+      'comments.body' => 'เนื้อหา',
+      'comments.titleRequired' => 'จำเป็นต้องมีชื่อเรื่องของความคิดเห็น',
+      'comments.confirmDeleteChildren' => 'การลบความคิดเห็นนี้จะลบการตอบกลับทั้งหมดด้วย คุณแน่ใจหรือว่าต้องการทำสิ่งนี้?',
+      'comments.delete' => 'ลบความคิดเห็นนี้',
+      'comments.emailReply' => 'ตอบกลับทางอีเมล',
+      'comments.enterComment' => 'ป้อนความคิดเห็น',
+      'comments.inResponseTo' => 'เพื่อตอบกลับ <a href="{$url}">{$title}</a>',
+      'comments.name' => 'ชื่อผู้โพสต์',
+      'comments.noComments' => 'ไม่มีความคิดเห็นจากผู้อ่านที่ถูกโพสต์',
+      'comments.nReplies' => '({$num} การตอบกลับ)',
+      'comments.oneReply' => '(1 การตอบกลับ)',
+      'comments.postAnonymously' => 'โพสต์ความคิดเห็นนี้โดยไม่ระบุตัวตน',
+      'comments.postReply' => 'โพสต์การตอบกลับ',
+      'comments.readerComments' => 'ความคิดเห็นของผู้อ่าน',
+      'comments.readMore' => 'อ่านเพิ่มเติม',
+      'comments.replies' => 'การตอบกลับ',
+      'comments.title' => 'ชื่อเรื่อง',
+      'comments.viewAllComments' => 'ดูความคิดเห็นทั้งหมด',
+      'reader.fullText' => 'เนื้อหาทั้งหมด:',
+    ),
+  ),
+);

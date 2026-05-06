@@ -1,0 +1,110 @@
+<?php $exp = 1809591662; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=1; plural=0;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'emails.submissionAck.subject' => '{$contextName}への投稿のお礼',
+      'emails.submissionAck.body' => '<p>{$recipientName}様</p><p>雑誌『{$contextName}』に原稿「{$submissionTitle}」をご投稿いただき、ありがとうございました。編集部がすぐに拝見します。最初の決定が下りましたらメールをお送りし、さらに詳しい情報をご連絡させていただくことがあります。</p><p>本誌が使用しているオンライン雑誌管理システムでは、雑誌のウェブサイトにログインすることにより、編集過程の進捗状況を確認することができます。</p><p>原稿のURL: {$authorSubmissionUrl}</p><p>ログアウトした場合は、{$recipientUsername}というユーザー名で再度ログインできます。 </p><p>何かご不明な点がございましたら、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>からご連絡ください。</p><p>研究成果の発表の場として、本誌をご検討いただき、誠にありがとうございました。</p>{$contextSignature}',
+      'emails.submissionAck.description' => 'このメールは、著者が投稿を提出すると自動的に送信されます。',
+      'emails.reviewAck.subject' => '論文査読のお礼',
+      'emails.reviewAck.body' => '<p>{$recipientName}様:</p>
+<p>雑誌『{$contextName}』への投稿原稿「{$submissionTitle}」の査読をしていただき、ありがとうございました。本誌が発行する論文の品質向上に対する貴殿の貢献に対し感謝いたします。</p>
+<p>{$contextName} の査読者としてあなたと協力ができて光栄でした。今後もまた機会があることを願っています。</p>
+<p>よろしくお願いいたします。</p>
+<p>{$signature}</p>',
+      'emails.decision.notifyReviewers.subject' => '論文査読のお礼',
+      'emails.decision.notifyReviewers.body' => '<p>{$recipientName}様:</p>
+<p>雑誌『{$contextName}』への投稿原稿「{$submissionTitle}」の査読をしていただき、ありがとうございました。本誌が発行する論文の品質向上に対する貴殿の貢献に対し感謝いたします。あなたのコメントは、他の査読者のコメントや編集者の決定とともに著者と共有しました。</p>
+<p>受け取ったフィードバックに基づいて、著者に次のことを通知しました:</p>
+<p>{$decisionDescription}</p>
+<p>あなたの推奨事項は、決定を下す前に他の査読者の推奨事項と併せて検討されました。編集者の決定は、1 人以上の査読者の推奨事項と異なる場合があります。編集者は多くの要素を考慮し、これらの決定を軽々しく下すことはありません。査読者の専門知識と提案に感謝します。</p>
+<p>{$contextName} の査読者としてあなたと協力ができて光栄でした。今後もまた機会があることを願っています。</p>
+<p>よろしくお願いいたします。</p>
+<p>{$signature}</p>',
+      'emails.decision.notifyOtherAuthors.subject' => '投稿に関する最新情報',
+      'emails.decision.notifyOtherAuthors.body' => '<p>下記のメールは、「{$submissionTitle}」に関して『{$contextName}』から {$submittingAuthorName} に送信されました。</p>
+<p>貴方はこの投稿の著者として識別されているため、この通知のコピーを受け取っています。以下のメッセージ内の指示は、投稿者 {$submittingAuthorName} に向けたものであり、現時点では貴方に必要な操作はありません。</p>
+
+{$messageToSubmittingAuthor}',
+      'emails.editorDecisionSendToExternal.subject' => '投稿が査読に送られました',
+      'emails.editorDecisionSendToExternal.body' => '<p>{$recipientName} 様</p><p>編集者が貴方の投稿「{$submissionTitle}」をレビューし、査読に送ることを決定したことをお知らせします。編集者は、貴方の投稿に対するフィードバックを提供する適格な査読者を特定します。</p><p>{$reviewTypeDescription} 査読者からのフィードバックと次の手順に関する情報は、後日ご連絡いたします。</p><p>投稿を査読に送っても、必ず公開されるわけではありませんのでご注意ください。投稿の公開を承認する前に、査読者の推奨事項を考慮します。最終決定を下す前に、修正や査読者のコメントへの対応を求められる場合があります。</p><p>質問がある場合は、投稿ダッシュボードからご連絡ください。</p><p>{$signature}</p>',
+      'emails.editorDecisionSendToProduction.subject' => '投稿物を公開するための次のステップ',
+      'emails.editorDecisionSendToProduction.body' => '<p>{$recipientName} 様</p><p>私は『{$contextName}』から、貴方の投稿「{$submissionTitle}」の編集が完了したことをお知らせするためにこのメールをお送りします。貴方の投稿はこれから制作段階に進み、出版に向けて最終校正が準備されます。さらにサポートが必要な場合はご連絡いたします。</p><p>ご質問がある場合は、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>からご連絡ください。</p><p>よろしくお願いいたします。</p>{$signature}',
+      'emails.editorDecisionRevisions.subject' => '投稿は査読済み・修正版提出のお勧め',
+      'emails.editorDecisionRevisions.body' => '<p>{$recipientName} 様、</p><p>提出された投稿「{$submissionTitle}」は査読されました。査読者のコメントに対応した修正版を提出していただくようお願いいたします。編集者が修正版をレビューし、懸念事項が適切に解決されていれば、投稿された論文は出版される可能性があります。</p><p>査読者のコメントはこのメールの下部に記載されています。査読者のコメントの各ポイントに対応し、どのような変更を加えたかを明記してください。査読者のコメントが不当または不適切であると思われる場合は、その見解を説明してください。</p><p>修正が完了したら、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>で、修正した文書と査読者のコメントへの対応説明文をアップロードできます。ログアウトしている場合は、ユーザー名 {$recipientUsername} で再度ログインできます。</p><p>ご質問がある場合は、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>からご連絡ください。</p><p>修正された投稿物をお待ちしております。</p><p>よろしくお願いいたします。</p>{$signature} <hr><p>査読者から以下のコメントを受け取りました。</p>{$allReviewerComments}',
+      'emails.editorDecisionResubmit.subject' => '投稿は査読済み・修正して再提出してください',
+      'emails.editorDecisionResubmit.body' => '<p>{$recipientName} 様、</p><p>貴方の投稿「{$submissionTitle}」を査読した結果、査読者は、現在の形式では投稿を出版に受け入れることはできないと勧告しました。ただし、査読者のコメントに対応した改訂版を提出することをお勧めします。修正版は編集者によってレビューされ、別の査読者に送られる場合があります。</p><p>論文を再提出しても、受け入れられる保証はありません。</p><p>査読者のコメントはこのメールの下部に記載されています。各ポイントに対応し、どのような変更を加えたかを明記してください。査読者のコメントが不適切と思われる場合は、その見解を説明してください。査読の推奨事項について質問がある場合は、対応説明文にその点を含めてください。</p><p>修正が完了したら、査読者のコメントへの対応とともに、修正した論文を <a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>にアップロードできます。ログアウトしている場合は、ユーザー名 {$recipientUsername} で再度ログインできます。</p><p>ご質問がある場合は、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>からご連絡ください。</p><p>修正された投稿物をお待ちしております。</p><p>よろしくお願いいたします。</p>{$signature}<hr><p>査読者から以下のコメントを受け取りました。</p>{$allReviewerComments}',
+      'emails.editorDecisionDecline.subject' => '投稿は不採用されました',
+      'emails.editorDecisionDecline.body' => '<p>{$recipientName} 様</p><p>ご投稿をいただき、ありがとうございます。しかし、査読者のコメントにより、「{$submissionTitle}」の公開は認められません。</p><p>査読者のコメントはこのメールの下部に記載されています。</p><p>『{$contextName}』にご投稿いただきありがとうございます。ご投稿が不採用されたのは残念ですが、査読者のコメントが建設的で役立つものであったことを願っております。</p><p>ご希望であれば、他の場所にご投稿いただくこともできます。</p><p>よろしくお願いいたします。</p>{$signature}<hr><p>査読者から以下のコメントを受け取りました。</p>{$allReviewerComments}',
+      'emails.editorRecommendation.subject' => '編集者の査読結果',
+      'emails.editorRecommendation.body' => '<p>{$recipientName} 様</p><p>査読者のフィードバックを考慮し、投稿「{$submissionTitle}」に関して次の推奨事項を提示したいと思います。</p><p>推奨事項は次のとおりです: {$recommendation}。</p><p>この推奨事項に従うには、投稿物の <a href="{$submissionUrl}">編集ワークフロー</a> にアクセスしてください。</p><p>ご質問がございましたら、お気軽にお問い合わせください。</p><p>よろしくお願いいたします。</p><p>{$senderName}</p>',
+      'emails.copyeditRequest.subject' => '投稿{$submissionId} は {$contextAcronym} 用に原稿整理される準備ができています',
+      'emails.copyeditRequest.body' => '<p>{$recipientName} 様、</p><p>新しい投稿が原稿整理の準備が整いました:</p><p><a href"{$submissionUrl}">{$submissionId} — 「{$submissionTitle}」</a><br />{$contextName}</p><p>このタスクを完了するには、次の手順に従ってください:</p><ol><li>以下の投稿 URL をクリックしてください。</li><li>下書きファイルの下にあるファイルを開き、ファイルを編集してください。編集者または著者に連絡する必要がある場合は、原稿整理ディスカッションを使用してください。</li><li>原稿整理されたファイルを保存し、原稿整理済みパネルにアップロードしてください。</li><li>原稿整理ディスカッションを使用して、すべてのファイルが準備され、制作プロセスを開始できることを編集者に通知してください。</li></ol><p>現時点でこの作業を実行できない場合、または質問がある場合は、私に連絡してください。 『{$contextName}』へのご貢献に感謝いたします。</p><p>よろしくお願いいたします。</p>{$signature}',
+      'emails.editorDecisionNewReviewRound.subject' => '投稿は、再度の査読に送られました',
+      'emails.editorDecisionNewReviewRound.body' => '<p>{$recipientName} 様</p>
+<p>修正された投稿「{$submissionTitle}」は、新たな査読に送られました。
+査読者からのフィードバックと次のステップに関する情報をお知らせします。</p>
+<p>ご質問がある場合は、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>からご連絡ください。</p>
+<p>よろしくお願いいたします。</p>
+<p>{$signature}</p>
+',
+      'emails.editorDecisionRevertDecline.subject' => '投稿を不採用するという決定を覆しました',
+      'emails.editorDecisionRevertDecline.body' => '<p>{$recipientName} 様</p>
+<p>投稿「{$submissionTitle}」を不採用する決定が取り消されました。
+編集者が査読ラウンドうを完了し、決定が下されたら通知されます。</p>
+<p>時折、投稿を不採用する決定が誤ってシステムに記録され、
+元に戻す必要がある場合があります。これにより混乱が生じた場合はお詫び申し上げます。</p>
+<p>さらにサポートが必要な場合はご連絡いたします。</p>
+<p>ご質問がある場合は、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>からご連絡ください。</p>
+<p>よろしくお願いいたします。</p>
+<p>{$signature}</p>
+',
+      'emails.editorDecisionRevertInitialDecline.subject' => '投稿を不採用するという決定を覆しました',
+      'emails.editorDecisionRevertInitialDecline.body' => '<p>{$recipientName} 様</p>
+<p>投稿「{$submissionTitle}」を不採用する決定が取り消されました。
+編集者は、投稿をさらに検討した上で、投稿を不採用するか、査読に送るかを決定します。</p>
+<p>時折、投稿を不採用する決定が誤ってシステムに記録され、元に戻す必要がある場合があります。これにより混乱が生じた場合はお詫び申し上げます。</p>
+<p>さらにサポートが必要な場合はご連絡いたします。</p>
+<p>ご質問がある場合は、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>からご連絡ください。</p>
+<p>よろしくお願いいたします。</p>
+<p>{$signature}</p>
+',
+      'emails.editorDecisionInitialDecline.subject' => '投稿は不採用されました',
+      'emails.editorDecisionInitialDecline.body' => '<p>{$recipientName} 様</p><p>申し訳ありませんが、ご提出いただいた投稿「{$submissionTitle}」を査読した結果、編集者が『{$contextName}』での出版要件を満たしていないことが判明しました。</p><p>他の場所での論文の提出をご検討の場合は、成功をお祈りいたします。</p><p>よろしくお願いいたします。</p>{$signature}',
+      'emails.editorialReminder.subject' => '『{$contextName}』の未完了の編集タスク',
+      'emails.editorialReminder.body' => '<p>{$recipientName} 様、</p><p>現在、<a href="{$contextUrl}">『{$contextName}』</a> の {$numberOfSubmissions} 件の投稿物が割り当てられています。下記の投稿物は <b>貴方の対応を待っています</b>。</p>{$outstandingTasks}<p>すべての割当は、<a href="{$submissionsUrl}">投稿ダッシュボード</a>で確認できます。</p><p>割当についてご質問がある場合は、{$contactName}（{$contactEmail}）までお問い合わせください。</p>',
+      'discussion.notification.description' => 'このメールは、ユーザーが新しいディスカッションを作成したり、既存のディスカッションに返信したりしたときに送信されます',
+      'emails.editorDecisionBackFromProduction.subject' => '投稿は原稿整理に送り返されました',
+      'emails.editorDecisionBackFromProduction.body' => '<p>{$recipientName} 様</p><p>ご提出いただいた投稿「{$submissionTitle}」は原稿整理段階に戻されました。ここでさらに原稿整理とフォーマットが行われ、出版の準備が整います。</p><p>場合によっては、最終的な校正刷りの準備が整う前に、制作段階に送られることがあります。ご提出いただいた原稿はまだ出版準備中です。ご迷惑をおかけして申し訳ございません。</p><p>ご質問がある場合は、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>からご連絡ください。</p><p>さらにサポートが必要な場合はご連絡いたします。</p><p>よろしくお願いいたします。</p><p>{$signature}</p>',
+      'emails.editorDecisionBackFromCopyediting.subject' => '投稿は査読に返送されました',
+      'emails.editorDecisionBackFromCopyediting.body' => '<p>{$recipientName} 様</p><p>ご提出いただいた投稿「{$submissionTitle}」は、査読段階に戻されました。公開に承認される前に、さらに査読が行われます。</p><p>場合によっては、提出された投稿を承認する決定が誤ってシステムに記録され、査読に送り返さなければならないことがあります。この件で混乱が生じたことをお詫び申し上げます。できるだけ早く最終決定を下していただけるよう、さらなる査読を迅速に完了できるよう努めてまいります。</p><p>さらにサポートが必要な場合は、ご連絡いたします。</p><p>ご質問がある場合は、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>からご連絡ください。</p><p>よろしくお願いいたします。</p><p>{$signature}</p>',
+      'emails.editorDecisionCancelReviewRound.subject' => '投稿の査読ラウンドはキャンセルされました',
+      'emails.editorDecisionCancelReviewRound.body' => '<p>{$recipientName} 様</p><p>先日、貴方の投稿「{$submissionTitle}」の新しい査読ラウンドを開始しました。現在、この査読 ラウンドを終了しています。</p><p>査読ラウンドを開始するという決定が誤ってシステムに記録され、この査読ラウンドをキャンセルしなければならない場合があります。これにより混乱が生じた場合はお詫び申し上げます。</p><p>さらにサポートが必要な場合はご連絡いたします。</p><p>ご質問がある場合は、<a href="{$authorSubmissionUrl}">投稿ダッシュボード</a>からご連絡ください。</p><p>よろしくお願いいたします。</p><p>{$signature}</p>',
+      'emails.reviewResendRequest.subject' => '『{$contextName} 』のための査読を再度お願いします',
+      'emails.reviewResendRequest.body' => '<p>{$recipientName} 様</p><p>先日、『{$contextName}』の提出物「{$submissionTitle}」の査読依頼を却下されました。このたびは、貴方が査読を実施できるかどうか確認するためにこのメールをお送りしています。</p><p>この査読を実施していただける場合は大変ありがたいのですが、現時点では不可能な場合も承知しております。いずれにせよ、{$responseDueDate} までに <a href="{$reviewAssignmentUrl}">リクエストを承認または却下</a>していただき、代わりの査読者を見つけられるようにしてください。</p><p>ご質問がある場合は、私にご連絡ください。</p><p>よろしくお願いいたします。</p>{$signature}',
+      'emails.footer.unsubscribe' => '<br><br>—<br><a href="{$unsubscribeUrl}">『{$contextName}』</a> からのメールの配信解除します。',
+      'emails.footer.unsubscribe.discussion' => '<br><br>—<br>このコメントに <a href="{$submissionUrl}">#{$submissionId} {$authorsShort}</a> で返信するか、<a href="{$unsubscribeUrl}">『{$contextName}』</a> からのメールを配信解除してください。',
+      'emails.footer.unsubscribe.automated' => '<br><br>—<br>これは <a href="{$contextUrl}">『{$contextName}』</a> からの自動メッセージです。このメールはいつでも <a href="{$unsubscribeUrl}">配信解除</a> できます。',
+      'emailTemplate.variable.unsubscribe' => 'このメールの登録を解除するためのリンク。',
+      'emails.discussion.subject' => '{$contextName}に関するメッセージ',
+      'emails.discussion.body' => 'メッセージを入力してください。',
+      'emails.versionCreated.subject' => '「{$submissionTitle}」の新しいバージョンが作成されました',
+      'emails.versionCreated.body' => '<p>{$recipientName} 様、</p><p>これは、投稿「{$submissionTitle}」の新しいバージョンが作成されたことをお知らせする自動メッセージです。このバージョンは、次のリンクにある投稿ダッシュボードから表示できます:</p><p><a href="{$submissionUrl}">「{$submissionTitle}」</a></p><hr><p>これは、<a href="{$contextUrl}">『{$contextName}』</a> から送信された自動メールです。</p>',
+      'emails.reviewComplete.subject' => '査読完了: {$reviewerName} さんが #{$submissionId} {$authorsShort} — 「{$submissionTitle} 」に対して {$reviewRecommendation} を推奨しています',
+      'emails.reviewComplete.body' => '<p>{$recipientName} 様、</p><p>{$reviewerName} さんが下記の査読を完了しました:</p><p><a href="{$submissionUrl}">#{$submissionId} {$authorsShort} — 「{$submissionTitle}」</a><br /><b>推奨事項:</b> {$reviewRecommendation}<br /><b>タイプ:</b> {$reviewMethod}</p><p>この査読者が提供した <a href="{$submissionUrl}">すべてのファイルとコメントを表示</a>するには、ログインしてください。</p>',
+      'emails.reviewEdit.subject' => '『{$contextName}』のための査読割当が変更されました',
+      'emails.reviewEdit.body' => '<p>{$recipientName} 様、</p><p>編集者が『{$contextName}』のための査読割当に変更を加えました。以下の詳細を確認し、質問がある場合はお知らせください。</p><p><a href="{$reviewAssignmentUrl}">「{$submissionTitle}」</a><br /><b>タイプ:</b> {$reviewMethod}<br /><b>承認または拒否期限:</b> {$responseDueDate}<br /><b>査読の送信期限:</b> {$reviewDueDate}</p><p>いつでもログインして <a href="{$reviewAssignmentUrl}">この査読を完了</a>できます。</p>',
+      'emails.reviewConfirm.subject' => '査読依頼の受諾: {$reviewerName} が #{$submissionId} {$authorsShort} — 「{$submissionTitle} 」の査読割当を承認しました',
+      'emails.reviewConfirm.body' => '<p>{$recipientName} 様、</p><p>{$reviewerName} さんが下記の査読を承認しました:</p><p><a href="{$submissionUrl}">#{$submissionId} {$authorsShort} — 「{$submissionTitle}」</a><br /><b>タイプ:</b> {$reviewMethod}</p><p><b>査読期限:</b> {$reviewDueDate}</p><p>この投稿の <a href="{$submissionUrl}">すべての査読者の割当を表示</a>するには、ログインしてください。</p><br><br>—<br>これは <a href="{$contextUrl}">『{$contextName}』</a> からの自動メッセージです。',
+      'emails.submissionSavedForLater.subject' => '『{$contextName}』への投稿を再開する',
+      'emails.submissionSavedForLater.body' => '<p>{$recipientName} 様</p><p>ご提出いただいた内容はシステムに保存されていますが、まだ査読に送られていません。以下のリンクをたどることで、いつでも戻って投稿を完了することができます。</p><p><a href="{$submissionWizardUrl}">{$authorsShort} — 「{$submissionTitle}」</a></p><hr><p>これは <a href="{$contextUrl}">『{$contextName}』</a> からの自動送信メールです。</p>',
+      'emails.submissionNeedsEditor.subject' => '新規投稿には担当編集者が必要: 「{$submissionTitle}」',
+      'emails.submissionNeedsEditor.body' => '<p>{$recipientName} 様、</p><p>下記の投稿は送信されましたが、編集者が割り当てられていません。</p><p><a href="{$submissionUrl}">「{$submissionTitle}」</a><br />{$authors}</p><p><b>概要</b></p>{$submissionAbstract}<p>上記のタイトルをクリックし、[参加者] セクションで編集者を割り当てることで、投稿の責任者となる編集者を割り当ててください。</p><hr><p>これは <a href="{$contextUrl}">『{$contextName}』</a> からの自動送信メールです。</p>',
+      'emails.submissionAckNotUser.description' => 'このメールは、新しい投稿に名前が記載されているが、投稿者本人ではない著者に自動的に送信されます。',
+      'emails.submissionAckNotAuthor.subject' => '投稿のお礼',
+      'emails.submissionAckNotAuthor.body' => '<p>{$recipientName} 様</p><p>貴方は、『{$contextName}』への投稿の共著者として登録されていました。投稿者 {$submitterName} は、下記の詳細を提供しました:</p><p>{$submissionTitle\'\',{$authorsWithAffiliation}</p><p>これらの詳細のいずれかが間違っている場合、またはこの投稿に名前を載せたくない場合は、私に連絡してください。</p><p>貴方の研究の場として『{$contextName}』をご検討いただきありがとうございます。</p><p>よろしくお願いいたします。</p>{$contextSignature}',
+    ),
+  ),
+);

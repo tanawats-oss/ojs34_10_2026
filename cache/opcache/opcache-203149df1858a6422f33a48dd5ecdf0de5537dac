@@ -1,0 +1,135 @@
+<?php $exp = 1809591662; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=2; plural=n > 1;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'emails.submissionAck.subject' => 'Accusé de réception de la soumission à {$contextName}',
+      'emails.submissionAck.body' => '<p>{$recipientName},</p><p>Nous vous remercions d\'avoir soumis le manuscrit intitulé « {$submissionTitle} » à la revue {$contextName}. Nous l\'avons bien reçu et un membre de notre équipe éditorial le prendre en charge sous peu. Grâce à notre système de gestion en ligne, vous pourrez suivre votre soumission tout au long du processus d\'édition en accédant au site Web de la revue :</p>
+<br />
+URL de la soumission : {$submissionUrl}<br />
+Nom d\'utilisateur-trice : {$recipientUsername}<br />
+<br />
+Si vous avez des questions, n\'hésitez pas à communiquer avec nous. Nous vous remercions d\'avoir pensé à notre revue pour la publication de vos travaux.<br />
+<br />
+{$contextSignature}',
+      'emails.submissionAck.description' => 'Ce courriel est envoyé automatiquement à un auteur-e lors de la soumissions de son article.',
+      'emails.reviewAck.subject' => 'Accusé de réception de l\'évaluation d\'une soumission',
+      'emails.reviewAck.body' => '<p>{$recipientName},</p>
+<p>Nous vous remercions d\'avoir évaluer la soumission, {$submissionTitle}, pour {$contextName}. Nous apprécions l\'expertise et le temps que vous y avez consacrés et qui contribuent à la qualité des travaux que nous publions.</p>
+<p>Ce fut un plaisir de travailler avec vous et nous espérons avoir opportunité de le faire encore à l\'avenir.</p>
+<p>Cordialement,</p>
+<p>{$signature}</p>',
+      'emails.decision.notifyReviewers.subject' => 'Décision éditoriale suite à votre évaluation',
+      'emails.decision.notifyReviewers.body' => '<p>{$recipientName},</p>
+<p>Nous vous remercions d\'avoir complété votre évaluation de la soumission, {$submissionTitle}, pour {$contextName}. Nous vous sommes reconnaissant pour votre temps et votre expertise qui contribue à la qualité des travaux que nous publions. Nous avons partagé vos commentaires avec l\'auteur-e, ainsi que ceux des autres évaluateurs-trices. </p>
+<p>En fonction des recommandations reçues, nous avons informé l\'auteur-e de notre décision qui est la suivante: </p>
+<p>{$decisionDescription}</p>
+<p>Votre recommandation a été prise en considération conjointement avec celles des autres évaluateurs-trices avant d\'en arriver à cette décision.</p>
+<p>Ce fut un plaisir de travailler avec vous à cette évaluation pour {$contextName}. Nous espérons avoir l\'opportunité de renouveler cette expérience avec vous à l\'avenir.</p>
+<p>Cordialement,</p>
+<p>{$signature}</p>',
+      'emails.decision.notifyOtherAuthors.subject' => 'Mise à jour concernant votre soumission',
+      'emails.decision.notifyOtherAuthors.body' => '<p>Ce courriel a été envoyé à {$submittingAuthorName} par {$contextName} concernant {$submissionTitle}.</p>
+<p>Vous recevez une copie de cet avis car vous êtes identifié comme auteur-e de cette soumission. Toutes les instructions dans le message ci-dessous sont à l\'intention de l\'auteur-e de correspondance, {$submittingAuthorName}. </p><p>Aucune action n\'est attendue de votre part.</p>
+
+{$messageToSubmittingAuthor}',
+      'emails.editorDecisionSendToExternal.subject' => 'Votre manuscrit a été envoyé en évaluation',
+      'emails.editorDecisionSendToExternal.body' => '<p>{$recipientName},</p><p>Nous sommes heureux de vous annoncer qu\'un-e redacteur-trice à évaluer votre manuscrit, {$submissionTitle}, et a décidé de l\'envoyer en évaluation. Un-e redacteur-trice identifiera des évaluateurs-trices qui feront des commentaires sur votre manuscrit.</p><p>{$reviewTypeDescription} Nous vous ferons part de leurs commentaires et vous informerons des prochaines étapes par la suite.</p><p>S\'il vous plait, prenez en considération que le fait d\'envoyer votre manuscrit en évaluation ne garantit en rien le fait d\'être publié. Nous prendrons en considération les recommandations des évaluateurs avant de décider de publier votre manuscrit.</p><p>Si vous avez des questions, vous pouvez nous contacter à partir de votre <a href="{$authorSubmissionUrl}">tableau de bord de soumission</a>.</p><p>{$signature}</p>',
+      'emails.editorDecisionSendToProduction.subject' => 'Décision du rédacteur',
+      'emails.editorDecisionSendToProduction.body' => '<p>{$recipientName},</p><p>Je vous écris de la part de {$contextName} afin de vous confirmer que la révision de votre soumission, {$submissionTitle}, est terminée. Votre soumission sera envoyée à l\'étape de production, nous procéderons à la mise en page avant publication. Nous vous contacterons au besoin.</p><p>Si vous avez des questions, vous pouvez nous rejoindre à partir du <a href="{$authorSubmissionUrl}">tableau de bord de votre soumission</a>.</p><p>Cordialement,</p>{$signature}',
+      'emails.editorDecisionRevisions.subject' => 'Décision du rédacteur',
+      'emails.editorDecisionRevisions.body' => '{$authors},<br />
+<br />
+Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à la revue {$contextName}.<br />
+<br />
+Notre décision est de vous demander d\'apporter des révisions à votre soumission.',
+      'emails.editorDecisionResubmit.subject' => 'Décision du rédacteur',
+      'emails.editorDecisionResubmit.body' => '{$authors},<br />
+<br />
+Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à la revue {$contextName}.<br />
+<br />
+Notre décision est de vous demander d\'apporter des révisions à votre soumission et de la soumettre à nouveau.',
+      'emails.editorDecisionDecline.subject' => 'Décision du rédacteur',
+      'emails.editorDecisionDecline.body' => '{$authors}:<br />
+<br />
+Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à la revue {$contextName}.<br />
+<br />
+Notre décision est de refuser votre soumission.',
+      'emails.editorRecommendation.subject' => 'Recommandation du rédacteur',
+      'emails.editorRecommendation.body' => '<p>{$recipientName},</p><p>Ma recommandation concernant la soumission « {$submissionTitle} » à la revue {$contextName} est de : {$recommendation}</p><p>S\'il vous plait, consulter la <a href="{$submissionUrl}">page de la soumission</a> afin de donner suite à cette recommandation.</p><p>Cordialement,</p><p>{$senderName}</p>',
+      'emails.copyeditRequest.subject' => 'Demande de révision d\'une soumission',
+      'emails.copyeditRequest.body' => '{$recipientName},<br />
+<br />
+J\'aimerais que vous effectuiez la révision du manuscrit intitulé « {$submissionTitle} » pour la revue {$contextName} à l\'aide des étapes suivantes.<br />
+1. Cliquer sur l\'URL de la soumission ci-dessous.<br />
+2. Ouvrir le(s) fichier(s) disponible(s) sous Fichiers des ébauches finales et effectuer votre révision, tout en ajoutant des discussions sur la révision, le cas échéant.<br />
+3. Enregistrer le(s) fichier(s) révisé(s) et le(s) téléverser dans la section Version(s) révisée(s).<br />
+4. Informer le,la rédacteur-trice que tous les fichiers ont été révisés et que l\'étape de production peut débuter.<br />
+<br />
+URL de la revue {$contextName} : {$contextUrl}<br />
+URL de la soumission : {$submissionUrl}<br />
+Nom d\'utilisateur-trice : {$recipientUsername}',
+      'emails.editorDecisionNewReviewRound.subject' => 'Votre soumission fera l\'objet d\'un nouveau cycle d\'évaluation',
+      'emails.editorDecisionNewReviewRound.body' => '<p>{$recipientName},</p>
+<p>Votre soumission révisée, {$submissionTitle}, fera l\'objet d\'un nouveau cycle d\'évaluation par les pairs. 
+Nous vous contacterons afin de vous faire part des commentaires des évaluateurs et vous fournir des informations sur les prochaines étapes.</p>
+<p>Si vous avec des questions, vous pouvez nous contacter à partir de votre <a href="{$authorSubmissionUrl}">tableau de bord de soumission</a>.</p>
+<p>Cordialement,</p>
+<p>{$signature}</p>
+',
+      'emails.editorDecisionRevertDecline.subject' => 'Nous avons renversé la décision de rejeter votre soumission',
+      'emails.editorDecisionRevertDecline.body' => '<p>{$recipientName},</p>
+<p>La décision de rejeter votre soumission, {$submissionTitle}, a été renversée. Un-e rédacteur-trice complétera le cycle d\'évaluation et vous serez informé-e lorsqu\'une décision éditoriale sera prise.</p>
+<p>Si vous avez des questions, vous pouvez nous contacter sur votre <a href="{$authorSubmissionUrl}">tableau de bord de soumissions</a>.</p>
+<p>Cordialement,</p>
+<p>{$signature}</p>
+',
+      'emails.editorDecisionRevertInitialDecline.subject' => 'Nous avons renversé la décision de rejeter votre soumission',
+      'emails.editorDecisionRevertInitialDecline.body' => '<p>{$recipientName},</p>
+<p>La décision de rejeter votre soumission, {$submissionTitle}, a été renversée. Un-e rédacteur-trice consultera en détail votre soumission avant de décider de la rejeter ou de l\'envoyer en évaluation.</p>
+<p>Si vous avez des questions, vous pouvez nous contacter à partir de votre <a href="{$authorSubmissionUrl}">tableau de bord de soumission</a>.</p>
+<p>Cordialement,</p>
+<p>{$signature}</p>
+',
+      'emails.editorDecisionInitialDecline.subject' => 'Décision du rédacteur',
+      'emails.editorDecisionInitialDecline.body' => '<p>{$recipientName},</p><p>Nous avons le regret de vous informer qu\'après avoir évaluer votre manuscrit, {$submissionTitle}, le-la rédacteur-trice en a conclue qu\'il ne rencontre pas les exigences nécessaires pour être publier dans {$contextName}.</p><p>Cordialement,</p>{$signature}',
+      'emails.editorialReminder.subject' => 'Tâches éditoriales en attente pour {$contextName}',
+      'emails.editorialReminder.body' => '<p>$recipientName}, </p><p>Vous êtes présentement assigné-e à {$numberOfSubmissions} soumissions dans <a href="{$contextUrl}">{$journalName}</a>. Des actions sont <b>attendues de votre part pour ces soumissions</b>.</p>{$outstandingTasks}<p>Vous pouvez consulter toutes vos soumissions dans votre <a href="{$submissionsUrl}">tableau de bord des soumissions</a>.</p><p>Si vous avez des questions, contactez {$contactName} par courriel à l’adresse: {$contactEmail}. </p>',
+      'discussion.notification.description' => 'Ce courriel est envoyé lorsqu\'un-e utilisateur-trice crée une nouvelle discussion ou répond à une discussion en cours.',
+      'emails.editorDecisionBackFromProduction.subject' => 'Votre soumission a été renvoyée à l\'étape de révision',
+      'emails.editorDecisionBackFromProduction.body' => '<p>{$recipientName},</p><p>Votre soumission, {$submissionTitle}, a été renvoyée à l\'étape de révision, où nous procéderons à des révisions supplémentaires ainsi qu\'à la mise en page en prévision de la publication.</p><p>Nous nous excusons pour la confusion que cette opération peut occasionner.</p><p>Si vous avez des questions, vous pouvez nous contacter à partir de votre <a href="{$authorSubmissionUrl}">tableau de bord de soumission</a>.</p><p>Cordialement,</p><p>{$signature}</p>',
+      'emails.editorDecisionBackFromCopyediting.subject' => 'Votre soumission a été renvoyée à l\'étape d\'évaluation.',
+      'emails.editorDecisionBackFromCopyediting.body' => '<p>{$recipientName},</p><p>Votre soumission, {$submissionTitle}, a été renvoyée à l\'étape d\'évaluation. Elle sera réévaluée avant de pouvoir être acceptée.</p><p>Il peut arriver qu\'une décision d\'accepter une soumission soit prise par erreur dans notre système et qu\'elle doive être renvoyée à l\'étape d\'évaluation. Nous nous excusons cette la confusion. Nous allons faire en sorte de compléter le processus d\'évaluation rapidement afin de vous communiquer notre décision finale le plus tôt possible.</p><p>Nous vous contacterons au besoin.</p><p>Si vous avez des questions, n\'hésitez pas à nous contacter à partir de votre <a href="{$authorSubmissionUrl}">tableau de bord de soumission</a>.</p><p>Cordialement,</p><p>{$signature}</p>',
+      'emails.editorDecisionCancelReviewRound.subject' => 'Un cycle d\'évaluation de votre soumission a été annulé',
+      'emails.editorDecisionCancelReviewRound.body' => '<p>{$recipientName},</p><p>Nous avions déclenché un nouveau cycle d\'évaluation pour votre soumission, {$submissionTitle}. Nous fermons désormais ce cycle.</p><p>Nous nous excusons pour la confusion que cette action peut occasionner. </p><p>Nous vous contacterons si nous avons besoin d\'une aide supplémentaire de votre part.</p><p>Si vous avez des questions, vous pouvez nous contacter à partir de votre <a href="{$authorSubmissionUrl}">tableau de bord de soumissions</a></p>.<p>Kind regards,</p><p>{$signature}</p>',
+      'emails.reviewResendRequest.subject' => 'Demande d\'évaluation réitérée pour {$contextName}',
+      'emails.reviewResendRequest.body' => '<p>{$recipientName},</p><p>Vous avez décliné récemment notre invitation à évaluer la soumission, {$submissionTitle}, pour {$contextName}. Je vous écris afin de vous demander si vous accepteriez de reconsidérer votre décision et d\'accepter de l\'évaluer.</p><p>Nous vous en serions très reconnaissant, mais nous comprenons également que vous soyez dans l\'impossibilité de le faire en ce moment. Quoi qu\'il en soit, pouvez-vous s\'il vous plait <a href="{$reviewAssignmentUrl}">accepter ou approuver notre demande</a> avant le {$responseDueDate}.</p><p>Si vous avez des questions, n\'hésitez pas nous contacter.</p><p>Cordialement,</p>{$signature}',
+      'emails.footer.unsubscribe' => '<br><br>—<br><a href="{$unsubscribeUrl}">Se désabonner</a> des courriels envoyés par <a href="{$contextUrl}">{$contextName}</a>.',
+      'emails.footer.unsubscribe.discussion' => '<br><br>—<br>Répondre à ce commentaire à l\'adresse <a href="{$submissionUrl}">#{$submissionId} {$authorsShort}</a> ou<a href="{$unsubscribeUrl}">se désabonner</a> des courriels envoyés par <a href="{$contextUrl}">{$contextName}</a>.',
+      'emails.footer.unsubscribe.automated' => '<br><br>—<br>Ceci est un message automatique de <a href="{$contextUrl}">{$contextName}</a>. Vous pouvez vous <a href="{$unsubscribeUrl}">désabonner</a> à tout moment.',
+      'emailTemplate.variable.unsubscribe' => 'Le lien pour vous désabonner de cette notification par courriel.',
+      'emails.discussion.subject' => 'Un message à propos de la revue {$contextName}',
+      'emails.discussion.body' => 'Prière de saisir votre message.',
+      'emails.versionCreated.subject' => 'Une nouvelle version a été créée pour {$submissionTitle}',
+      'emails.versionCreated.body' => '<p>{$recipientName}, </p><p>Ceci est un courriel automatique de <a href="{$contextUrl}">{$contextName}</a> pour vous informer qu\'une nouvelle version de votre soumission, {$submissionTitle}, a été créée. Vous pouvez consulter cette version à partir de votre tableau de bord de soumission:</p><p><a href="{$submissionUrl}">{$submissionTitle}</a></p><hr>',
+      'emails.reviewComplete.subject' => 'Évaluation terminée: {$reviewerName} recommande {$reviewRecommendation} pour #{$submissionId} {$authorsShort} — {$submissionTitle}',
+      'emails.reviewComplete.body' => '<p>{$recipientName},</p><p>{$reviewerName} a terminé son évaluation :</p><p><a href="{$submissionUrl}">#{$submissionId} {$authorsShort} — {$submissionTitle}</a><br /><b>Recommandation :</b> {$reviewRecommendation}<br /><b>Type :</b> {$reviewMethod}</p><p>Connectez-vous <a href="{$submissionUrl}">afin de consulter les commentaires</a> de l\'évaluateur-trice.</p>',
+      'emails.reviewEdit.body' => '<p>{$recipientName},</p><p>Un-e rédacteur-trice a modifié l\'assignation de votre évaluation pour {$contextName}. S\'il vous plaît, consulter les détails ci-dessous et n\'hésitez pas à nous contacter si vous avez des questions.</p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a><br /><b>Type :</b> {$reviewMethod}<br /><b>Accepté ou rejeté avant le :</b> {$responseDueDate}<br /><b>Évaluation soumise avant le :</b> {$reviewDueDate}</p><p>Vous pouvez vous connectez afin de <a href="{$reviewAssignmentUrl}">terminer cette évaluation</a>.</p>',
+      'emails.reviewConfirm.subject' => 'Acceptation d\'évaluation',
+      'emails.reviewConfirm.body' => 'Rédacteurs-trices,<br />
+<br />
+Je suis en mesure d\'évaluer la soumission intitulée « {$submissionTitle} » pour la revue {$contextName}. Je vous remercie d\'avoir pensé à moi. Je devrais être en mesure de compléter l\'évaluation pour la date du {$reviewDueDate}, voire avant.<br />
+<br />
+{$senderName}',
+      'emails.submissionSavedForLater.subject' => 'Reprendre votre soumission à {$contextName}',
+      'emails.submissionSavedForLater.body' => '<p>{$recipientName},</p><p>Les détails de votre soumission ont été enregistrés, mais vous ne l\'avez pas encore finalisée. Vous pouvez le faire en cliquant sur le lien ci-dessous: </p><p><a href="{$submissionWizardUrl}">{$authorsShort} — {$submissionTitle}</a></p><hr><p>Ceci est un message automatique de <a href="{$contextUrl}">{$contextName}</a>.</p>',
+      'emails.submissionNeedsEditor.subject' => 'Un-e rédacteur-trice doit être assigné-e à la nouvelle soumission : {$submissionTitle}',
+      'emails.submissionNeedsEditor.body' => '<p>{$recipientName},</p><p>La soumission suivante a été soumise et aucun-e rédacteur-trice ne lui est assigné-e.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstract</b></p>{$submissionAbstract}<p>S\'il vous plait, assignez un-e rédacteur-trice qui sera responsable de la soumission. </p><hr><p>Ceci est un courriel automatique de <a href="{$contextUrl}">{$contextName}</a>.</p>',
+      'emails.submissionAckNotUser.description' => 'Ce courriel est automatiquement envoyé aux auteurs-es d\'une nouvelle soumission qui ne sont pas l\'auteur-e de correspondance.',
+      'emails.submissionAckNotAuthor.subject' => 'Accusé de réception de la soumission',
+      'emails.submissionAckNotAuthor.body' => '<p>Bonjour,</p><p>Le manuscrit intitulé , « {$submissionTitle} » , a été soumis par {$submitterName} à la revue {$contextName}.</p><p>Si vous avez des questions, n\'hésitez pas à communiquer avec nous. Nous vous remercions d\'avoir pensé à la revue {$contextName} pour la publication de vos travaux.</p><p>Cordialement,</p>{$contextSignature}',
+    ),
+  ),
+);
