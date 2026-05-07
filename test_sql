@@ -26,3 +26,19 @@ ALTER TABLE publications DROP FOREIGN KEY publications_doi_id_foreign;
 
 ALTER TABLE `issues` DROP INDEX `issues_doi_id`;
 ALTER TABLE `issues` DROP `doi_id`;
+cmd-----------------------------------------------------------------------------------------
+
+
+
+
+
+sudo rm -rf cache/t_compile/*.php  sudo rm -rf cache/_db/*.php sudo systemctl restart apache2 php tools/upgrade.php upgrade
+
+
+sudo systemctl restart apache2 php 
+
+sudo rm -rf cache/*.php
+sudo rm -rf cache/_db/*.php
+sudo rm -rf cache/t_compile/*.php
+sudo rm -rf cache/opcache/*
+php tools/upgrade.php upgrade
