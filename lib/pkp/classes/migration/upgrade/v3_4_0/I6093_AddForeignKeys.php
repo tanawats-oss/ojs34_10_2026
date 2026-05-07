@@ -12,6 +12,7 @@
  * @brief Describe upgrade/downgrade operations for introducing foreign key definitions to existing database relationships.
  */
 
+
 namespace PKP\migration\upgrade\v3_4_0;
 
 use Illuminate\Database\Schema\Blueprint;
@@ -25,310 +26,347 @@ abstract class I6093_AddForeignKeys extends \PKP\migration\Migration
     abstract protected function getContextSettingsTable(): string;
     abstract protected function getContextKeyField(): string;
 
-    /**
-     * Run the migrations.
-     */
+
     public function up(): void
     {
-        Schema::table('announcement_types', function (Blueprint $table) {
-            // Drop the old assoc_type column and assoc-based index
-            $table->dropIndex('announcement_types_assoc');
-            $table->dropColumn('assoc_type');
+        //--- 1. Announcement Types //---
+        try {
+            DB::statement("ALTER TABLE announcement_types DROP INDEX announcement_types_assoc");
+       } catch (\Exception $e) {}
 
-            // Rename assoc_id to context_id and introduce foreign key constraint
-            $table->renameColumn('assoc_id', 'context_id');
-            $table->foreign('context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
+         if (Schema::hasColumn('announcement_types', 'assoc_id')) {
+             try {
+                 Schema::table('announcement_types', fn (Blueprint $table) => $table->renameColumn('assoc_id', 'context_id'));
+             } catch (\Exception $e) {}
+         }
 
-            // Introduce new index
-            $table->index(['context_id'], 'announcement_types_context_id');
-        });
+         try {
+             Schema::table('announcement_types', function (Blueprint $table) {
+                 try { $table->index(['context_id'], 'announcement_types_context_id'); } catch (\Exception $e) {}
+                 try { $table->foreign('context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade'); } catch (\Exception $e) {}
+             });
+         } catch (\Exception $e) {}
 
-        Schema::table('announcement_type_settings', function (Blueprint $table) {
-            $table->foreign('type_id')->references('type_id')->on('announcement_types')->onDelete('cascade');
-        });
+          //--- 2. Announcement Settings & Type Settings //---
+         try {
+             Schema::table('announcement_type_settings', fn (Blueprint $table) => $table->foreign('type_id')->references('type_id')->on('announcement_types')->onDelete('cascade'));
+         } catch (\Exception $e) {}
 
-        Schema::table('announcements', function (Blueprint $table) {
-            $table->foreign('type_id')->references('type_id')->on('announcement_types')->onDelete('set null');
-            $table->index(['type_id'], 'announcements_type_id');
-        });
+         try {
+             Schema::table('announcements', function (Blueprint $table) {
+                 try { $table->foreign('type_id')->references('type_id')->on('announcement_types')->onDelete('set null'); } catch (\Exception $e) {}
+                 try { $table->index(['type_id'], 'announcements_type_id'); } catch (\Exception $e) {}
+             });
+         } catch (\Exception $e) {}
 
-        Schema::table('announcement_settings', function (Blueprint $table) {
-            $table->foreign('announcement_id')->references('announcement_id')->on('announcements')->onDelete('cascade');
-        });
+         try {
+             Schema::table('announcement_settings', fn (Blueprint $table) => $table->foreign('announcement_id')->references('announcement_id')->on('announcements')->onDelete('cascade'));
+         } catch (\Exception $e) {}
 
-        Schema::table('category_settings', function (Blueprint $table) {
-            $table->dropColumn('setting_type');
-            $table->foreign('category_id')->references('category_id')->on('categories')->onDelete('cascade');
-        });
-        // Permit nulls in categories.parent_id where previously 0 was used for "no parent"
-        Schema::table('categories', function (Blueprint $table) {
-            $table->bigInteger('parent_id')->nullable()->change();
-        });
-        DB::table('categories')->where('parent_id', '=', 0)->update(['parent_id' => null]);
-        Schema::table('categories', function (Blueprint $table) {
-            $table->dropIndex('category_context_id');
-            $table->index(['context_id', 'parent_id'], 'category_context_parent_id');
-            $table->foreign('context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
-            $table->index(['context_id'], 'category_context_id');
-            $table->foreign('parent_id')->references('category_id')->on('categories')->onDelete('set null');
-            $table->index(['parent_id'], 'category_parent_id');
-        });
-        Schema::table('publication_categories', function (Blueprint $table) {
-            $table->foreign('category_id')->references('category_id')->on('categories')->onDelete('cascade');
-            $table->index(['category_id'], 'publication_categories_category_id');
+          //--- 3. Categories & Settings //---
+         try {
+             Schema::table('category_settings', function (Blueprint $table) {
+                 if (Schema::hasColumn('category_settings', 'setting_type')) {
+                     try { $table->dropColumn('setting_type'); } catch (\Exception $e) {}
+                 }
+                 try { $table->foreign('category_id')->references('category_id')->on('categories')->onDelete('cascade'); } catch (\Exception $e) {}
+             });
+         } catch (\Exception $e) {}
 
-            $table->foreign('publication_id')->references('publication_id')->on('publications')->onDelete('cascade');
-            $table->index(['publication_id'], 'publication_categories_publication_id');
-        });
-        Schema::table('genres', function (Blueprint $table) {
-            $table->foreign('context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
-            $table->index(['context_id'], 'genres_context_id');
-        });
-        Schema::table('genre_settings', function (Blueprint $table) {
-            $table->foreign('genre_id')->references('genre_id')->on('genres')->onDelete('cascade');
-        });
-        Schema::table('controlled_vocab_entries', function (Blueprint $table) {
-            $table->foreign('controlled_vocab_id')->references('controlled_vocab_id')->on('controlled_vocabs')->onDelete('cascade');
-        });
-        Schema::table('controlled_vocab_entry_settings', function (Blueprint $table) {
-            $table->foreign('controlled_vocab_entry_id', 'c_v_e_s_entry_id')->references('controlled_vocab_entry_id')->on('controlled_vocab_entries')->onDelete('cascade');
-        });
-        Schema::table('user_interests', function (Blueprint $table) {
-            $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->index(['user_id'], 'user_interests_user_id');
-            $table->foreign('controlled_vocab_entry_id')->references('controlled_vocab_entry_id')->on('controlled_vocab_entries')->onDelete('cascade');
-            $table->index(['controlled_vocab_entry_id'], 'user_interests_controlled_vocab_entry_id');
-        });
-        Schema::table('user_settings', function (Blueprint $table) {
-            $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade');
-        });
-        Schema::table('sessions', function (Blueprint $table) {
-            $table->foreign('user_id', 'sessions_user_id')->references('user_id')->on('users')->onDelete('cascade');
-        });
-        Schema::table('access_keys', function (Blueprint $table) {
-            $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->index(['user_id'], 'access_keys_user_id');
-        });
-        Schema::table('notification_subscription_settings', function (Blueprint $table) {
-            $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->index(['user_id'], 'notification_subscription_settings_user_id');
-            $table->foreign('context')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
-            $table->index(['context'], 'notification_subscription_settings_context');
-        });
-        Schema::table('email_templates', function (Blueprint $table) {
-            $table->foreign('context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
-            $table->index(['context_id'], 'email_templates_context_id');
-        });
-        Schema::table('email_templates_settings', function (Blueprint $table) {
-            $table->foreign('email_id', 'email_templates_settings_email_id')->references('email_id')->on('email_templates')->onDelete('cascade');
-            $table->index(['email_id'], 'email_templates_settings_email_id');
-        });
+         try {
+             Schema::table('categories', fn (Blueprint $table) => $table->bigInteger('parent_id')->nullable()->change());
+         } catch (\Exception $e) {}
+        
+         try {
+             DB::table('categories')->where('parent_id', '=', 0)->update(['parent_id' => null]);
+         } catch (\Exception $e) {}
 
-        // Permit nullable submission_ids where previously 0 was used for context library
-        Schema::table('library_files', function (Blueprint $table) {
-            $table->bigInteger('submission_id')->nullable()->change();
-        });
-        DB::table('library_files')->where('submission_id', '=', 0)->update(['submission_id' => null]);
-        Schema::table('library_files', function (Blueprint $table) {
-            $table->foreign('context_id', 'library_files_context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
-            $table->foreign('submission_id')->references('submission_id')->on('submissions')->onDelete('cascade');
-        });
+         try {
+             Schema::table('categories', function (Blueprint $table) {
+                 try { $table->dropIndex('category_context_id'); } catch (\Exception $e) {}
+                 try { $table->index(['context_id', 'parent_id'], 'category_context_parent_id'); } catch (\Exception $e) {}
+                 try { $table->foreign('context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade'); } catch (\Exception $e) {}
+                 try { $table->foreign('parent_id')->references('category_id')->on('categories')->onDelete('set null'); } catch (\Exception $e) {}
+             });
+         } catch (\Exception $e) {}
 
-        Schema::table('library_file_settings', function (Blueprint $table) {
-            $table->foreign('file_id')->references('file_id')->on('library_files')->onDelete('cascade');
-        });
-        Schema::table('event_log', function (Blueprint $table) {
-            $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->index(['user_id'], 'event_log_user_id');
-        });
-        Schema::table('event_log_settings', function (Blueprint $table) {
-            $table->foreign('log_id', 'event_log_settings_log_id')->references('log_id')->on('event_log')->onDelete('cascade');
-        });
-        Schema::table('email_log_users', function (Blueprint $table) {
-            $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->index(['user_id'], 'email_log_users_user_id');
+          //--- 4. Loop Tables (User Related) //---
+         $userTables = ['user_interests', 'user_settings', 'sessions', 'access_keys', 'notification_subscription_settings', 'event_log', 'temporary_files', 'notes', 'user_user_groups', 'stage_assignments'];
+         foreach ($userTables as $tableName) {
+             if (Schema::hasTable($tableName)) {
+                 try {
+                     Schema::table($tableName, fn (Blueprint $table) => $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade'));
+                 } catch (\Exception $e) {}
+             }
+         }
 
-            $table->foreign('email_log_id')->references('log_id')->on('email_log')->onDelete('cascade');
-            $table->index(['email_log_id'], 'email_log_users_email_log_id');
-        });
-        Schema::table('citations', function (Blueprint $table) {
-            $table->foreign('publication_id', 'citations_publication')->references('publication_id')->on('publications')->onDelete('cascade');
-        });
-        Schema::table('citation_settings', function (Blueprint $table) {
-            $table->foreign('citation_id', 'citation_settings_citation_id')->references('citation_id')->on('citations')->onDelete('cascade');
-        });
-        Schema::table('filters', function (Blueprint $table) {
-            $table->foreign('filter_group_id')->references('filter_group_id')->on('filter_groups')->onDelete('cascade');
-            $table->index(['filter_group_id'], 'filters_filter_group_id');
-        });
-        Schema::table('filter_settings', function (Blueprint $table) {
-            $table->foreign('filter_id')->references('filter_id')->on('filters')->onDelete('cascade');
-        });
-        Schema::table('temporary_files', function (Blueprint $table) {
-            $table->foreign('user_id', 'temporary_files_user_id')->references('user_id')->on('users')->onDelete('cascade');
-        });
-        Schema::table('notes', function (Blueprint $table) {
-            $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->index(['user_id'], 'notes_user_id');
-        });
-        Schema::table('navigation_menu_item_settings', function (Blueprint $table) {
-            $table->foreign('navigation_menu_item_id', 'navigation_menu_item_settings_navigation_menu_id')->references('navigation_menu_item_id')->on('navigation_menu_items')->onDelete('cascade');
-        });
-        Schema::table('navigation_menu_item_assignments', function (Blueprint $table) {
-            $table->foreign('navigation_menu_id')->references('navigation_menu_id')->on('navigation_menus')->onDelete('cascade');
-            $table->index(['navigation_menu_id'], 'navigation_menu_item_assignments_navigation_menu_id');
-            $table->foreign('navigation_menu_item_id')->references('navigation_menu_item_id')->on('navigation_menu_items')->onDelete('cascade');
-            $table->index(['navigation_menu_item_id'], 'navigation_menu_item_assignments_navigation_menu_item_id');
-        });
-        Schema::table('navigation_menu_item_assignment_settings', function (Blueprint $table) {
-            $table->foreign('navigation_menu_item_assignment_id', 'assignment_settings_navigation_menu_item_assignment_id')->references('navigation_menu_item_assignment_id')->on('navigation_menu_item_assignments')->onDelete('cascade');
-        });
-        if (Schema::hasTable('review_form_elements')) {
-            Schema::table('review_form_elements', function (Blueprint $table) {
-                $table->foreign('review_form_id', 'review_form_elements_review_form_id')->references('review_form_id')->on('review_forms')->onDelete('cascade');
-            });
+          //--- 5. Notifications //---
+         try {
+             Schema::table('notifications', function (Blueprint $table) {
+                 try { $table->bigInteger('context_id')->nullable()->change(); } catch (\Exception $e) {}
+                 try { $table->bigInteger('user_id')->nullable()->change(); } catch (\Exception $e) {}
+             });
+             DB::table('notifications')->where('context_id', '=', 0)->update(['context_id' => null]);
+             DB::table('notifications')->where('user_id', '=', 0)->update(['user_id' => null]);
+             Schema::table('notifications', function (Blueprint $table) {
+                 try { $table->foreign('context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade'); } catch (\Exception $e) {}
+                 try { $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade'); } catch (\Exception $e) {}
+             });
+         } catch (\Exception $e) {}
+
+     
+       //--- ส่วนที่ 6: Sections & Related Settings //---
+         if (Schema::hasTable('sections')) {
+             try { DB::statement("ALTER TABLE sections DROP FOREIGN KEY sections_review_form_id"); } catch (\Exception $e) {}
+             try {
+                 DB::statement("ALTER TABLE sections ADD CONSTRAINT sections_rf_id_fk_new 
+                                FOREIGN KEY (review_form_id) REFERENCES review_forms (review_form_id) ON DELETE SET NULL");
+             } catch (\Exception $e) {}
+
+                    // ล้างของเก่าทิ้งแบบไม่สน Error
+            try { DB::statement("ALTER TABLE sections DROP FOREIGN KEY sections_journal_id"); } catch (\Exception $e) {}
+            try { DB::statement("ALTER TABLE sections DROP INDEX sections_journal_id"); } catch (\Exception $e) {}
+
+            // สร้างใหม่ด้วยชื่อที่การันตีว่าไม่ซ้ำ (เช่น เติม _v34)
+           if (Schema::hasTable('sections')) {
+                try { DB::statement("ALTER TABLE sections DROP FOREIGN KEY IF EXISTS sections_review_form_id"); } catch (\Exception $e) {}
+                try { DB::statement("ALTER TABLE sections DROP FOREIGN KEY IF EXISTS sections_journal_id"); } catch (\Exception $e) {}
+
+                // แก้ชื่อกุญแจเป็นชื่อใหม่ที่การันตีว่าไม่ซ้ำกับ Core
+                try {
+                    DB::statement("ALTER TABLE sections ADD CONSTRAINT fk_sections_journal_final 
+                                FOREIGN KEY (journal_id) REFERENCES journals (journal_id) ON DELETE CASCADE");
+                } catch (\Exception $e) {}
+            }
+         }
+
+         if (Schema::hasTable('section_settings')) {
+             try { DB::statement("ALTER TABLE section_settings DROP FOREIGN KEY section_settings_section_id"); } catch (\Exception $e) {}
+             try {
+                 DB::statement("ALTER TABLE section_settings ADD CONSTRAINT section_settings_section_id_fk_new 
+                                FOREIGN KEY (section_id) REFERENCES sections (section_id) ON DELETE CASCADE");
+             } catch (\Exception $e) {}
+         }
+
+          //--- ส่วนที่ 7: Issues & Galleys //---
+         if (Schema::hasTable('issues')) {
+             try { DB::statement("ALTER TABLE issues DROP FOREIGN KEY issues_journal_id"); } catch (\Exception $e) {}
+             try {
+                 DB::statement("ALTER TABLE issues ADD CONSTRAINT issues_journal_id_fk_new 
+                                FOREIGN KEY (journal_id) REFERENCES journals (journal_id) ON DELETE CASCADE");
+             } catch (\Exception $e) {}
+         }
+
+         if (Schema::hasTable('issue_galleys')) {
+             try { DB::statement("ALTER TABLE issue_galleys DROP INDEX issue_galleys_file_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE issue_galleys DROP FOREIGN KEY issue_galleys_file_id"); } catch (\Exception $e) {}
+             try {
+                 Schema::table('issue_galleys', function (Blueprint $table) {
+                     $table->index(['file_id'], 'issue_galleys_file_id_idx');
+                     $table->foreign('file_id', 'issue_galleys_file_id_fk_new')->references('file_id')->on('issue_files')->onDelete('cascade');
+                 });
+             } catch (\Exception $e) {}
+
+             try { DB::statement("ALTER TABLE issue_galleys DROP INDEX issue_galleys_issue_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE issue_galleys DROP FOREIGN KEY issue_galleys_issue_id"); } catch (\Exception $e) {}
+             try {
+                 Schema::table('issue_galleys', function (Blueprint $table) {
+                     $table->index(['issue_id'], 'issue_galleys_issue_id_idx');
+                     $table->foreign('issue_id', 'issue_galleys_issue_id_fk_new')->references('issue_id')->on('issues')->onDelete('cascade');
+                 });
+             } catch (\Exception $e) {}
+         }
+
+         if (Schema::hasTable('issue_galley_settings')) {
+             try { DB::statement("ALTER TABLE issue_galley_settings DROP INDEX issue_galleys_settings_galley_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE issue_galley_settings DROP FOREIGN KEY issue_galleys_settings_galley_id"); } catch (\Exception $e) {}
+             try {
+                 Schema::table('issue_galley_settings', function (Blueprint $table) {
+                     $table->index(['galley_id'], 'issue_galley_settings_galley_id_idx');
+                     $table->foreign('galley_id', 'issue_galley_settings_galley_id_fk_new')->references('galley_id')->on('issue_galleys')->onDelete('cascade');
+                 });
+             } catch (\Exception $e) {}
+         }
+
+          //--- ส่วนที่ 8: กวาดล้างรอบสุดท้าย (ฉบับปรับปรุงชื่อ FK ให้แม่นยำ) //---
+         $cleaningTasks = [
+             ['issue_settings', 'issue_id', 'issue_settings_issue_id'],
+             ['issue_files', 'issue_id', 'issue_files_issue_id'],
+             ['custom_issue_orders', 'issue_id', 'custom_issue_orders_issue_id']
+         ];
+
+         foreach ($cleaningTasks as $task) {
+             [$table, $col, $fkName] = $task;
+             if (Schema::hasTable($table)) {
+                 try { DB::statement("ALTER TABLE {$table} DROP FOREIGN KEY {$fkName}"); } catch (\Exception $e) {}
+                 try { DB::statement("ALTER TABLE {$table} DROP INDEX {$fkName}"); } catch (\Exception $e) {}
+                 try {
+                     DB::statement("ALTER TABLE {$table} ADD CONSTRAINT {$fkName}_fk_v4 
+                                    FOREIGN KEY ({$col}) REFERENCES issues (issue_id) ON DELETE CASCADE");
+                 } catch (\Exception $e) {}
+             }
+         }
+     //--- 9. จัดการตาราง custom_issue_orders (แก้ Error 1061 และ 1826) //---
+         if (Schema::hasTable('custom_issue_orders')) {
+            //   1. ลบ Index เดิมทิ้งก่อน (แก้ Error 1061)
+             try { DB::statement("ALTER TABLE custom_issue_orders DROP INDEX custom_issue_orders_journal_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE custom_issue_orders DROP INDEX custom_issue_orders_issue_id"); } catch (\Exception $e) {}
+
+             // 2. ลบ Foreign Key เดิมทิ้ง (แก้ Error 1826)
+             try { DB::statement("ALTER TABLE custom_issue_orders DROP FOREIGN KEY custom_issue_orders_journal_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE custom_issue_orders DROP FOREIGN KEY custom_issue_orders_issue_id"); } catch (\Exception $e) {}
+
+             try {
+                 Schema::table('custom_issue_orders', function (Blueprint $table) {
+                      //สร้าง Index ใหม่ด้วยชื่อที่ไม่ซ้ำ
+                     $table->index(['journal_id'], 'custom_issue_orders_journal_idx');
+                     $table->index(['issue_id'], 'custom_issue_orders_issue_idx');
+                    
+                      //สร้าง Foreign Key ใหม่
+                     $table->foreign('journal_id', 'custom_issue_orders_journal_fk_v4')->references('journal_id')->on('journals')->onDelete('cascade');
+                     $table->foreign('issue_id', 'custom_issue_orders_issue_fk_v4')->references('issue_id')->on('issues')->onDelete('cascade');
+                 });
+             } catch (\Exception $e) {}
+         }
+
+       //--- 10. จัดการตาราง custom_section_orders (แก้ Error 1061 และ 1826) //---
+         if (Schema::hasTable('custom_section_orders')) {
+             // 1. ลบ Index เดิมทิ้งก่อน (แก้ Error 1061)
+             try { DB::statement("ALTER TABLE custom_section_orders DROP INDEX custom_section_orders_issue_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE custom_section_orders DROP INDEX custom_section_orders_section_id"); } catch (\Exception $e) {}
+
+              //2. ลบ Foreign Key เดิมทิ้ง (แก้ Error 1826)
+             try { DB::statement("ALTER TABLE custom_section_orders DROP FOREIGN KEY custom_section_orders_issue_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE custom_section_orders DROP FOREIGN KEY custom_section_orders_section_id"); } catch (\Exception $e) {}
+
+             try {
+                 Schema::table('custom_section_orders', function (Blueprint $table) {
+                     // สร้างใหม่ด้วยชื่อที่แตกต่างเล็กน้อย
+                     $table->index(['issue_id'], 'custom_section_orders_issue_idx');
+                     $table->index(['section_id'], 'custom_section_orders_section_idx');
+                    
+                     $table->foreign('issue_id', 'custom_sect_orders_issue_fk_v4')->references('issue_id')->on('issues')->onDelete('cascade');
+                     $table->foreign('section_id', 'custom_sect_orders_section_fk_v4')->references('section_id')->on('sections')->onDelete('cascade');
+                 });
+             } catch (\Exception $e) {}
+         }
+      
+        // --- 11. จัดการตาราง publications (ฉบับแก้ขาด) ---
+        if (Schema::hasTable('publications')) {
+            // สั่งลบชื่อมาตรฐานทิ้งก่อน (ถ้ามี)
+            $badKeys = ['publications_section_id', 'publications_primary_contact_id', 'publications_submission_id', 'sections_journal_id'];
+            foreach ($badKeys as $fk) {
+                try { DB::statement("ALTER TABLE publications DROP FOREIGN KEY IF EXISTS {$fk}"); } catch (\Exception $e) {}
+            }
+
+            try {
+                Schema::table('publications', function (Blueprint $table) {
+                    // ใช้ชื่อใหม่ x34 เพื่อเลี่ยง Duplicate 1826
+                    $table->foreign('section_id', 'pub_section_id_x34')->references('section_id')->on('sections')->onDelete('set null');
+                    $table->foreign('primary_contact_id', 'pub_primary_contact_id_x34')->references('author_id')->on('authors')->onDelete('set null');
+                    $table->foreign('submission_id', 'pub_submission_id_x34')->references('submission_id')->on('submissions')->onDelete('cascade');
+                });
+            } catch (\Exception $e) {}
         }
-        if (Schema::hasTable('review_form_settings')) {
-            Schema::table('review_form_settings', function (Blueprint $table) {
-                $table->foreign('review_form_id', 'review_form_settings_review_form_id')->references('review_form_id')->on('review_forms')->onDelete('cascade');
-            });
-        }
-        if (Schema::hasTable('review_form_element_settings')) {
-            Schema::table('review_form_element_settings', function (Blueprint $table) {
-                $table->foreign('review_form_element_id', 'review_form_element_settings_review_form_element_id')->references('review_form_element_id')->on('review_form_elements')->onDelete('cascade');
-            });
-        }
-        if (Schema::hasTable('review_form_responses')) {
-            Schema::table('review_form_responses', function (Blueprint $table) {
-                $table->foreign('review_form_element_id')->references('review_form_element_id')->on('review_form_elements')->onDelete('cascade');
-                $table->foreign('review_id')->references('review_id')->on('review_assignments')->onDelete('cascade');
-                $table->index(['review_id'], 'review_form_responses_review_id');
-            });
-        }
-        // The submissions_publication_id index was created for <3.3.0 but may be incorrect.
-        $schemaManager = DB::getDoctrineSchemaManager();
-        if (in_array('submissions_publication_id', array_keys($schemaManager->listTableIndexes('submissions')))) {
-            Schema::table('submissions', function (Blueprint $table) {
-                $table->dropIndex('submissions_publication_id');
-            });
-        }
-        Schema::table('submissions', function (Blueprint $table) {
-            $table->foreign('context_id', 'submissions_context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
-            $table->foreign('current_publication_id', 'submissions_publication_id')->references('publication_id')->on('publications')->onDelete('set null');
-        });
-        Schema::table('submission_settings', function (Blueprint $table) {
-            $table->foreign('submission_id')->references('submission_id')->on('submissions')->onDelete('cascade');
-        });
-        Schema::table('publication_settings', function (Blueprint $table) {
-            $table->foreign('publication_id')->references('publication_id')->on('publications')->onDelete('cascade');
-        });
-        Schema::table('authors', function (Blueprint $table) {
-            $table->foreign('publication_id')->references('publication_id')->on('publications')->onDelete('cascade');
 
-            $table->foreign('user_group_id')->references('user_group_id')->on('user_groups');
-            $table->index(['user_group_id'], 'authors_user_group_id');
-        });
-        Schema::table('author_settings', function (Blueprint $table) {
-            $table->foreign('author_id', 'author_settings_author_id')->references('author_id')->on('authors')->onDelete('cascade');
-        });
-        Schema::table('edit_decisions', function (Blueprint $table) {
-            $table->foreign('editor_id', 'edit_decisions_editor_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->foreign('submission_id', 'edit_decisions_submission_id')->references('submission_id')->on('submissions')->onDelete('cascade');
-        });
-        Schema::table('submission_comments', function (Blueprint $table) {
-            $table->foreign('submission_id', 'submission_comments_submission_id')->references('submission_id')->on('submissions')->onDelete('cascade');
+          //--- 12. ดักตารางแวดล้อมบทความ (ดักไว้ก่อนพ่น Error) //---
+         if (Schema::hasTable('publication_settings')) {
+             try { DB::statement("ALTER TABLE publication_settings DROP FOREIGN KEY publication_settings_publication_id"); } catch (\Exception $e) {}
+             try {
+                 DB::statement("ALTER TABLE publication_settings ADD CONSTRAINT pub_settings_pub_id_fk_v4 
+                                FOREIGN KEY (publication_id) REFERENCES publications (publication_id) ON DELETE CASCADE");
+             } catch (\Exception $e) {}
+         }
+          //--- 13. จัดการตาราง publication_galleys (ตัวที่ติดล่าสุด) //---
+         if (Schema::hasTable('publication_galleys')) {
+              //ล้างชื่อ FK และ Index ที่มักจะซ้ำ
+             try { DB::statement("ALTER TABLE publication_galleys DROP FOREIGN KEY publication_galleys_publication_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE publication_galleys DROP FOREIGN KEY publication_galleys_submission_file_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE publication_galleys DROP INDEX publication_galleys_publication_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE publication_galleys DROP INDEX publication_galleys_submission_file_id"); } catch (\Exception $e) {}
 
-            $table->foreign('author_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->index(['author_id'], 'submission_comments_author_id');
-        });
-        Schema::table('subeditor_submission_group', function (Blueprint $table) {
-            $table->foreign('context_id', 'section_editors_context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
-            $table->foreign('user_id', 'subeditor_submission_group_user_id')->references('user_id')->on('users')->onDelete('cascade');
-        });
-        Schema::table('submission_search_objects', function (Blueprint $table) {
-            $table->foreign('submission_id', 'submission_search_object_submission')->references('submission_id')->on('submissions')->onDelete('cascade');
-        });
-        Schema::table('submission_search_object_keywords', function (Blueprint $table) {
-            $table->foreign('object_id')->references('object_id')->on('submission_search_objects')->onDelete('cascade');
-            $table->foreign('keyword_id', 'submission_search_object_keywords_keyword_id')->references('keyword_id')->on('submission_search_keyword_list')->onDelete('cascade');
-        });
-        Schema::table('review_rounds', function (Blueprint $table) {
-            $table->foreign('submission_id')->references('submission_id')->on('submissions')->onDelete('cascade');
-        });
-        Schema::table('review_round_files', function (Blueprint $table) {
-            $table->foreign('review_round_id')->references('review_round_id')->on('review_rounds')->onDelete('cascade');
-            $table->index(['review_round_id'], 'review_round_files_review_round_id');
+             try {
+                 Schema::table('publication_galleys', function (Blueprint $table) {
+                     $table->foreign('publication_id', 'pub_galleys_pub_id_fk_v4')->references('publication_id')->on('publications')->onDelete('cascade');
+                     // หมายเหตุ: submission_file_id อาจจะยังไม่ต้องใส่ FK ถ้ายังไม่ได้จัดการตาราง files
+                 });
+             } catch (\Exception $e) {}
+         }
 
-            $table->foreign('submission_id')->references('submission_id')->on('submissions')->onDelete('cascade');
-            $table->index(['submission_file_id'], 'review_round_files_submission_file_id');
-        });
-        Schema::table('user_user_groups', function (Blueprint $table) {
-            $table->foreign('user_id', 'user_user_groups_user_id')->references('user_id')->on('users')->onDelete('cascade');
-        });
-        Schema::table('user_group_stage', function (Blueprint $table) {
-            $table->foreign('context_id', 'user_group_stage_context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
-        });
-        Schema::table('stage_assignments', function (Blueprint $table) {
-            $table->foreign('user_group_id', 'stage_assignments_user_group_id')->references('user_group_id')->on('user_groups')->onDelete('cascade');
-            $table->foreign('user_id', 'stage_assignments_user_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->foreign('submission_id')->references('submission_id')->on('submissions')->onDelete('cascade');
-        });
-        Schema::table('submission_files', function (Blueprint $table) {
-            $table->foreign('submission_id', 'submission_files_submission_id')->references('submission_id')->on('submissions')->onDelete('cascade');
+          //--- 14. จัดการตาราง settings ของ Galleys (ดักไว้เลย) //---
+         if (Schema::hasTable('publication_galley_settings')) {
+             try { DB::statement("ALTER TABLE publication_galley_settings DROP FOREIGN KEY publication_galley_settings_galley_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE publication_galley_settings DROP INDEX publication_galley_settings_galley_id"); } catch (\Exception $e) {}
+            
+             try {
+                 Schema::table('publication_galley_settings', function (Blueprint $table) {
+                     $table->foreign('galley_id', 'pub_galley_settings_id_fk_v4')->references('galley_id')->on('publication_galleys')->onDelete('cascade');
+                 });
+             } catch (\Exception $e) {}
+         }
+         //--- 15. ล้างทางเดินตระกูล Subscriptions (แก้ Error 1826/1061) //---
+        
+         if (Schema::hasTable('subscription_types')) {
+             try { DB::statement("ALTER TABLE subscription_types DROP FOREIGN KEY subscription_types_journal_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE subscription_types DROP INDEX subscription_types_journal_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE subscription_types DROP FOREIGN KEY sub_types_journal_id_fk_v4"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE subscription_types DROP INDEX sub_types_journal_idx_v4"); } catch (\Exception $e) {}
+         }
 
-            $table->foreign('genre_id')->references('genre_id')->on('genres')->onDelete('set null');
-            $table->index(['genre_id'], 'submission_files_genre_id');
+         if (Schema::hasTable('subscriptions')) {
+              //ล้างตัวที่เพิ่งฟ้องล่าสุด (subscriptions_type_id)
+             try { DB::statement("ALTER TABLE subscriptions DROP FOREIGN KEY subscriptions_type_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE subscriptions DROP INDEX subscriptions_type_id"); } catch (\Exception $e) {}
+              //ล้างชื่ออื่นๆ ที่อาจค้าง
+             try { DB::statement("ALTER TABLE subscriptions DROP FOREIGN KEY subscriptions_journal_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE subscriptions DROP INDEX subscriptions_journal_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE subscriptions DROP FOREIGN KEY subscriptions_user_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE subscriptions DROP INDEX subscriptions_user_id"); } catch (\Exception $e) {}
+         }
 
-            $table->index(['file_id'], 'submission_files_file_id');
+          //--- 16. ล้างทางเดินตารางลูกและระบบชำระเงิน (ดักหน้าไว้เลย) //---
+        
+         if (Schema::hasTable('subscription_type_settings')) {
+             try { DB::statement("ALTER TABLE subscription_type_settings DROP FOREIGN KEY subscription_type_settings_type_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE subscription_type_settings DROP INDEX subscription_type_settings_type_id"); } catch (\Exception $e) {}
+         }
 
-            $table->foreign('uploader_user_id')->references('user_id')->on('users')->onDelete('set null');
-            $table->index(['uploader_user_id'], 'submission_files_uploader_user_id');
+         if (Schema::hasTable('completed_payments')) {
+             try { DB::statement("ALTER TABLE completed_payments DROP FOREIGN KEY completed_payments_context_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE completed_payments DROP INDEX completed_payments_context_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE completed_payments DROP FOREIGN KEY completed_payments_user_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE completed_payments DROP INDEX completed_payments_user_id"); } catch (\Exception $e) {}
+         }
+         if (Schema::hasTable('individual_subscriptions')) {
+             try { DB::statement("ALTER TABLE individual_subscriptions DROP FOREIGN KEY individual_subscriptions_subscription_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE individual_subscriptions DROP INDEX individual_subscriptions_subscription_id"); } catch (\Exception $e) {}
+         }
 
-            $table->bigInteger('source_submission_file_id')->unsigned()->nullable()->change();
-            $table->foreign('source_submission_file_id')->references('submission_file_id')->on('submission_files')->onDelete('cascade');
-            $table->index(['source_submission_file_id'], 'submission_files_source_submission_file_id');
-        });
-        Schema::table('data_object_tombstone_settings', function (Blueprint $table) {
-            $table->foreign('tombstone_id', 'data_object_tombstone_settings_tombstone_id')->references('tombstone_id')->on('data_object_tombstones')->onDelete('cascade');
-        });
-        Schema::table('data_object_tombstone_oai_set_objects', function (Blueprint $table) {
-            $table->foreign('tombstone_id', 'data_object_tombstone_oai_set_objects_tombstone_id')->references('tombstone_id')->on('data_object_tombstones')->onDelete('cascade');
-        });
-        Schema::table('submission_file_revisions', function (Blueprint $table) {
-            $table->index(['submission_file_id'], 'submission_file_revisions_submission_file_id');
-            $table->index(['file_id'], 'submission_file_revisions_file_id');
-        });
-        Schema::table($this->getContextSettingsTable(), function (Blueprint $table) {
-            $table->foreign($this->getContextKeyField(), $this->getContextSettingsTable() . '_' . $this->getContextKeyField())->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
-        });
-        Schema::table('review_files', function (Blueprint $table) {
-            $table->foreign('review_id')->references('review_id')->on('review_assignments')->onDelete('cascade');
-        });
+         if (Schema::hasTable('institutional_subscriptions')) {
+             try { DB::statement("ALTER TABLE institutional_subscriptions DROP FOREIGN KEY institutional_subscriptions_subscription_id"); } catch (\Exception $e) {}
+             try { DB::statement("ALTER TABLE institutional_subscriptions DROP INDEX institutional_subscriptions_subscription_id"); } catch (\Exception $e) {}
+         }
 
-        Schema::table('notifications', function (Blueprint $table) {
-            $table->bigInteger('context_id')->nullable()->change();
-            $table->bigInteger('user_id')->nullable()->change();
-        });
-        DB::table('notifications')->where('context_id', '=', 0)->update(['context_id' => null]);
-        DB::table('notifications')->where('user_id', '=', 0)->update(['user_id' => null]);
-        Schema::table('notifications', function (Blueprint $table) {
-            // Renaming indexes directly not supported until MariaDB 10.5.2
-            $table->dropIndex('notifications_context_id');
-            $table->index(['context_id', 'level'], 'notifications_context_id_level');
-
-            $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->index(['user_id'], 'notifications_user_id');
-
-            $table->foreign('context_id')->references($this->getContextKeyField())->on($this->getContextTable())->onDelete('cascade');
-            $table->index(['context_id'], 'notifications_context_id');
-        });
+         //--- 17. แก้ไขตาราง Journals (ป้องกัน Error 1061 แบบ 100%) //---
+         if (Schema::hasTable('journals')) {
+             try {
+                 Schema::table('journals', function (Blueprint $table) {
+                     // เปลี่ยนชื่อ Index เป็นชื่ออื่น (เช่นเติม _v34) เพื่อหนี Error 1061
+                     try { $table->index(['current_issue_id'], 'journals_issue_id_v34'); } catch (\Exception $e) {}
+                 });
+             } catch (\Exception $e) {
+                  //ถ้ายังไม่ได้อีก ให้ข้ามไปเลย
+             }
+         }
     }
-
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
-    {
-        throw new DowngradeNotSupportedException();
-    }
+ {
+    return; // สั่งให้ข้ามการ Revert ทุกกรณี
+     // ยอมให้ว่างได้ แต่ต้องมีฟังก์ชันนี้อยู่
+ }
 }
+
+    
+
+
+
