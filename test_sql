@@ -1,0 +1,28 @@
+SQL-----------------------------------------------------------------------------------------
+
+SET FOREIGN_KEY_CHECKS = 0;
+ALTER TABLE review_round_files DROP FOREIGN KEY review_round_files_unique;
+ALTER TABLE review_round_files DROP INDEX review_round_files_unique;
+SET FOREIGN_KEY_CHECKS = 1;
+
+
+
+
+
+
+SET FOREIGN_KEY_CHECKS = 0;
+CREATE TABLE review_round_files_new LIKE review_round_files;
+INSERT INTO review_round_files_new SELECT * FROM review_round_files;
+DROP TABLE review_round_files;
+ALTER TABLE review_round_files_new RENAME TO review_round_files;
+SET FOREIGN_KEY_CHECKS = 1;
+
+
+
+
+ALTER TABLE publications DROP FOREIGN KEY publications_doi_id_foreign;
+
+
+
+ALTER TABLE `issues` DROP INDEX `issues_doi_id`;
+ALTER TABLE `issues` DROP `doi_id`;
