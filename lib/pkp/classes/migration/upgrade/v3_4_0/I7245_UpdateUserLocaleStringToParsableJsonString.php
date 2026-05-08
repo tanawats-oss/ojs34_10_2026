@@ -42,6 +42,6 @@ class I7245_UpdateUserLocaleStringToParsableJsonString extends Migration
 
     public function down(): void
     {
-        throw new DowngradeNotSupportedException();
+        // throw new DowngradeNotSupportedException();
     }
 }
