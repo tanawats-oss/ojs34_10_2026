@@ -1,0 +1,31 @@
+<?php $exp = 1810001397; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=1; plural=0;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'api.announcements.400.contextsNotMatched' => 'ประกาศที่คุณร้องขอไม่ได้เป็นส่วนหนึ่งของวารสารนี้',
+      'api.contexts.404.contextNotFound' => 'ไม่พบวารสารที่คุณร้องขอ',
+      'api.dois.403.contextsNotMatched' => 'DOI ที่คุณร้องขอไม่ได้เป็นส่วนหนึ่งของวารสารนี้',
+      'api.dois.400.noRegistrationAgencyConfigured' => 'ไม่มีหน่วยงานจดทะเบียน DOI ที่กำหนดไว้สำหรับวารสารนี้',
+      'api.dois.400.depositFailed' => 'บางรายการไม่สามารถฝากข้อมูลได้สำเร็จ โปรดตรวจสอบข้อผิดพลาดเฉพาะของแต่ละรายการ',
+      'api.emails.403.disabled' => 'ฟีเจอร์การแจ้งเตือนทางอีเมลยังไม่ได้เปิดใช้งานสำหรับวารสารนี้',
+      'api.submissions.400.wrongContext' => 'การส่งที่คุณร้องขอไม่ได้อยู่ในวารสารนี้',
+      'api.submissions.403.cantChangeContext' => 'คุณไม่สามารถเปลี่ยนวารสารของการส่งนี้ได้',
+      'api.submissions.403.unpublishedIssues' => 'คุณไม่มีสิทธิ์ในการดูประเด็นที่ยังไม่ได้เผยแพร่',
+      'api.contexts.403.requestedDisabledContexts' => 'คุณสามารถดูได้เฉพาะวารสารที่ถูกเปิดใช้งานแล้วเท่านั้น',
+      'api.contexts.403.notAllowed' => 'คุณไม่มีสิทธิ์ในการดูวารสารนี้',
+      'api.contexts.403.contextsDidNotMatch' => 'คุณไม่สามารถดูหรือแก้ไขวารสารนี้ได้ เว้นแต่จะทำการร้องขอผ่าน API ของวารสารหรือ API ระดับเว็บไซต์',
+      'api.contexts.403.requiresContext' => 'คุณไม่สามารถแก้ไขวารสารนี้จาก API ระดับเว็บไซต์ได้',
+      'api.contexts.403.notAllowedEdit' => 'คุณไม่มีสิทธิ์ในการแก้ไขวารสารนี้',
+      'api.contexts.403.notAllowedDelete' => 'คุณไม่มีสิทธิ์ในการลบวารสารนี้',
+      'api.emailTemplates.403.notAllowedChangeContext' => 'คุณไม่มีสิทธิ์ในการย้ายแม่แบบอีเมลนี้ไปยังวารสารอื่น',
+      'api._payments.400.invalidPaymentMethod' => 'วิธีการชำระเงินที่คุณเลือกไม่ได้รับการสนับสนุน',
+      'api.publications.403.contextsDidNotMatch' => 'สิ่งพิมพ์ที่คุณร้องขอไม่ได้เป็นส่วนหนึ่งของวารสารนี้',
+      'api.publications.403.submissionsDidNotMatch' => 'สิ่งพิมพ์ที่คุณร้องขอไม่ได้เป็นส่วนหนึ่งของการส่งนี้',
+      'api.submissionFiles.400.badRepresentationAssocType' => 'คุณไม่สามารถเชื่อมโยงไฟล์จากขั้นตอนนี้กับแกลเลอรีได้',
+      'api.submission.400.inactiveSection' => 'ส่วนนี้ไม่รับการส่งอีกต่อไป',
+    ),
+  ),
+);

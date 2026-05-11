@@ -201,6 +201,7 @@ grep -rn "at.assoc_id" .
 
 OTHER ----------------------------------------------------------
 nano cleanup.sql
+
 mysql -u user -p -f db < cleanup.sql
 
 
@@ -215,3 +216,4 @@ sudo rm -rf /var/www/html/ojs/cache/*.php
 sudo rm -rf /var/www/html/ojs/cache/*.dat
 sudo rm -rf /var/www/html/ojs/cache/t_compile/*.php
 sudo rm -rf /var/www/html/ojs/cache/_db/*.php
+sudo -u www-data php /var/www/html/ojs/tools/upgrade.php upgrade

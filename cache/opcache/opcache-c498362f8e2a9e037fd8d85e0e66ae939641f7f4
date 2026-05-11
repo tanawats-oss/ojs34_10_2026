@@ -1,0 +1,14 @@
+<?php $exp = 1810001395; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=2; plural=n != 1;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.generic.recommendByAuthor.displayName' => 'Müəllifin digər məqalələri',
+      'plugins.generic.recommendByAuthor.heading' => 'Eyni müəllif(lar)ın jurnaldakı ən çox oxunan məqalələri',
+      'plugins.generic.recommendByAuthor.description' => 'Bu əlavə məqalə səhifəsinə eyni müəllif(lar)ın jurnaldakı digər məqalələrinin bir siyahısını əlavə edər.',
+      'plugins.generic.recommendByAuthor.noMetric' => 'Xəbərdarlıq: Bu əlavə ən az bir statistika/hesabat əlavəsinin aktivləşdirilmiş olmasını tələb edir. Statistik əlavələriniz birdən çox metrik təqdim edirsə, zəhmət olmasa sayt idarəçisinin sayt tənzimləri səhifəsindən və Jurnal idarəçisinin tənzimlər səhifələrindən bir əsas metrik seçin.',
+    ),
+  ),
+);

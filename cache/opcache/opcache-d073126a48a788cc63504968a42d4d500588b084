@@ -1,0 +1,31 @@
+<?php $exp = 1810001397; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=2; plural=n != 1;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'api.announcements.400.contextsNotMatched' => 'Сиз сураган жарнак бул журналдын бир бөлүгү эмес.',
+      'api.emails.403.disabled' => 'Бул журнал үчүн электрондук почта билдирүүсү иштетилген эмес.',
+      'api.submissions.400.wrongContext' => 'Сиз сураган материал бул журналда жок.',
+      'api.submissions.403.cantChangeContext' => 'Сиз материалдын журналын өзгөртө албайсыз.',
+      'api.submissions.403.unpublishedIssues' => 'Жарыяланбаган маселелерди көрүүгө уруксатыңыз жок.',
+      'api.contexts.403.requestedDisabledContexts' => 'Сиз бөлүшүлгөн журналдарды гана көрө аласыз.',
+      'api.contexts.403.notAllowed' => 'Бул журналды көрүүгө уруксатыңыз жок.',
+      'api.contexts.403.contextsDidNotMatch' => 'Бул журналды log API же жалпы сайт API\'сине сурамсыз көрүп же түзөтө албайсыз.',
+      'api.contexts.403.requiresContext' => 'Бул журналды сайттын API аркылуу түзөтө албайсыз.',
+      'api.contexts.403.notAllowedEdit' => 'Бул журналды түзөтүүгө уруксатыңыз жок.',
+      'api.contexts.403.notAllowedDelete' => 'Бул журналды жок кылууга уруксатыңыз жок.',
+      'api.contexts.404.contextNotFound' => 'Сиз сураган журнал табылган жок.',
+      'api.dois.403.contextsNotMatched' => 'Сиз сураган DOI бул журналдын бир бөлүгү эмес.',
+      'api.dois.400.noRegistrationAgencyConfigured' => 'Бул журнал үчүн конфигурацияланган DOI каттоо агенттиги жок.',
+      'api.dois.400.depositFailed' => 'Кээ бир нерселердин эскроосу ишке ашкан жок. Ката билдирүүлөрү үчүн жеке элементтерди текшериңиз.',
+      'api.emailTemplates.403.notAllowedChangeContext' => 'Бул каттын үлгүсүн башка журналга жылдырууга уруксатыңыз жок.',
+      'api._payments.400.invalidPaymentMethod' => 'Сиз тандаган төлөм ыкмасы колдоого алынбайт.',
+      'api.publications.403.contextsDidNotMatch' => 'Сиз сураган басылма бул журналдын бир бөлүгү эмес.',
+      'api.publications.403.submissionsDidNotMatch' => 'Сиз сураган басылма бул материалдын бир бөлүгү эмес.',
+      'api.submissionFiles.400.badRepresentationAssocType' => 'Бул этаптагы файлды галлеяга байланыштыра албайсыз.',
+      'api.submission.400.inactiveSection' => 'Бул бөлүм мындан ары тапшырыктарды кабыл албайт.',
+    ),
+  ),
+);

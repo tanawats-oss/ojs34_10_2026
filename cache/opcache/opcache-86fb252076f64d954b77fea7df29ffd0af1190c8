@@ -1,0 +1,31 @@
+<?php $exp = 1810001397; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=2; plural=n != 1;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'api.submissions.403.cantChangeContext' => 'तुमच्या सादरीकरणाचे नियतकालिक बदलू शकत नाही.',
+      'api.contexts.403.requestedDisabledContexts' => 'तुम्ही केवळ कार्यान्वित (enable) केलेली नियतकालिके पाहू शकता.',
+      'api.contexts.403.contextsDidNotMatch' => 'जोपर्यंत तुम्ही नियतकालिकाच्या API किंवा संकेतस्थळ-व्यापी API वर शोधत नाही तोपर्यंत तुम्ही हे नियतकालिक पाहू किंवा त्यात फेरफार करू शकणार नाही.',
+      'api.contexts.404.contextNotFound' => 'तुम्ही शोधत असलेले नियतकालिक येथे उपलब्ध नाही.',
+      'api.dois.400.noRegistrationAgencyConfigured' => 'या नियतकालिकासाठी कुठल्याही DOI नोंदणी संस्थेशी जोडणी (कॉन्फिगर) केलेली नाही.',
+      'api.dois.400.depositFailed' => 'काही बाबी यशस्वीरित्या साठवल्या गेल्या नाहीत. कृपया प्रत्येक बाबीसाठी विशिष्ट त्रुटी संदेश तपासा.',
+      'api.publications.403.contextsDidNotMatch' => 'तुम्ही शोधत असलेले प्रकाशन या नियतकालिकाचा भाग नाही.',
+      'api.submissionFiles.400.badRepresentationAssocType' => 'तुम्ही या टप्प्यावर फाईल कच्च्या मुद्रितात (गॅली) संलग्न करू शकत नाही.',
+      'api.submission.400.inactiveSection' => 'या विभागात यापुढे सादरीकरणांचा स्वीकार थांबवला आहे.',
+      'api.announcements.400.contextsNotMatched' => 'तुम्ही शोधत असलेले निवेदन (announcement) या नियतकालिकाचा भाग नाही.',
+      'api.emails.403.disabled' => 'या नियतकालिकासाठी एकगठ्ठा (बल्क) ई-मेल पाठवण्याची सोय कार्यान्वित (enable) केलेली नाही.',
+      'api.submissions.400.wrongContext' => 'तुम्ही शोधत असलेल्या लेखनाचे सादरीकरण या नियतकालिकामध्ये नाही.',
+      'api.submissions.403.unpublishedIssues' => 'तुम्हाला अप्रकाशित अंक पाहण्याची परवानगी नाही.',
+      'api.contexts.403.notAllowed' => 'तुम्हाला हे नियतकालिक चाळण्याची परवानगी नाही.',
+      'api.contexts.403.requiresContext' => 'तुम्ही हे नियतकालिक संकेतस्थळ-व्यापी API वरून संपादित करू शकत नाही.',
+      'api.contexts.403.notAllowedEdit' => 'तुम्हाला हे नियतकालिक संपादित करण्याची परवानगी नाही.',
+      'api.contexts.403.notAllowedDelete' => 'तुम्हाला हे नियतकालिक हटवण्याची परवानगी नाही.',
+      'api.dois.403.contextsNotMatched' => 'तुम्ही शोधत असलेला DOI या नियतकालिकाचा भाग नाही.',
+      'api.emailTemplates.403.notAllowedChangeContext' => 'तुम्हाला हा ई-मेल मसूदा (टेम्पलेट) दुसऱ्या नियतकालिकासाठी वापरण्याची परवानगी नाही.',
+      'api._payments.400.invalidPaymentMethod' => 'तुम्ही निवडलेली रक्कम प्रदान करण्याची पद्धत येथे वापरात नाही.',
+      'api.publications.403.submissionsDidNotMatch' => 'तुम्ही शोधत असलेले प्रकाशन या लेखन सादरीकरणाचा भाग नाही.',
+    ),
+  ),
+);

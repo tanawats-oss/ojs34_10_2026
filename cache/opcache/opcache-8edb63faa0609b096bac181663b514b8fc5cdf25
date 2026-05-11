@@ -1,0 +1,20 @@
+<?php $exp = 1810001397; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=2; plural=n != 1;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'submission.submit.userGroup' => 'Менин ролум менен тапшырыңыз...',
+      'submission.title' => 'Макаланын аталышы',
+      'submission.submit.newSubmissionMultiple' => 'Жаңы материалды жөнөтө баштаңыз',
+      'submission.submit.newSubmissionSingle' => 'Жаңы материал',
+      'grid.action.workflow' => 'Тапшыруу процесси',
+      'submission.abstract.wordCount.description' => 'Аннотация {$wordCount} сөздөн ашпашы керек.',
+      'submission.upload.selectComponent' => 'Макала компонентин тандаңыз',
+      'submission.title.tip' => 'Медиа түрү, адатта, "сүрөт", "текст" же башка медиа түрлөрү, анын ичинде "программалык камсыздоо" же "интерактивдүү". Материалыңыз үчүн эң ылайыктуу түрүн тандаңыз. Мисалдарды <a target="_blank" href="http://dublincore.org/documents/2001/04/12/usageguide/generic.shtml#type">http://dublincore.org/documents/ дарегинен тапса болот. 2001 /04/12/usageguide/generic.shtml#type</a>',
+      'submission.submit.noContext' => 'Бул материал үчүн журнал табылган жок.',
+      'submission.issueEntry' => 'Метаберилиштер',
+    ),
+  ),
+);

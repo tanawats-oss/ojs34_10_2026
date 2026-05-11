@@ -1,0 +1,22 @@
+<?php $exp = 1810001398; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=1; plural=0;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.generic.announcementfeed.displayName' => 'ปลั๊กอินฟีดประกาศ',
+      'plugins.generic.announcementfeed.description' => 'ปลั๊กอินนี้สร้างฟีดเว็บในรูปแบบ RSS/Atom สำหรับประกาศของวารสาร',
+      'plugins.generic.announcementfeed.settings' => 'การตั้งค่า',
+      'plugins.generic.announcementfeed.settings.all' => 'แสดงลิงก์ฟีดบนทุกหน้าของวารสาร',
+      'plugins.generic.announcementfeed.settings.homepage' => 'แสดงลิงก์ฟีดเฉพาะบนหน้าแรกและหน้าประกาศเท่านั้น',
+      'plugins.generic.announcementfeed.settings.announcement' => 'แสดงลิงก์ฟีดเฉพาะบนหน้าประกาศเท่านั้น',
+      'plugins.generic.announcementfeed.settings.recentAnnouncements1' => 'จำกัดฟีดให้ถึง',
+      'plugins.generic.announcementfeed.settings.recentAnnouncements2' => 'ประกาศล่าสุดเท่านั้น',
+      'plugins.generic.announcementfeed.settings.recentItemsRequired' => 'โปรดป้อนจำนวนเต็มบวกสำหรับประกาศล่าสุด',
+      'plugins.generic.announcementfeed.atom.altText' => 'โลโก้ Atom',
+      'plugins.generic.announcementfeed.rss1.altText' => 'โลโก้ RSS1',
+      'plugins.generic.announcementfeed.rss2.altText' => 'โลโก้ RSS2',
+    ),
+  ),
+);

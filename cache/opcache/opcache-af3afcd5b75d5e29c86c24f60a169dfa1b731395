@@ -1,0 +1,16 @@
+<?php $exp = 1810001397; $val = \PKP\i18n\translation\Translator::__set_state(array(
+   'domain' => '',
+   'dictionary' => 
+  array (
+    '' => 
+    array (
+      '' => 
+      array (
+        'admin.hostedContexts' => 'کوربه شوي ژورنالونه',
+      ),
+    ),
+  ),
+   'plurals' => 
+  array (
+  ),
+));

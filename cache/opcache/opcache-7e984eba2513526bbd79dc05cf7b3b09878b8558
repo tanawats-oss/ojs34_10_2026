@@ -1,0 +1,32 @@
+<?php $exp = 1810001397; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=2; plural=n != 1;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'comments.body' => 'लेखाचा मुख्य भाग',
+      'comments.titleRequired' => 'टिप्पणीला शीर्षक असणे बंधनकारक आहे.',
+      'comments.confirmDeleteChildren' => 'ही टिप्पणी वगळली तर त्यावर केलेले प्रतिवाद देखील हटवले जातील. तुमची खात्री आहे का की तुम्ही हे करू इच्छिता?',
+      'comments.delete' => 'ही टिप्पणी वगळा',
+      'comments.email' => 'संदेश पाठवणार्‍याचा ई-मेल',
+      'comments.emailReply' => 'ई-मेलला उत्तर',
+      'comments.enterComment' => 'टिप्पणीची नोंद करा',
+      'comments.inResponseTo' => '<a href="{$url}">{$title}</a> च्या प्रतिसादात',
+      'comments.name' => 'पोस्टरचे नाव',
+      'comments.noComments' => 'वाचकांच्या टिप्पण्या अद्याप नोंदवलेल्या नाहीत.',
+      'comments.nReplies' => '({$num} प्रत्युत्तरे)',
+      'comments.oneReply' => '(1 प्रत्युत्तर)',
+      'comments.postAnonymously' => 'या टिप्पणीची नोंद निनावी करावी',
+      'comments.postReply' => 'प्रत्युत्तराची नोंद करा',
+      'comments.readerComments' => 'वाचकांच्या टिप्पण्या',
+      'comments.readMore' => 'पुढे वाचा',
+      'comments.replies' => 'प्रत्युत्तरे',
+      'comments.title' => 'शीर्षक',
+      'comments.viewAllComments' => 'सर्व टिप्पण्या पहा',
+      'reader.fullText' => 'संपूर्ण मजकूर :',
+      'comments.anonymousNamed' => 'वापरकर्त्याचे नाव "{$userName}"',
+      'comments.anonymous' => 'निनावी वापरकर्ता',
+    ),
+  ),
+);

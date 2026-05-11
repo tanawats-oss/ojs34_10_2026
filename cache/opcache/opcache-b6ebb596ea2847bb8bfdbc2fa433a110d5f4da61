@@ -1,0 +1,22 @@
+<?php $exp = 1810001395; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=2; plural=n != 1;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.generic.announcementfeed.displayName' => 'Elan vermə əlavəsi',
+      'plugins.generic.announcementfeed.settings' => 'Tənzimlər',
+      'plugins.generic.announcementfeed.settings.all' => 'Bəsləmə linklərini bütün jurnal səhifələrində göstərin.',
+      'plugins.generic.announcementfeed.settings.recentAnnouncements1' => 'Göstəriləcək bəsləmə linki sayı',
+      'plugins.generic.announcementfeed.atom.altText' => 'Atom loqotipi',
+      'plugins.generic.announcementfeed.rss1.altText' => 'RSS1 loqotipi',
+      'plugins.generic.announcementfeed.rss2.altText' => 'RSS2 loqotipi',
+      'plugins.generic.announcementfeed.description' => 'Bu əlavə jurnal elanları üçün RSS/Atom veb axını təchizatları istehsal edir.',
+      'plugins.generic.announcementfeed.settings.homepage' => 'Bəsləmə linklərini sadəcə ana səhifə və elan səhifəsində göstərin.',
+      'plugins.generic.announcementfeed.settings.announcement' => 'Bəsləmə linklərini sadəcə elan səhifəsində göstərin.',
+      'plugins.generic.announcementfeed.settings.recentAnnouncements2' => 'Ən son elanlar.',
+      'plugins.generic.announcementfeed.settings.recentItemsRequired' => 'Zəhmət olmasa ən son elanlar üçün pozitiv bir tam say daxil edin.',
+    ),
+  ),
+);
