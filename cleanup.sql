@@ -22,6 +22,25 @@ PREPARE stmt FROM @sql;
 EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
 
+-- แถม: ลบคอลัมน์ doi_id ที่มันบ่นว่า Duplicate ก่อนหน้านี้ด้วยเลย
+SET @cnt_col = (
+    SELECT COUNT(*)
+    FROM information_schema.COLUMNS
+    WHERE TABLE_SCHEMA = DATABASE()
+      AND TABLE_NAME = 'publications'
+      AND COLUMN_NAME = 'doi_id'
+);
+
+SET @sql_col = IF(
+    @cnt_col > 0,
+    'ALTER TABLE publications DROP COLUMN doi_id',
+    'SELECT "INFO: Column doi_id already gone - SKIPPING"'
+);
+
+PREPARE stmt_col FROM @sql_col;
+EXECUTE stmt_col;
+DEALLOCATE PREPARE stmt_col;
+
 
 -- pub_primary_contact_id_x34
 SET @cnt = (
@@ -377,6 +396,28 @@ SET @sql = IF(
     'ALTER TABLE journals DROP COLUMN current_issue_id',
     'SELECT "SKIP journals.current_issue_id"'
 );
+PREPARE stmt FROM @sql;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
+-- =========================================================
+-- Add COLUMN current to issues (Fixed Version)
+-- =========================================================
+
+SET @cnt = (
+    SELECT COUNT(*)
+    FROM information_schema.COLUMNS
+    WHERE TABLE_SCHEMA = DATABASE()
+      AND TABLE_NAME = 'issues'
+      AND COLUMN_NAME = 'current'
+);
+
+-- แก้ตรงนี้: ถ้า @cnt = 0 (แปลว่ายังไม่มีคอลัมน์) ให้ ADD
+SET @sql = IF(
+    @cnt = 0, 
+    'ALTER TABLE issues ADD COLUMN current TINYINT DEFAULT 0;',
+    'SELECT "COLUMN current ALREADY EXISTS - SKIPPING"'
+);
+
 PREPARE stmt FROM @sql;
 EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
@@ -1108,6 +1149,28 @@ PREPARE stmt FROM @sql;
 EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
 -- =========================================================
+-- DROP FK: section_settings_fk
+-- =========================================================
+
+SET @cnt = (
+    SELECT COUNT(*)
+    FROM information_schema.TABLE_CONSTRAINTS
+    WHERE TABLE_SCHEMA = DATABASE()
+      AND TABLE_NAME = 'section_settings'
+      AND CONSTRAINT_NAME = 'section_settings_section_id'
+      AND CONSTRAINT_TYPE = 'FOREIGN KEY'
+);
+
+SET @sql = IF(
+    @cnt > 0,
+    'ALTER TABLE section_settings DROP FOREIGN KEY section_settings_section_id',
+    'SELECT "SKIP FK section_settings_section_id"'
+);
+
+PREPARE stmt FROM @sql;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
+-- =========================================================
 -- DROP INDEX: section_settings_unique
 -- =========================================================
 
@@ -1482,9 +1545,53 @@ SET @sql_fk = IF(
 PREPARE stmt FROM @sql_fk;
 EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
+-- =========================================================
+-- DROP FOREIGN KEY review_assignments_review_form_id_foreign
+-- ป้องกัน Error 1826: Duplicate foreign key constraint name
+-- =========================================================
+
+SET @cnt_fk = (
+    SELECT COUNT(*)
+    FROM information_schema.KEY_COLUMN_USAGE
+    WHERE TABLE_SCHEMA = DATABASE()
+      AND TABLE_NAME = 'review_assignments'
+      AND CONSTRAINT_NAME = 'review_assignments_review_form_id_foreign'
+);
+
+SET @sql_fk = IF(
+    @cnt_fk > 0,
+    'ALTER TABLE review_assignments DROP FOREIGN KEY review_assignments_review_form_id_foreign',
+    'SELECT "SKIP FK review_assignments_review_form_id_foreign"'
+);
+
+PREPARE stmt FROM @sql_fk;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
+-- =========================================================
+-- DROP FOREIGN KEY review_assignments_review_reviewer_id_foreign
+-- ป้องกัน Error 1826: Duplicate foreign key constraint name
+-- =========================================================
+
+SET @cnt_fk = (
+    SELECT COUNT(*)
+    FROM information_schema.KEY_COLUMN_USAGE
+    WHERE TABLE_SCHEMA = DATABASE()
+      AND TABLE_NAME = 'review_assignments'
+      AND CONSTRAINT_NAME = 'review_assignments_reviewer_id_foreign'
+);
+
+SET @sql_fk = IF(
+    @cnt_fk > 0,
+    'ALTER TABLE review_assignments DROP FOREIGN KEY review_assignments_reviewer_id_foreign',
+    'SELECT "SKIP FK review_assignments_reviewer_id_foreign"'
+);
+
+PREPARE stmt FROM @sql_fk;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
 
 -- =========================================================
--- แถม: ตรวจสอบและลบ INDEX ที่ชื่อซ้ำกันด้วย (ป้องกันด่านถัดไป)
+-- DROP INDEX review_assignments_submission_id
 -- =========================================================
 
 SET @cnt_idx = (
@@ -1499,6 +1606,70 @@ SET @sql_idx = IF(
     @cnt_idx > 0,
     'ALTER TABLE review_assignments DROP INDEX review_assignments_submission_id',
     'SELECT "SKIP INDEX review_assignments_submission_id"'
+);
+
+PREPARE stmt_idx FROM @sql_idx;
+EXECUTE stmt_idx;
+DEALLOCATE PREPARE stmt_idx;
+
+-- =========================================================
+-- DROP INDEX review_assignments_reviewer_id
+-- =========================================================
+
+SET @cnt_idx = (
+    SELECT COUNT(*)
+    FROM information_schema.STATISTICS
+    WHERE TABLE_SCHEMA = DATABASE()
+      AND TABLE_NAME = 'review_assignments'
+      AND INDEX_NAME = 'review_assignments_reviewer_id'
+);
+
+SET @sql_idx = IF(
+    @cnt_idx > 0,
+    'ALTER TABLE review_assignments DROP INDEX review_assignments_reviewer_id',
+    'SELECT "SKIP INDEX review_assignments_reviewer_id"'
+);
+
+PREPARE stmt_idx FROM @sql_idx;
+EXECUTE stmt_idx;
+DEALLOCATE PREPARE stmt_idx;
+-- =========================================================
+-- DROP INDEX review_assignments_form_id
+-- =========================================================
+
+SET @cnt_idx = (
+    SELECT COUNT(*)
+    FROM information_schema.STATISTICS
+    WHERE TABLE_SCHEMA = DATABASE()
+      AND TABLE_NAME = 'review_assignments'
+      AND INDEX_NAME = 'review_assignments_form_id'
+);
+
+SET @sql_idx = IF(
+    @cnt_idx > 0,
+    'ALTER TABLE review_assignments DROP INDEX review_assignments_form_id',
+    'SELECT "SKIP INDEX review_assignments_form_id"'
+);
+
+PREPARE stmt_idx FROM @sql_idx;
+EXECUTE stmt_idx;
+DEALLOCATE PREPARE stmt_idx;
+-- =========================================================
+-- DROP INDEX review_assignments_reviewer_review
+-- =========================================================
+
+SET @cnt_idx = (
+    SELECT COUNT(*)
+    FROM information_schema.STATISTICS
+    WHERE TABLE_SCHEMA = DATABASE()
+      AND TABLE_NAME = 'review_assignments'
+      AND INDEX_NAME = 'review_assignments_reviewer_review'
+);
+
+SET @sql_idx = IF(
+    @cnt_idx > 0,
+    'ALTER TABLE review_assignments DROP INDEX review_assignments_reviewer_review',
+    'SELECT "SKIP INDEX review_assignments_reviewer_review"'
 );
 
 PREPARE stmt_idx FROM @sql_idx;
