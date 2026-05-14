@@ -26,10 +26,10 @@
 
 ; Set this to On once the system has been installed
 ; (This is generally done automatically by the installer)
-installed = Off
+installed = On
 
 ; The canonical URL to the OJS installation (excluding the trailing slash)
-base_url = "http://localhost/ojs"
+base_url = "http://10.1.217.9/ojs"
 
 ; Enable strict mode. This will more aggressively cause errors/warnings when
 ; deprecated behaviour exists in the codebase.
@@ -219,7 +219,7 @@ connection_charset = utf8
 ; Complete path to directory to store uploaded files
 ; (This directory should not be directly web-accessible)
 ; Windows users should use forward slashes
-files_dir = files
+files_dir = "var/www/html/ojs/files/"
 
 ; Path to the directory to store public uploaded files
 ; (This directory should be web-accessible and the specified path
@@ -263,16 +263,16 @@ force_login_ssl = Off
 ; Enabling this option provides some additional security, but may cause
 ; login problems for some users (e.g. if a user IP is changed frequently
 ; by a server or network configuration).
-session_check_ip = On
+session_check_ip = Off
 
 ; The encryption (hashing) algorithm to use for encrypting user passwords
 ; Valid values are: md5, sha1
 ; NOTE: This hashing method is deprecated, but necessary to permit gradual
 ; migration of old password hashes.
-encryption = sha1
+encryption = md5
 
 ; The unique salt to use for generating password reset hashes
-salt = "YouMustSetASecretKeyHere!!"
+salt = ""
 
 ; The unique secret used for encoding and decoding API keys
 api_key_secret = ""
@@ -439,10 +439,10 @@ recaptcha_public_key = your_public_key
 recaptcha_private_key = your_private_key
 
 ; Whether or not to use Captcha on user registration
-captcha_on_register = on
+captcha_on_register = off
 
 ; Whether or not to use Captcha on user login
-captcha_on_login = on
+captcha_on_login = off
 
 ; Validate the hostname in the ReCaptcha response
 recaptcha_enforce_hostname = Off

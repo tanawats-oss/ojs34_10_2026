@@ -1,0 +1,37 @@
+[2026-05-14 06:12:17] http://localhost/ojs
+[2026-05-14 06:12:17] [Notice] Task process started.
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 1
+[2026-05-14 06:12:17] [Notice] Dispatched 1 jobs to send editorial email reminders to users 1 in context 1
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 2
+[2026-05-14 06:12:17] [Notice] Dispatched 9 jobs to send editorial email reminders to users 1, 20, 3648, 3864, 6121, 10041, 15914, 36606, 112968 in context 2
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 4
+[2026-05-14 06:12:17] [Notice] Dispatched 3 jobs to send editorial email reminders to users 1, 273, 73543 in context 4
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 5
+[2026-05-14 06:12:17] [Notice] Dispatched 2 jobs to send editorial email reminders to users 1, 273 in context 5
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 16
+[2026-05-14 06:12:17] [Notice] Dispatched 7 jobs to send editorial email reminders to users 1, 1766, 2076, 2434, 2496, 2497, 95569 in context 16
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 18
+[2026-05-14 06:12:17] [Notice] Dispatched 4 jobs to send editorial email reminders to users 1, 3904, 3905, 47829 in context 18
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 27
+[2026-05-14 06:12:17] [Notice] Dispatched 8 jobs to send editorial email reminders to users 1, 881, 4663, 38510, 38635, 38640, 108069, 110087 in context 27
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 34
+[2026-05-14 06:12:17] [Notice] Dispatched 4 jobs to send editorial email reminders to users 1, 3173, 36606, 36739 in context 34
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 35
+[2026-05-14 06:12:17] [Notice] Dispatched 12 jobs to send editorial email reminders to users 1, 3174, 59334, 64868, 65309, 65339, 65590, 67593, 77551, 78499, 79510, 80446 in context 35
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 37
+[2026-05-14 06:12:17] [Notice] Dispatched 6 jobs to send editorial email reminders to users 1, 37906, 55735, 58477, 68280, 77167 in context 37
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 39
+[2026-05-14 06:12:17] [Notice] Dispatched 6 jobs to send editorial email reminders to users 1, 3785, 4059, 51229, 64740, 65525 in context 39
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 42
+[2026-05-14 06:12:17] [Notice] Dispatched 2 jobs to send editorial email reminders to users 1, 4662 in context 42
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 47
+[2026-05-14 06:12:17] [Notice] Dispatched 6 jobs to send editorial email reminders to users 1, 16053, 23824, 51780, 64740, 65149 in context 47
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 51
+[2026-05-14 06:12:17] [Notice] Dispatched 19 jobs to send editorial email reminders to users 1, 65964, 66006, 66050, 66052, 66871, 66943, 67216, 67334, 102622, 102763, 105615, 105616, 105619, 105624, 105707, 105757, 105972, 106990 in context 51
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 52
+[2026-05-14 06:12:17] [Notice] Dispatched 22 jobs to send editorial email reminders to users 1, 74359, 74360, 74361, 74364, 74365, 74367, 76617, 100475, 100476, 100478, 100479, 112879, 112929, 112933, 112940, 112941, 112942, 112943, 112944, 112945, 112948 in context 52
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 53
+[2026-05-14 06:12:17] [Notice] Dispatched 18 jobs to send editorial email reminders to users 1, 1156, 6379, 7312, 7360, 11184, 15161, 17801, 29960, 39006, 42115, 44378, 64742, 78982, 78983, 78984, 78985, 87218 in context 53
+[2026-05-14 06:12:17] [Notice] Identifying editors to remind in context 54
+[2026-05-14 06:12:17] [Notice] Dispatched 4 jobs to send editorial email reminders to users 1, 88088, 89049, 112958 in context 54
+[2026-05-14 06:12:17] [Notice] Task process stopped.

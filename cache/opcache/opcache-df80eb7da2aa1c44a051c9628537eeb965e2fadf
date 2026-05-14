@@ -1,4 +1,4 @@
-<?php $exp = 1778575506; $val = array (
+<?php $exp = 1778748123; $val = array (
   'ar' => 
   \PKP\i18n\LocaleMetadata::__set_state(array(
      '_parsedLocale' => NULL,
@@ -88,11 +88,6 @@
   \PKP\i18n\LocaleMetadata::__set_state(array(
      '_parsedLocale' => NULL,
      'locale' => 'fi',
-  )),
-  'fr' => 
-  \PKP\i18n\LocaleMetadata::__set_state(array(
-     '_parsedLocale' => NULL,
-     'locale' => 'fr',
   )),
   'fr_CA' => 
   \PKP\i18n\LocaleMetadata::__set_state(array(
@@ -214,11 +209,6 @@
      '_parsedLocale' => NULL,
      'locale' => 'nb',
   )),
-  'nb_NO' => 
-  \PKP\i18n\LocaleMetadata::__set_state(array(
-     '_parsedLocale' => NULL,
-     'locale' => 'nb_NO',
-  )),
   'nl' => 
   \PKP\i18n\LocaleMetadata::__set_state(array(
      '_parsedLocale' => NULL,
@@ -233,11 +223,6 @@
   \PKP\i18n\LocaleMetadata::__set_state(array(
      '_parsedLocale' => NULL,
      'locale' => 'ps',
-  )),
-  'pt' => 
-  \PKP\i18n\LocaleMetadata::__set_state(array(
-     '_parsedLocale' => NULL,
-     'locale' => 'pt',
   )),
   'pt_BR' => 
   \PKP\i18n\LocaleMetadata::__set_state(array(
@@ -284,11 +269,6 @@
      '_parsedLocale' => NULL,
      'locale' => 'sq',
   )),
-  'sr' => 
-  \PKP\i18n\LocaleMetadata::__set_state(array(
-     '_parsedLocale' => NULL,
-     'locale' => 'sr',
-  )),
   'sr@cyrillic' => 
   \PKP\i18n\LocaleMetadata::__set_state(array(
      '_parsedLocale' => NULL,
@@ -298,11 +278,6 @@
   \PKP\i18n\LocaleMetadata::__set_state(array(
      '_parsedLocale' => NULL,
      'locale' => 'sr@latin',
-  )),
-  'sr_Latn' => 
-  \PKP\i18n\LocaleMetadata::__set_state(array(
-     '_parsedLocale' => NULL,
-     'locale' => 'sr_Latn',
   )),
   'sv' => 
   \PKP\i18n\LocaleMetadata::__set_state(array(
@@ -353,11 +328,6 @@
   \PKP\i18n\LocaleMetadata::__set_state(array(
      '_parsedLocale' => NULL,
      'locale' => 'uz@latin',
-  )),
-  'uz_Latn' => 
-  \PKP\i18n\LocaleMetadata::__set_state(array(
-     '_parsedLocale' => NULL,
-     'locale' => 'uz_Latn',
   )),
   'vi' => 
   \PKP\i18n\LocaleMetadata::__set_state(array(
