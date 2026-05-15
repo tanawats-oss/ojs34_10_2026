@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2026-05-14 08:23:27
+/* Smarty version 4.3.1, created on 2026-05-15 07:50:58
   from 'plugins-0-plugins-blocks-languageToggle-blocks-languageToggle:block.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6a05867f276840_49571917',
+  'unifunc' => 'content_6a06d062c2a6e0_58977790',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6a05867f276840_49571917 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a06d062c2a6e0_58977790 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/ojs/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.replace.php','function'=>'smarty_modifier_replace',),));
 if ($_smarty_tpl->tpl_vars['enableLanguageToggle']->value) {?>
 <div class="pkp_block block_language">

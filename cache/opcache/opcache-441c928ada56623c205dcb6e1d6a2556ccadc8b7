@@ -1,0 +1,29 @@
+<?php $exp = 1810367458; $val = array (
+  'domain' => NULL,
+  'plural-forms' => NULL,
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.block.navigation' => 'Navigation',
+      'plugins.block.navigation.displayName' => 'Navigation Block',
+      'plugins.block.navigation.description' => 'This plugin provides sidebar tools for navigating issues and articles.',
+      'plugins.block.navigation.articles' => 'Browse Articles',
+      'plugins.block.navigation.previousissuearticle' => 'Previous issue',
+      'plugins.block.navigation.nextissuearticle' => 'Next issue',
+      'plugins.block.navigation.firstarticle' => 'First article',
+      'plugins.block.navigation.previousarticle' => 'Previous article',
+      'plugins.block.navigation.nextarticle' => 'Next article',
+      'plugins.block.navigation.lastarticle' => 'Last article',
+      'plugins.block.navigation.toc' => 'Table of Contents',
+      'plugins.block.navigation.issues' => 'Browse Issues',
+      'plugins.block.navigation.firstissue' => 'First issue',
+      'plugins.block.navigation.previousissue' => 'Previous issue',
+      'plugins.block.navigation.nextissue' => 'Next issue',
+      'plugins.block.navigation.lastissue' => 'Last issue',
+      'plugin.block.navigation.archives' => 'All issues',
+      'plugins.block.navigation.volume' => 'Vol.',
+      'plugins.block.navigation.number' => 'No.',
+    ),
+  ),
+);

@@ -39,7 +39,7 @@ strict = Off
 session_cookie_name = OJSSID
 
 ; Session cookie path; if not specified, defaults to the detected base path
-; session_cookie_path = /
+ session_cookie_path = /
 
 ; Number of days to save login cookie for if user selects to remember
 ; (set to 0 to force expiration at end of current session)
@@ -219,7 +219,7 @@ connection_charset = utf8
 ; Complete path to directory to store uploaded files
 ; (This directory should not be directly web-accessible)
 ; Windows users should use forward slashes
-files_dir = "var/www/html/ojs/files/"
+files_dir = "/var/www/html/ojs_files/"
 
 ; Path to the directory to store public uploaded files
 ; (This directory should be web-accessible and the specified path

@@ -1,0 +1,56 @@
+<?php $exp = 1810367450; $val = array (
+  'domain' => NULL,
+  'plural-forms' => 'nplurals=2; plural=n != 1;',
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.generic.opdoira.displayName' => 'OP DOI RA Manager Plugin',
+      'plugins.generic.opdoira.description' => 'Handles depositing and exporting OP DOI RA metadata',
+      'plugins.generic.opdoira.registrationAgency.name' => 'OP DOI RA',
+      'plugins.generic.opdoira.deposit.unsuccessful' => 'Registration was not successful! Please check your configuration and try again.',
+      'plugins.importexport.opdoira.displayName' => 'OP DOI RA Export/Registration Plugin',
+      'plugins.importexport.opdoira.description' => 'Export issue, article and galley metadata in Onix for DOI (O4DOI) format and register DOIs with the OP DOI RA registration agency.',
+      'plugins.importexport.opdoira.settings.description' => 'Please configure the OP DOI RA export plugin before using it for the first time.',
+      'plugins.importexport.opdoira.settings.label' => 'OP DOI RA Settings',
+      'plugins.importexport.opdoira.registrationAgency.name' => 'OP DOI RA',
+      'plugins.importexport.opdoira.intro' => 'If you want to register DOIs with OP DOI RA, please follow the directions on the <a href="https://ra.publications.europa.eu/doi_howto.htm" target="_blank">OP DOI RA homepage</a> to receive a username and password.
+If you do not have your own username and password you\'ll still be able to export into the OP DOI RA XML format (Onix for DOI) but you cannot register your DOIs with OP DOI RA from within OJS. 
+Please note that the password will be saved as plain text, i.e. not encrypted, due to the OP DOI RA registration service requirements.',
+      'plugins.importexport.opdoira.settings.form.description' => 'Please configure the OP DOI RA export plugin:',
+      'plugins.importexport.opdoira.settings.form.username' => 'Username',
+      'plugins.importexport.opdoira.settings.form.usernameRequired' => 'Please enter your OP DOI RA username. The username may not contain colons.',
+      'plugins.importexport.opdoira.settings.form.registrantName.label' => 'Registrant Name',
+      'plugins.importexport.opdoira.settings.form.registrantName' => 'The name of the institution registered at OP DOI RA',
+      'plugins.importexport.opdoira.settings.form.registrantNameRequired' => 'Please enter the institution that is registered at OP DOI RA.',
+      'plugins.importexport.opdoira.settings.form.fromFields' => 'Person to be contacted by OP DOI RA in case of technical inquiries:',
+      'plugins.importexport.opdoira.settings.form.fromCompany' => 'Institution',
+      'plugins.importexport.opdoira.settings.form.fromCompanyRequired' => 'Please enter the institution that is technically responsible for DOI export (e.g. the institution hosting your web server).',
+      'plugins.importexport.opdoira.settings.form.fromName' => 'Contact Person',
+      'plugins.importexport.opdoira.settings.form.fromNameRequired' => 'Please enter a technical contact person.',
+      'plugins.importexport.opdoira.settings.form.fromEmail' => 'Email',
+      'plugins.importexport.opdoira.settings.form.fromEmailRequired' => 'Please enter a valid technical contact email.',
+      'plugins.importexport.opdoira.settings.form.publicationCountry' => 'Please choose the country to be informed as \'publication country\' to OP DOI RA.',
+      'plugins.importexport.opdoira.settings.form.exportIssuesAs' => 'Please choose whether you want to export issues as <a href="https://ra.publications.europa.eu/metada_specs.htm" target="_blank">\'works\' or \'manifestations\'</a>.<br/>NB: DOIs assigned to articles will be exported to OP DOI RA as <a href="https://ra.publications.europa.eu/metada_specs.htm" target="_blank">\'works\'</a>. ',
+      'plugins.importexport.opdoira.settings.form.work' => 'work',
+      'plugins.importexport.opdoira.settings.form.manifestation' => 'manifestation',
+      'plugins.importexport.opdoira.settings.form.exportIssuesAs.label' => 'Issues export as',
+      'plugins.importexport.opdoira.settings.form.automaticRegistration.description' => 'OJS will register assigned DOIs automatically to OP DOI RA. Please note that this may take a short amount of time after publication to process (e.g. depending on your cronjob configuration). You can check for all unregistered DOIs.',
+      'plugins.importexport.opdoira.settings.form.testMode.description' => 'Use the OP DOI RA test API (testing environment) for DOI registration. Please do not forget to remove this option for the production.',
+      'plugins.importexport.opdoira.workOrProduct' => 'NB: DOIs assigned to articles will be exported to OP DOI RA as <a href="https://ra.publications.europa.eu/metada_specs.htm" target="_blank">\'works\'</a>. DOIs assigned to galleys will be exported as <a href="https://ra.publications.europa.eu/metada_specs.htm" target="_blank">\'manifestations\'</a>.',
+      'plugins.importexport.opdoira.senderTask.name' => 'OP DOI RA automatic registration task',
+      'plugins.importexport.opdoira.crossref.label' => 'Deposit to Crossref',
+      'plugins.importexport.opdoira.crossref' => 'Deposit the DOIs also with the Crossref. (This OP DOI RA service must be enabled for your account.)',
+      'plugins.importexport.opdoira.crossref.error.cause' => 'Cause: file not valid in respect to the OP DOI RA and/or Crossref requirements.',
+      'plugins.importexport.opdoira.crossref.error.number' => 'Number of errors',
+      'plugins.importexport.opdoira.crossref.error.details' => 'The following requirements were not met',
+      'plugins.importexport.opdoira.crossref.error.code' => 'CODE',
+      'plugins.importexport.opdoira.crossref.error.element' => 'ELEMENT',
+      'plugins.importexport.opdoira.crossref.error.description' => 'DESCRIPTION',
+      'plugins.importexport.opdoira.cliUsage' => 'Usage: 
+{$scriptName} {$pluginName} export [xmlFileName] [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...
+{$scriptName} {$pluginName} register [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...
+',
+    ),
+  ),
+);

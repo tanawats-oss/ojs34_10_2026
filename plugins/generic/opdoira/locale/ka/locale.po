@@ -1,0 +1,154 @@
+# Adapted Translation for OP DOI RA plugin. Based on
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-04-09 09:55+0000\n"
+"Last-Translator: Dimitri Gogelia <dimitri.gogelia@iliauni.edu.ge>\n"
+"Language-Team: Georgian <http://translate.pkp.sfu.ca/projects/plugins/medra/"
+"ka_GE/>\n"
+"Language: ka_GE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+msgid "plugins.importexport.opdoira.settings.form.username"
+msgstr "მომხმარებლის სახელი"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompany"
+msgstr "ორგანიზაცია"
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmail"
+msgstr "ელფოსტა"
+
+msgid "plugins.importexport.opdoira.displayName"
+msgstr "OP DOI RA ექსპორტის/რეგისტრაციის პლაგინი"
+
+msgid "plugins.importexport.opdoira.description"
+msgstr ""
+"ექსპორტის გამოცემა, სტატიები და გაზქათა მეტამონაცემები Onix– ში DOI (O4DOI) "
+"ფორმატისთვის და DOI– ების რეგისტრაცია OP DOI RA– ს სარეგისტრაციო სააგენტოში."
+
+msgid "plugins.importexport.opdoira.intro"
+msgstr ""
+"\n"
+"\t\tთუ გსურთ DOI– ების რეგისტრაცია OP DOI RA– სთან, გთხოვთ მიჰყევით მითითებებს "
+"აქ\n"
+"\t\t<a href=\"https://ra.publications.europa.eu/doi_howto.htm\" target=\"_blank\">OP DOI RA "
+"საწყისი გვერდი</a>\n"
+"\t\tმიიღონ მომხმარებლის სახელი და პაროლი. თუ არ გაქვთ საკუთარი მომხმარებლის "
+"სახელი და\n"
+"\t\tთქვენ კვლავ შეძლებთ ექსპორტის გატარებას OP DOI RA XML ფორმატში (Onix for DOI)"
+"\n"
+"\t\tმაგრამ თქვენ არ შეგიძლიათ დარეგისტრირდეთ თქვენი DOI OP DOI RA– ს საშუალებით "
+"OJS– ის შიგნიდან. \n"
+"\t\tგთხოვთ გაითვალისწინოთ, რომ პაროლი შეინახება როგორც მარტივი ტექსტი, ანუ "
+"არ არის დაშიფრული\n"
+"\t\tOP DOI RA-ს სარეგისტრაციო მომსახურების მოთხოვნების შესაბამისად.\n"
+"\t"
+
+msgid "plugins.importexport.opdoira.settings.form.description"
+msgstr "გთხოვთ, დააყენოთ OP DOI RA ექსპორტის მოდული:"
+
+msgid "plugins.importexport.opdoira.settings.form.usernameRequired"
+msgstr ""
+"გთხოვთ, შეიყვანოთ თქვენი OP DOI RA მომხმარებლის სახელი. მომხმარებლის სახელი "
+"შეიძლება არ შეიცავდეს კოლონებს."
+
+msgid "plugins.importexport.opdoira.settings.form.registrantName"
+msgstr "OP DOI RA– ზე რეგისტრირებული დაწესებულების სახელი"
+
+msgid "plugins.importexport.opdoira.settings.form.registrantNameRequired"
+msgstr "გთხოვთ, შეიყვანოთ დაწესებულება, რომელიც რეგისტრირებულია OP DOI RA– ზე."
+
+msgid "plugins.importexport.opdoira.settings.form.fromFields"
+msgstr ""
+"ადამიანი, რომელსაც დაუკავშირდება OP DOI RA ტექნიკური გამოძიების შემთხვევაში:"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompanyRequired"
+msgstr ""
+"გთხოვთ, შეიყვანოთ ის ინსტიტუტი, რომელიც ტექნიკურად პასუხისმგებელია DOI– ს "
+"ექსპორტზე (მაგ. დაწესებულება, რომელიც თქვენს ვებ – სერვერს მასპინძლობს)."
+
+msgid "plugins.importexport.opdoira.settings.form.fromName"
+msgstr "Საკონტაქტო პირი"
+
+msgid "plugins.importexport.opdoira.settings.form.fromNameRequired"
+msgstr "გთხოვთ, შეიყვანოთ ტექნიკური საკონტაქტო პირი."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmailRequired"
+msgstr "გთხოვთ, შეიყვანოთ სწორი საკონტაქტო ელ.ფოსტა."
+
+msgid "plugins.importexport.opdoira.settings.form.publicationCountry"
+msgstr ""
+"გთხოვთ, აირჩიოთ ქვეყანა, რომლის შესახებაც უნდა ეცნობოთ OP DOI RA– ს „"
+"გამომცემლობის ქვეყნად“."
+
+#, fuzzy
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs"
+msgstr ""
+"გთხოვთ, აირჩიოთ, გსურთ ექსპორტის საკითხი, როგორც <a href=\"https://"
+"ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">\"ნამუშევრები\" ან \""
+"მანიფესტაციები\"</a> ."
+
+msgid "plugins.importexport.opdoira.settings.form.work"
+msgstr "სამსახური"
+
+msgid "plugins.importexport.opdoira.settings.form.manifestation"
+msgstr "მანიფესტაცია"
+
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs.label"
+msgstr "გამოსცემს ექსპორტს, როგორც"
+
+msgid "plugins.importexport.opdoira.settings.form.automaticRegistration.description"
+msgstr ""
+"OJS დანიშნულ DOI– ს ავტომატურად დაარეგისტრირებს OP DOI RA– ს. გთხოვთ "
+"გაითვალისწინოთ, რომ ამას შეიძლება გამოქვეყნებიდან მოკლე დრო დასჭირდეს (მაგ. "
+"დამოკიდებულია თქვენი cronjob– ის კონფიგურაციაზე). თქვენ შეგიძლიათ შეამოწმოთ "
+"ყველა არარეგისტრირებული DOI."
+
+msgid "plugins.importexport.opdoira.settings.form.testMode.description"
+msgstr ""
+"გამოიყენეთ OP DOI RA ტესტის API (ტესტირების გარემო) DOI– ს რეგისტრაციისთვის. "
+"გთხოვთ, არ დაგავიწყდეთ ამ პარამეტრის ამოღება წარმოებისთვის."
+
+msgid "plugins.importexport.opdoira.workOrProduct"
+msgstr ""
+"შენიშვნა: სტატიებზე მინიჭებული DOI ექსპორტირდება OP DOI RA– ში, როგორც <a href=\""
+"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">„სამუშაოები“</a> "
+". გალერეებისთვის მინიჭებული DOI ექსპორტირდება როგორც <a href=\""
+"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">\"მანიფესტაცია\""
+"</a> ."
+
+msgid "plugins.importexport.opdoira.senderTask.name"
+msgstr "OP DOI RA ავტომატური რეგისტრაციის ამოცანა"
+
+msgid "plugins.importexport.opdoira.crossref"
+msgstr ""
+"ანაბარი Crossref- ში. (ეს სერვისი ჩართული უნდა იყოს თქვენი ანგარიშისთვის.)"
+
+msgid "plugins.importexport.opdoira.crossref.error.cause"
+msgstr "მიზეზი: ფაილი არასწორია OP DOI RA და / ან Crossref მოთხოვნების შესაბამისად."
+
+msgid "plugins.importexport.opdoira.crossref.error.number"
+msgstr "შეცდომების რაოდენობა"
+
+msgid "plugins.importexport.opdoira.crossref.error.details"
+msgstr "შემდეგი მოთხოვნები არ დაკმაყოფილდა"
+
+msgid "plugins.importexport.opdoira.crossref.error.code"
+msgstr "CODE"
+
+msgid "plugins.importexport.opdoira.crossref.error.element"
+msgstr "ELEMENT"
+
+msgid "plugins.importexport.opdoira.crossref.error.description"
+msgstr "DESCRIPTION"
+
+msgid "plugins.importexport.opdoira.cliUsage"
+msgstr ""
+"გამოყენება: \n"
+"{$scriptName} {$pluginName} export [xmlFileName] [journal_path] "
+"{issues|articles|galleys} objectId1 [objectId2] ...\n"
+"{$scriptName} {$pluginName} register [journal_path] {issues|articles|galleys}"
+" objectId1 [objectId2] ...\n"

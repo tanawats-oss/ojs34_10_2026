@@ -1,0 +1,144 @@
+# Adapted Translation for OP DOI RA plugin. Based on
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-20T15:57:55+00:00\n"
+"PO-Revision-Date: 2021-01-30 15:53+0000\n"
+"Last-Translator: Eirik Hanssen <eirikh@oslomet.no>\n"
+"Language-Team: Norwegian Bokmål <http://translate.pkp.sfu.ca/projects/"
+"plugins/medra/nb_NO/>\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+msgid "plugins.importexport.opdoira.displayName"
+msgstr "OP DOI RA programtilegg for eksport/registrering"
+
+msgid "plugins.importexport.opdoira.description"
+msgstr "Eksporter metadata for hefte, artikkel og oppsett i Onix for DOI (O4DOI) format. Registrer DOI ved OP DOI RA registreringsbyrå."
+
+msgid "plugins.importexport.opdoira.cliUsage"
+msgstr ""
+"Bruk:\n"
+"{$scriptName} {$pluginName} eksporterer [xmlFilnavn] [tidsskrift_sti] "
+"{issues|articles|galleys} objekstId1 [objekstId2] ...\n"
+"{$scriptName} {$pluginName} registrerer [tidsskrift_sti] "
+"{issues|articles|galleys} objekstId1 [objekstId2] ...\n"
+
+msgid "plugins.importexport.opdoira.senderTask.name"
+msgstr "OP DOI RAs automatiske registrering"
+
+msgid "plugins.importexport.opdoira.workOrProduct"
+msgstr ""
+"Merk: DOI-er som blir opprettet for artikler blir eksportert til OP DOI RA som <"
+"a href=\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\""
+">«verk»</a>. DOI-er opprettet til oppsett vil bli eksportert som <a href=\""
+"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\""
+">«manifestasjoner»</a>."
+
+msgid "plugins.importexport.opdoira.settings.form.testMode.description"
+msgstr ""
+"Bruk OP DOI RA API-test (testmiljø) for DOI-registreringen. Ikke glem å fjerne "
+"dette valget før produksjonsfasen."
+
+msgid "plugins.importexport.opdoira.settings.form.automaticRegistration.description"
+msgstr ""
+"OJS vil registrere opprettede DOI-er automatisk til OP DOI RA. Merk at det kan "
+"ta litt tid å behandle dette etter publiseringen. Du kan velge alle "
+"uregistrerte DOI-er."
+
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs.label"
+msgstr "Utgaver eksportert som"
+
+msgid "plugins.importexport.opdoira.settings.form.manifestation"
+msgstr "manifestasjon"
+
+msgid "plugins.importexport.opdoira.settings.form.work"
+msgstr "verk"
+
+#, fuzzy
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs"
+msgstr ""
+"Velg om du vil eksportere utgaver som <a href=\"https://"
+"ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">«verk» eller «manifestasjoner»</a>."
+
+msgid "plugins.importexport.opdoira.settings.form.publicationCountry"
+msgstr "Velg et land som skal vises som publiseringsland hos OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmailRequired"
+msgstr "Skriv inn e-postadressen til teknisk kontaktperson."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmail"
+msgstr "E-post"
+
+msgid "plugins.importexport.opdoira.settings.form.fromNameRequired"
+msgstr "Skriv inn teknisk kontaktperson."
+
+msgid "plugins.importexport.opdoira.settings.form.fromName"
+msgstr "Kontaktperson"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompanyRequired"
+msgstr ""
+"Skriv inn institusjonen som er teknisk ansvarlig for DOI-eksporten (f.eks. "
+"institusjonen som er vert for webserveren din)."
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompany"
+msgstr "Institusjon"
+
+msgid "plugins.importexport.opdoira.settings.form.fromFields"
+msgstr "Personen som OP DOI RA skal kontakte ved ev. tekniske spørsmål:"
+
+msgid "plugins.importexport.opdoira.settings.form.registrantNameRequired"
+msgstr "Skriv inn institusjonen som er registert hos OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.registrantName"
+msgstr "Navnet på institusjonen som er registrert hos OP DOI RA"
+
+msgid "plugins.importexport.opdoira.settings.form.usernameRequired"
+msgstr ""
+"Legg inn brukernavnet ditt hos OP DOI RA. Brukernavnet kan ikke inneholde kolon."
+
+msgid "plugins.importexport.opdoira.settings.form.username"
+msgstr "Brukernavn"
+
+msgid "plugins.importexport.opdoira.settings.form.description"
+msgstr "Konfigurer OP DOI RAs programtillegg for eksport:"
+
+msgid "plugins.importexport.opdoira.intro"
+msgstr ""
+"\n"
+"\t\tHvis du vil registrere DOI-er med OP DOI RA, følg instruksene på <a href=\""
+"https://ra.publications.europa.eu/doi_howto.htm\" target=\"_blank\">OP DOI RAs hjemmeside</a> "
+"for å motta brukernavn og passord. Dersom du ikke har ditt eget brukernavn "
+"og passord, vil du likevel kunne eksportere data til OP DOI RAs XML-format (Onix "
+"for DOI), men du kan ikke registrere DOI-ene dine med OP DOI RA i OJS.  Merk at "
+"passordet vil bli lagret som ren tekst (ikke kryptert), pga. betingelsene "
+"til OP DOI RAs registreringstjeneste.\n"
+"\t"
+
+msgid "plugins.importexport.opdoira.crossref.error.description"
+msgstr "DESCRIPTION"
+
+msgid "plugins.importexport.opdoira.crossref.error.element"
+msgstr "ELEMENT"
+
+msgid "plugins.importexport.opdoira.crossref.error.code"
+msgstr "CODE"
+
+msgid "plugins.importexport.opdoira.crossref.error.details"
+msgstr "Følgende krav ble ikke oppfylt"
+
+msgid "plugins.importexport.opdoira.crossref.error.number"
+msgstr "Antall feil"
+
+msgid "plugins.importexport.opdoira.crossref.error.cause"
+msgstr ""
+"Årsak: filen er ikke gyldig i henhold til kravene fra OP DOI RA og/eller "
+"Crossref."
+
+msgid "plugins.importexport.opdoira.crossref"
+msgstr "Deponér hos Crossref. (Denne tjeneste må aktiveres for din konto.)"

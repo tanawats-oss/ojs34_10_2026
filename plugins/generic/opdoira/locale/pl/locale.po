@@ -1,0 +1,108 @@
+# Adapted Translation for OP DOI RA plugin. Based on
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19T11:05:42+00:00\n"
+"PO-Revision-Date: 2020-12-01 11:48+0000\n"
+"Last-Translator: rl <biuro@fimagis.pl>\n"
+"Language-Team: Polish <http://translate.pkp.sfu.ca/projects/ojs/"
+"importexport-medra/pl_PL/>\n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+msgid "plugins.importexport.opdoira.displayName"
+msgstr "Wtyczka eksportu/rejestracji OP DOI RA"
+
+msgid "plugins.importexport.opdoira.description"
+msgstr "Eksportuj metadane numeru, artykułu lub pliku w formacie Onix dla DOI (O4DOI) w agencji rejestrującej DOI: OP DOI RA."
+
+msgid "plugins.importexport.opdoira.intro"
+msgstr ""
+"\n"
+"\t\tJeżeli chcesz zarejestrować DOI w OP DOI RA, postępuj zgodnie z poniższymi "
+"wskazówkami\n"
+"\t\t<a href=\"https://ra.publications.europa.eu/doi_howto.htm\" target=\"_blank\">strona "
+"OP DOI RA</a>\n"
+"\t\taby uzyskać nazwę użytkownika i hasło. Jeżeli nie posiadasz nazwy "
+"użytkownika i hasła nadal możesz eksportować dane w formacie OP DOI RA XML (Onix "
+"dla DOI)\n"
+"\t\tale nie możesz zarejestrować DOI w OP DOI RA z poziomu OJS.\n"
+"\t"
+
+msgid "plugins.importexport.opdoira.settings.form.description"
+msgstr "Skonfiguruj wtyczkę eksportu OP DOI RA:"
+
+msgid "plugins.importexport.opdoira.settings.form.username"
+msgstr "Użytkownik"
+
+msgid "plugins.importexport.opdoira.settings.form.usernameRequired"
+msgstr "Wprowadź nazwę użytkownika OP DOI RA. Nazwa użytkownika nie może zawierać dwukropka."
+
+msgid "plugins.importexport.opdoira.settings.form.registrantName"
+msgstr "Nazwa instytucji zarejestrowanej w OP DOI RA"
+
+msgid "plugins.importexport.opdoira.settings.form.registrantNameRequired"
+msgstr "Wprowadź instytucję, która jest zarejestrowana w OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.fromFields"
+msgstr "Osoba odpowiedzialna za kontakt z OP DOI RA w sprawach technicznych:"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompany"
+msgstr "Instytucja"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompanyRequired"
+msgstr "Wprowadź instytucje, która jest technicznie odpowiedzialna za ekspoert DOI (np. instytucję zapewniającą hosting serwera)."
+
+msgid "plugins.importexport.opdoira.settings.form.fromName"
+msgstr "Osoba do kontaktu"
+
+msgid "plugins.importexport.opdoira.settings.form.fromNameRequired"
+msgstr "Wprowadź osobę do kontaktu w sprawach technicznych."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmail"
+msgstr "E-mail"
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmailRequired"
+msgstr "Wprowadź e-mail osoby do kontaktu w sprawach technicznych."
+
+msgid "plugins.importexport.opdoira.settings.form.publicationCountry"
+msgstr "Wybierz kraj, który będzie podany jako 'publication country' w OP DOI RA."
+
+#, fuzzy
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs"
+msgstr "Wybierz, czy chcesz eksportować numery jako <a href=\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'works' lub 'manifestations'</a>."
+
+msgid "plugins.importexport.opdoira.settings.form.work"
+msgstr "praca"
+
+msgid "plugins.importexport.opdoira.settings.form.manifestation"
+msgstr "deklaracja"
+
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs.label"
+msgstr "Numery eksportowane jako"
+
+msgid "plugins.importexport.opdoira.settings.form.automaticRegistration.description"
+msgstr "OJS zarejestruje przypisane DOI automatycznie w OP DOI RA. Zauważ, że zadanie to zostanie wykonane zaraz po publikacji. Może sprawdzić, czy wszystkie dane zostały zarejestrowane."
+
+msgid "plugins.importexport.opdoira.settings.form.testMode.description"
+msgstr "Wykorzystaj testowy API OP DOI RA (środowisko tekstowe) do rejestracji DOI. Nie zapomnij usunąć tej opcji przed produkcją."
+
+msgid "plugins.importexport.opdoira.workOrProduct"
+msgstr "DOI przypisane do artykułów będzie eksportowane do OP DOI RA jako <a href=\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'works'</a>. DOIs przypisane do plików będzie eksportowane jako <a href=\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'manifestations'</a>."
+
+msgid "plugins.importexport.opdoira.senderTask.name"
+msgstr "zadanie automatycznej rejestracji w OP DOI RA"
+
+msgid "plugins.importexport.opdoira.cliUsage"
+msgstr ""
+"Użycie: \n"
+"{$scriptName} {$pluginName} export [xmlFileName] [journal_path] "
+"{issues|articles|galleys} objectId1 [objectId2] ...\n"
+"{$scriptName} {$pluginName} register [journal_path] {issues|articles|galleys}"
+" objectId1 [objectId2] ...\n"

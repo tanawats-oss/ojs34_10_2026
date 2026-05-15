@@ -1,0 +1,429 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-01-08T23:03:20+00:00\n"
+"PO-Revision-Date: 2021-01-08T23:03:20+00:00\n"
+"Language: \n"
+
+msgid "plugins.generic.dataverse.displayName"
+msgstr "Plugin Dataverse"
+
+msgid "plugins.generic.dataverse.description"
+msgstr "Deposita conjuntos de dados e/ou outros documentos suplementares no Dataverse."
+
+msgid "plugins.generic.dataverse.settings.emptyApiSecretKey"
+msgstr "É necessário que o administrador defina um segredo no arquivo de configuração do site ('api_key_secret')."
+
+msgid "plugins.generic.dataverse.settings.description"
+msgstr ""
+"Configure a API Dataverse para depositar dados de pesquisa em um repositório Dataverse.<br>"
+"Para mais informações, consulte a <a href=\"https://github.com/lepidus/dataversePlugin#configuration\" target=\"_new\">documentação do plugin</a>."
+
+msgid "plugins.generic.dataverse.settings.connect"
+msgstr "Conectar"
+
+msgid "plugins.generic.dataverse.settings.dataverseUrl"
+msgstr "URL Dataverse"
+
+msgid "plugins.generic.dataverse.settings.dataverseUrlDescription"
+msgstr "URL completa do repositório Dataverse onde serão depositado os dados de pesquisa, por exemplo: https://demo.dataverse.org/dataverse/anotherdemo"
+
+msgid "plugins.generic.dataverse.settings.token"
+msgstr "Token de API"
+
+msgid "plugins.generic.dataverse.settings.tokenDescription"
+msgstr "Token de API para integração com o Dataverse. "
+"Para mais informações sobre como obter o token de API, consulte o "
+"<a href=\"https://guides.dataverse.org/en/5.13/user/account.html#api-token\" target=\"_new\">Guia de Usuário do Dataverse</a>."
+
+msgid "plugins.generic.dataverse.settings.termsOfUse"
+msgstr "Termos de Uso"
+
+msgid "plugins.generic.dataverse.settings.termsOfUseDescription"
+msgstr "URL para os termos de uso que os usuários devem concordar antes de depositar os dados de pesquisa no repositório."
+
+msgid "plugins.generic.dataverse.settings.additionalInstructions"
+msgstr "Instruções Adicionais"
+
+msgid "plugins.generic.dataverse.settings.additionalInstructionsDescription"
+msgstr "Instruções adicionais para os usuários que forem depositar dados de pesquisa no repositório."
+
+msgid "plugins.generic.dataverse.settings.datasetPublish"
+msgstr "Publicar Dados de Pesquisa"
+
+msgid "plugins.generic.dataverse.settings.datasetPublishDescription"
+msgstr "Escolha o evento para disponibilizar publicamente os dados de pesquisa no repositório Dataverse."
+
+msgid "plugins.generic.dataverse.settings.datasetPublish.submissionAccepted"
+msgstr "Editor aceita a submissão"
+
+msgid "plugins.generic.dataverse.settings.datasetPublish.submissionPublished"
+msgstr "Submissão é publicada"
+
+msgid "plugins.generic.dataverse.settings.datasetPublishRequired"
+msgstr "É obrigatório escolher o evento para publicar os dados de pesquisa."
+
+msgid "plugins.generic.dataverse.settings.dataverseUrlRequired"
+msgstr "Endereço do Dataverse é obrigatório."
+
+msgid "plugins.generic.dataverse.settings.dataverseUrlNotValid"
+msgstr "Impossível conectar ao Dataverse."
+
+msgid "plugins.generic.dataverse.settings.tokenRequired"
+msgstr "Informe uma chave de API para Dataverse."
+
+msgid "plugins.generic.dataverse.researchDataDescription"
+msgstr "Use esse campo apenas para submeter dados de pesquisa. "
+"Não use este campo para enviar seu manuscrito ou a lista de referências bibliográficas de seu manuscrito. "
+"O arquivo do manuscrito deve ser enviado apenas na área “{$addGalleyLabel}” acima."
+
+msgid "plugins.generic.dataverse.notification.galleyContainsResearchData"
+msgstr "Dados de pesquisa e composição final possuem o mesmo arquivo. Certifique-se de que os arquivos sejam adicionados na seção apropriada."
+
+msgid "plugins.generic.dataverse.researchData"
+msgstr "Dados de pesquisa"
+
+msgid "plugins.generic.dataverse.noResearchData"
+msgstr "Sem dados de pesquisa"
+
+msgid "plugins.generic.dataverse.addResearchData"
+msgstr "Adicione dados de pesquisa"
+
+msgid "plugins.generic.dataverse.datasetMetadata"
+msgstr "Metadados dos dados de pesquisa"
+
+msgid "plugins.generic.dataverse.datasetMetadata.description"
+msgstr "Por favor informe os seguintes detalhes sobre os dados de pesquisa que você está submetendo."
+
+msgid  "plugins.generic.dataverse.log.researchDataFileAdded"
+msgstr "Arquivo \"{$filename}\" adicionado como dados de pesquisa."
+
+msgid  "plugins.generic.dataverse.log.researchDataFileDeleted"
+msgstr "Arquivo \"{$filename}\" excluído dos dados de pesquisa."
+
+msgid  "plugins.generic.dataverse.log.researchDataDeposited"
+msgstr "Dados de pesquisa depositados: {$persistentId}"
+
+msgid  "plugins.generic.dataverse.log.researchDataUpdated"
+msgstr "Metadados dos dados de pesquisa atualizados"
+
+msgid  "plugins.generic.dataverse.log.researchDataPublished"
+msgstr "Dados de pesquisa publicados"
+
+msgid  "plugins.generic.dataverse.log.researchDataDeleted"
+msgstr "Dados de pesquisa excluídos"
+
+msgid  "plugins.generic.dataverse.log.sendDatasetDeleteEmail"
+msgstr "Email enviado para {$email} notificando a exclusão dos dados de pesquisa"
+
+msgid "plugins.generic.dataverse.error.researchData.required"
+msgstr "Para submeter dados de pesquisa é necessário enviar pelo menos um arquivo. "
+"Certifique-se que você escolheu e enviou arquivos de dados de pesquisa no passo “Enviar Arquivos”."
+
+msgid "plugins.generic.dataverse.error.datasetSubject.required"
+msgstr "O assunto dos dados de pesquisa é obrigatório. "
+"Certifique-se que você informou o assunto dos dados de pesquisa no passo “Para os Editores”."
+
+msgid "plugins.generic.dataverse.error.readmeFile.required"
+msgstr "É obrigatório o envio de um arquivo README, em formato PDF, MD ou TXT, que acompanhe os arquivos de dados de pesquisa"
+
+msgid "plugins.generic.dataverse.error.getFailed"
+msgstr "Erro ao obter dados de pesquisa no Dataverse: {$error}"
+
+msgid "plugins.generic.dataverse.error.datasetDeposit"
+msgstr "Erro ao depositar dados de pesquisa no Dataverse: {$error}"
+
+msgid "plugins.generic.dataverse.error.datasetDeposit.author"
+msgstr "Erro ao depositar dados de pesquisa no Dataverse: {$error}<br>"
+"Por favor, escolha outra opção de declaração de dados ou tente novamente mais tarde."
+
+msgid "plugins.generic.dataverse.error.datasetFileDeposit"
+msgstr "Erro ao depositar o arquivo de dados \"{$fileName}\" no Dataverse: {$error}"
+
+msgid "plugins.generic.dataverse.error.datasetFileDeposit.author"
+msgstr "Erro ao depositar o arquivo de dados \"{$fileName}\" no Dataverse: {$error}<br>"
+"Por favor, verifique se há algum problema com o arquivo e substitua-o caso necessário"
+
+msgid "plugins.generic.dataverse.error.updateFailed"
+msgstr "Erro ao atualizar dados de pesquisa no Dataverse: {$error}"
+
+msgid "plugins.generic.dataverse.error.deleteFailed"
+msgstr "Erro ao excluir dados de pesquisa no Dataverse: {$error}"
+
+msgid "plugins.generic.dataverse.error.publishFailed"
+msgstr "Erro ao publicar dados de pesquisa no Dataverse: {$error}"
+
+msgid  "plugins.generic.dataverse.error.addFileFailed"
+msgstr "Erro ao adicionar o arquivo de dados de pesquisa \"{$filename}\": {$error}"
+
+msgid  "plugins.generic.dataverse.error.deleteFileFailed"
+msgstr "Erro ao excluir o arquivo de dados de pesquisa \"{$filename}\": {$error}"
+
+msgid "plugins.generic.dataverse.modal.addFile.title"
+msgstr "Enviar arquivo de dados de pesquisa"
+
+msgid "plugins.generic.dataverse.modal.addFile.datasetFileLabel"
+msgstr "Arquivo de dados de pesquisa"
+
+msgid "plugins.generic.dataverse.researchDataFile.error"
+msgstr "Dados de pesquisa são requeridos. Certifique-se que você escolheu e enviou dados de pesquisa."
+
+msgid "plugins.generic.dataverse.termsOfUse.label"
+msgstr "Termos de uso do Dataverse"
+
+msgid "plugins.generic.dataverse.termsOfUse.description"
+msgstr "Depositar dados de pesquisa no Dataverse <strong>{$dataverseName}</strong>, concordando com os <a href=\"{$termsOfUseURL}\" target=\"_new\">Termos de Uso</a>."
+
+msgid "plugins.generic.dataverse.termsOfUse.error"
+msgstr "Para depositar dados de pesquisa você deve aceitar os termos de uso do Dataverse."
+
+msgid "plugins.generic.dataverse.modal.deleteDatasetFile"
+msgstr "Excluir arquivo de dados de pesquisa"
+
+msgid "plugins.generic.dataverse.modal.confirmDelete"
+msgstr "Deseja realmente excluir permanentemente o arquivo de dados de pesquisa <strong>{$title}</strong>?"
+
+msgid "plugins.generic.dataverse.modal.confirmDatasetDelete"
+msgstr "Deseja realmente excluir permanentemente os dados de pesquisa relacionados a esse preprint?"
+
+msgid "plugins.generic.dataverse.modal.confirmDatasetPublish"
+msgstr ""
+"Deseja realmente publicar os dados de pesquisa relacionados a essa submissão? Esta ação não poderá ser desfeita.<br>"
+"Antes de continuar, certifique-se que são adequados para publicação em <a href=\"{$serverUrl}\" target=\"_new\">{$serverName}</a>.<br>"
+
+msgid "plugins.generic.dataverse.decision.selectDataFiles.name"
+msgstr "Selecionar Arquivos de Dados"
+
+msgid "plugins.generic.dataverse.decision.selectDataFiles.description"
+msgstr "Esta submissão possui dados de pesquisa depositados. Por favor, selecione quais arquivos de dados serão disponibilizados para visualização pelos avaliadores."
+
+msgid "api.draftDatasetFile.404.drafDatasetFileNotFound"
+msgstr "O arquivo rascunho do dataset solicitado não foi encontrado."
+
+msgid "api.error.researchDataCitationNotFound"
+msgstr "Não foi possível obter a citação dos dados de pesquisa."
+
+msgid "api.dataset.403.alreadyPublished"
+msgstr "Os dados de pesquisa que você deseja publicar já estão publicados."
+
+msgid "plugins.generic.dataverse.researchData.noResearchData"
+msgstr "Não foram transferidos dados de pesquisa."
+
+msgid "plugins.generic.dataverse.researchData.uploadDisabled"
+msgstr "Não é possível enviar dados de pesquisa em uma submissão publicada. "
+"Caso deseje enviar dados de pesquisa, por favor, entre em contato com o administrador do sistema."
+
+msgid "plugins.generic.dataverse.researchData.uploadResearchData"
+msgstr "Enviar dados de pesquisa"
+
+msgid "plugins.generic.dataverse.researchData.metadata"
+msgstr "Metadados"
+
+msgid "plugins.generic.dataverse.researchData.files"
+msgstr "Arquivos"
+
+msgid "plugins.generic.dataverse.researchData.delete"
+msgstr "Excluir dados de pesquisa"
+
+msgid "plugins.generic.dataverse.researchData.delete.sendEmail.yes"
+msgstr "Enviar uma notificação por e-mail para o contato do conjunto de dados"
+
+msgid "plugins.generic.dataverse.researchData.delete.sendEmail.no"
+msgstr "Não enviar uma notificação por e-mail"
+
+msgid "plugins.generic.dataverse.researchData.delete.emailNotification"
+msgstr "Notificação por e-mail"
+
+msgid "plugins.generic.dataverse.researchData.delete.submitLabel"
+msgstr "Excluir e enviar e-mail"
+
+msgid "plugins.generic.dataverse.researchData.publish"
+msgstr "Publicar dados de pesquisa"
+
+msgid "plugins.generic.dataverse.researchData.label.draft"
+msgstr "Esboço"
+
+msgid "plugins.generic.dataverse.researchData.label.unpublished"
+msgstr "Não publicado"
+
+msgid "plugins.generic.dataverse.researchData.label.inReview"
+msgstr "Em revisão"
+
+msgid "plugins.generic.dataverse.dataset.titlePrefix"
+msgstr "Dados de replicação para: "
+
+msgid "plugins.generic.dataverse.metadataForm.loadingDataset"
+msgstr "Carregando informações dos dados de pesquisa..."
+
+msgid "plugins.generic.dataverse.metadataForm.loadingDatasetCitation"
+msgstr "Carregando citação..."
+
+msgid "plugins.generic.dataverse.metadataForm.title"
+msgstr "Título"
+
+msgid "plugins.generic.dataverse.metadataForm.description"
+msgstr "Descrição"
+
+msgid "plugins.generic.dataverse.metadataForm.keyword"
+msgstr "Palavras-chave"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.label"
+msgstr "Assunto dos Dados de Pesquisa"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.description"
+msgstr "Selecione o assunto dos dados de pesquisa a serem depositados no Dataverse"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.agriculturalSciences"
+msgstr "Ciências Agrárias"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.artsAndHumanities"
+msgstr "Artes e Humanidades"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.astronomyAndAstrophysics"
+msgstr "Astronomia e Astrofísica"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.businessAndManagement"
+msgstr "Negócios e Gestão"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.chemistry"
+msgstr "Química"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.computerAndInformationScience"
+msgstr "Computação e Ciência da Informação"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.earthAndEnvironmentalSciences"
+msgstr "Ciências da Terra e do Meio Ambiente"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.Engineering"
+msgstr "Engenharia"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.Law"
+msgstr "Direito"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.mathematicalSciences"
+msgstr "Ciências Matemáticas"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.medicineHealthAndLifeSciences"
+msgstr "Medicina, Saúde e Ciência da Vida"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.Physics"
+msgstr "Física"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.socialSciences"
+msgstr "Ciências Sociais"
+
+msgid "plugins.generic.dataverse.metadataForm.subject.Other"
+msgstr "Outros"
+
+msgid "plugins.generic.dataverse.metadataForm.license.label"
+msgstr "Licença dos Dados de Pesquisa"
+
+msgid "plugins.generic.dataverse.metadataForm.license.description"
+msgstr "Selecione a licença dos dados de pesquisa a serem depositados no Dataverse"
+
+msgid "plugins.generic.dataverse.notice.cannotPublish"
+msgstr "Não é possível publicar os dados de pesquisa no Dataverse: {$error}"
+
+msgid "plugins.generic.dataverse.researchData.publishNotice"
+msgstr "Esta submissão possui dados de pesquisa depositados que ainda não estão públicos: <a href=\"{$persistentUri}\">{$persistentUri}</a>. "
+"Caso escolha publicá-los, certifique-se que são adequados para publicação em <a href=\"{$serverUrl}\" target=\"_new\">{$serverName}</a>."
+
+msgid "plugins.generic.dataverse.researchData.wouldLikeToPublish"
+msgstr "Gostaria de publicar os dados de pesquisa?"
+
+msgid "plugins.generic.dataverse.researchData.deleteNotice"
+msgstr "Esta submissão possui dados de pesquisa depositados: <a href=\"{$persistentUri}\">{$persistentUri}</a>. "
+
+msgid "plugins.generic.dataverse.researchData.wouldLikeToDelete"
+msgstr "Gostaria de excluir os dados de pesquisa?"
+
+msgid "plugins.generic.dataverse.dataStatement.title"
+msgstr "Declaração de dados"
+
+msgid "plugins.generic.dataverse.dataStatement.edit"
+msgstr "Editar declaração de dados"
+
+msgid "plugins.generic.dataverse.dataStatement.description"
+msgstr "Encorajamos a disponibilidade de todos os conteúdos (dados, códigos de programa e outros materiais) "
+"subjacentes ao texto do manuscrito previamente ou no momento da submissão. Exceções são permitidas em casos de "
+"questões legais e éticas. O objetivo é facilitar a moderação do manuscrito, a avaliação pela comunidade científica, "
+"aumentar a visibilidade e impacto da pesquisa, melhorar a qualidade dos artigos, além de contribuir para a "
+"preservação e reuso dos conteúdos e a reprodutibilidade das pesquisas.<br>"
+"Por favor, informe a declaração de dados deste manuscrito:"
+
+msgid "plugins.generic.dataverse.dataStatement.required"
+msgstr "É obrigatório informar a declaração de dados."
+
+msgid "plugins.generic.dataverse.dataStatement.inManuscript"
+msgstr "Os dados de pesquisa estão contidos no próprio manuscrito"
+
+msgid "plugins.generic.dataverse.dataStatement.repoAvailable"
+msgstr "Os dados de pesquisa estão disponíveis em um ou mais repositório de dados"
+
+msgid "plugins.generic.dataverse.dataStatement.repoAvailable.urls"
+msgstr "URLs"
+
+msgid "plugins.generic.dataverse.dataStatement.repoAvailable.urls.description"
+msgstr "Informe as URLs para os dados. Pressione 'Enter' depois de cada URL."
+
+msgid "plugins.generic.dataverse.dataStatement.repoAvailable.urls.required"
+msgstr "É obrigatório informar as URLs para os dados em repositórios."
+
+msgid "plugins.generic.dataverse.dataStatement.repoAvailable.urls.urlFormat"
+msgstr "Você deve inserir apenas as URLs para os dados. Outras informações textuais não são aceitas."
+
+msgid "plugins.generic.dataverse.dataStatement.submissionDeposit"
+msgstr "Os dados de pesquisa serão enviados nas etapas seguintes desta submissão, para que sejam depositados no repositório"
+" <a href=\"{$dataverseUrl}\" target=\"_new\">{$dataverseName}</a>"
+" (utilize esta opção somente se houver arquivos de dados adjacentes ao manuscrito para serem depositados)"
+
+msgid "plugins.generic.dataverse.dataStatement.onDemand"
+msgstr "Os dados de pesquisa estão disponíveis sob demanda, condição justificada no manuscrito"
+
+msgid "plugins.generic.dataverse.dataStatement.publiclyUnavailable"
+msgstr "Os dados de pesquisa não podem ser disponibilizados publicamente"
+
+msgid "plugins.generic.dataverse.dataStatement.publiclyUnavailable.reason"
+msgstr "Justificativa"
+
+msgid "plugins.generic.dataverse.dataStatement.publiclyUnavailable.reason.description"
+msgstr "Informe a justificativa para a não disponibilidade dos dados."
+
+msgid "plugins.generic.dataverse.dataStatement.publiclyUnavailable.reason.required"
+msgstr "É obrigatório informar a justificativa para a não disponibilidade dos dados."
+
+msgid "plugins.generic.dataverse.dataStatement.researchDataSubmitted"
+msgstr "Os dados de pesquisa foram submetidos ao repositório <strong>{$dataverseName}</strong>."
+
+msgid "plugins.generic.dataverse.report.displayName"
+msgstr "Relatório do Dataverse"
+
+msgid "plugins.generic.dataverse.report.description"
+msgstr "Relatório de declaração de dados e depósito de dados de pesquisa do Dataverse."
+
+msgid "plugins.generic.dataverse.report.headers.acceptedSubmissions"
+msgstr "Submissões aceitas"
+
+msgid "plugins.generic.dataverse.report.headers.acceptedSubmissionsWithDataset"
+msgstr "Submissões aceitas com dataset"
+
+msgid "plugins.generic.dataverse.report.headers.declinedSubmissions"
+msgstr "Submissões rejeitadas"
+
+msgid "plugins.generic.dataverse.report.headers.declinedSubmissionsWithDataset"
+msgstr "Submissões rejeitadas com dataset"
+
+msgid "plugins.generic.dataverse.report.headers.datasetsWithDepositError"
+msgstr "Datasets com erro no depósito"
+
+msgid "plugins.generic.dataverse.report.headers.datasetsWithPublishError"
+msgstr "Datasets com erro na publicação"
+
+msgid "plugins.generic.dataverse.report.headers.filesInDatasets"
+msgstr "Arquivos nos datasets"

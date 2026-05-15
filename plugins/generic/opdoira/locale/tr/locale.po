@@ -1,0 +1,135 @@
+# Adapted Translation for OP DOI RA plugin. Based on
+# Hüseyin Körpeoğlu <yoruyenturk@hotmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19T11:05:42+00:00\n"
+"PO-Revision-Date: 2022-10-08 03:58+0000\n"
+"Last-Translator: Hüseyin Körpeoğlu <yoruyenturk@hotmail.com>\n"
+"Language-Team: Turkish <http://translate.pkp.sfu.ca/projects/plugins/medra/"
+"tr_TR/>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13.1\n"
+
+msgid "plugins.importexport.opdoira.displayName"
+msgstr ".opdoira. İhraç/Kayıt Eklentisi"
+
+msgid "plugins.importexport.opdoira.description"
+msgstr ".opdoira. kayıt ajansı ile DOI (O4DOI) biçimi ve DOI'lere kayıt için Onix'de sayı, makale ve dizgi ihracı."
+
+msgid "plugins.importexport.opdoira.settings.form.description"
+msgstr "Lütfen .opdoira. ihraç eklentisini yapılandırınız:"
+
+msgid "plugins.importexport.opdoira.settings.form.username"
+msgstr "Kullanıcı adı"
+
+msgid "plugins.importexport.opdoira.settings.form.usernameRequired"
+msgstr "Lütfen .opdoira. kullanıcı adınızı giriniz. Kullanıcı adı virgül içeremez."
+
+msgid "plugins.importexport.opdoira.settings.form.registrantName"
+msgstr ".opdoira.'da kayıtlı kurumun adı"
+
+msgid "plugins.importexport.opdoira.settings.form.registrantNameRequired"
+msgstr "Lütfen .opdoira.'da kayıtlı olan kurumu girin."
+
+msgid "plugins.importexport.opdoira.settings.form.fromFields"
+msgstr "Teknik sorular için .opdoira. ile iletişime geçilecek kişi:"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompany"
+msgstr "Kurulum"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompanyRequired"
+msgstr ""
+"Lütfen DOI dışa aktarma işleminden teknik olarak sorumlu olan kurumu girin ("
+"örn. Web sunucunuzu barındıran kurum)."
+
+msgid "plugins.importexport.opdoira.settings.form.fromName"
+msgstr "İletişim Kurulacak Kişi"
+
+msgid "plugins.importexport.opdoira.settings.form.fromNameRequired"
+msgstr "Lütfen iletişim kurulacak teknik kişi giriniz."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmail"
+msgstr "E-posta"
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmailRequired"
+msgstr "Lütfen teknik bir iletişim e-postası giriniz."
+
+msgid "plugins.importexport.opdoira.settings.form.work"
+msgstr "iş"
+
+msgid "plugins.importexport.opdoira.settings.form.manifestation"
+msgstr "ortaya koyma"
+
+msgid "plugins.importexport.opdoira.cliUsage"
+msgstr ""
+"Kullanım:\n"
+"{$scriptName} {$pluginName} export [xmlFileName] [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...\n"
+"{$scriptName} {$pluginName} register [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...\n"
+""
+
+msgid "plugins.importexport.opdoira.intro"
+msgstr ""
+"DOI'leri .opdoira. ile kaydetmek istiyorsanız, lütfen kullanıcı adı ve şifre "
+"almak için <a href=\"https://ra.publications.europa.eu/doi_howto.htm\" target=\"_blank\""
+">.opdoira. Ana Sayfasın</a>daki talimatları izleyin. Eğer kendi kullanıcı adınız "
+"ve şifreniz yoksa, .opdoira. XML biçimine (DOI için Onix) aktarma imkanınız "
+"olacaktır, bu durumda DOI'lerinizi .opdoira.'ya OJS içinden kaydedemezsiniz. "
+"Şifrenin .opdoira. kayıt hizmeti gereksinimleri nedeniyle düz metin (şifreli "
+"değil) olarak kaydedileceğini lütfen unutmayın."
+
+msgid "plugins.importexport.opdoira.settings.form.publicationCountry"
+msgstr "Lütfen .opdoira.'ya 'yayınlan ülkeyi' olarak bildirilecek ülkeyi seçiniz."
+
+#, fuzzy
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs"
+msgstr ""
+"Lütfen sayıları <a href=\"https://ra.publications.europa.eu/metada_specs.htm\" target="
+"\"_blank\">\"iş\" veya \"görünüm\"</a> olarak dışa aktarmak isteyip "
+"istemediğinizi belirtin."
+
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs.label"
+msgstr "Sayıları şu şekilde ihraç et"
+
+msgid "plugins.importexport.opdoira.settings.form.automaticRegistration.description"
+msgstr "OJS atanmış DOI'leri otomatik olarak .opdoira.'ya kaydeder. Lütfen bunu yayınlanma işleminden sonra kısa bir süre alabileceğini unutmayın. Kayıtsız tüm DOI'leri kontrol edebilirsiniz."
+
+msgid "plugins.importexport.opdoira.settings.form.testMode.description"
+msgstr "DOI kaydı için .opdoira. test API'sini (test ortamı) kullanın. Lütfen bu seçeneği yayın için kaldırmayı unutmayın."
+
+msgid "plugins.importexport.opdoira.workOrProduct"
+msgstr ""
+"Not: Makalelere atanan DOI'ler .opdoira.'ya <a href=\"https://"
+"ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">\"iş\"</a> olarak ihraç edilecek. "
+"Dizgi'lere atanan DOI'ler <a href=\"https://ra.publications.europa.eu/metada_specs."
+"htm\" target=\"_blank\">\"görünüm\"</a> olarak ihraç edilecek."
+
+msgid "plugins.importexport.opdoira.senderTask.name"
+msgstr ".opdoira. otomatik kayıt görevi"
+
+msgid "plugins.importexport.opdoira.crossref.error.description"
+msgstr "AÇIKLAMA"
+
+msgid "plugins.importexport.opdoira.crossref.error.element"
+msgstr "ELEMENT"
+
+msgid "plugins.importexport.opdoira.crossref.error.code"
+msgstr "KOD"
+
+msgid "plugins.importexport.opdoira.crossref.error.details"
+msgstr "Aşağıdaki gereksinimler karşılanmadı"
+
+msgid "plugins.importexport.opdoira.crossref.error.number"
+msgstr "Hata sayısı"
+
+msgid "plugins.importexport.opdoira.crossref.error.cause"
+msgstr ""
+"Sorun: Dosya .opdoira. ve / veya Crossref gereksinimleri açısından geçerli değil."
+
+msgid "plugins.importexport.opdoira.crossref"
+msgstr "Crossref'e aktarın. (Bu hizmet, hesabınız için etkinleştirilmelidir.)"

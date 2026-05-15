@@ -1,0 +1,23 @@
+<?php $exp = 1810367450; $val = array (
+  'domain' => NULL,
+  'plural-forms' => NULL,
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.generic.formHoneypot.displayName' => 'Form Honeypot Plugin',
+      'plugins.generic.formHoneypot.description' => 'This plugin will add a field on the user registration form and use it as a honeypot. This field will be hidden from users and an error will be presented if a bot fills out the field.  You may also select a minimum and maximum time to allow for form completion.  For example, if a bot completes the form in under 2 seconds or tries to use the same form 30 minutes (1800 seconds) later, the registration can be blocked.',
+      'plugins.generic.formHoneypot.leaveBlank' => 'Leave this blank',
+      'plugins.generic.formHoneypot.doNotUseThisField' => 'This field must be left blank: {$element}',
+      'plugins.generic.formHoneypot.invalidSessionTime' => 'Your registration has been blocked.',
+      'plugins.generic.formHoneypot.manager.formHoneypotSettings' => 'Form Honeypot Settings',
+      'plugins.generic.formHoneypot.manager.settings.description' => 'Choose a minimum time and a maximum time, in seconds. Registration attempts that are completed faster than the minimum time or slower than the maximum time are rejected. You may disable this feature by setting both limits to 0.',
+      'plugins.generic.formHoneypot.manager.settings.element' => 'Form Element',
+      'plugins.generic.formHoneypot.manager.settings.createNewElement' => 'Create a new element',
+      'plugins.generic.formHoneypot.manager.settings.minimumTime' => 'Minimum time (in seconds)',
+      'plugins.generic.formHoneypot.manager.settings.minimumTimeNumber' => 'Minimum time must be a positive numeric value.',
+      'plugins.generic.formHoneypot.manager.settings.maximumTime' => 'Maximum time (in seconds)',
+      'plugins.generic.formHoneypot.manager.settings.maximumTimeNumber' => 'Maximum time must be a positive numeric value.',
+    ),
+  ),
+);

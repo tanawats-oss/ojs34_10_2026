@@ -1,0 +1,149 @@
+# Adapted Translation for OP DOI RA plugin. Based on
+# Studiorimau <studiorimau@gmail.com>, 2021.
+# Mohamad Shabilullah <shabilhamid91@gmail.com>, 2023.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-02-09 13:48+0000\n"
+"Last-Translator: Mohamad Shabilullah <shabilhamid91@gmail.com>\n"
+"Language-Team: Malay <http://translate.pkp.sfu.ca/projects/plugins/medra/"
+"ms_MY/>\n"
+"Language: ms\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.13.1\n"
+
+msgid "plugins.importexport.opdoira.cliUsage"
+msgstr ""
+"Penggunaan:\n"
+"{$scriptName} {$pluginName} eksport [xmlFileName] [journal_path] {issue "
+"|articles|galleys} objectId1 [objectId2] ...\n"
+"{$scriptName} {$pluginName} daftar [journal_path] {issue |articles|galleys} "
+"objectId1 [objectId2] ...\n"
+
+msgid "plugins.importexport.opdoira.crossref.error.description"
+msgstr "BUTIRAN"
+
+msgid "plugins.importexport.opdoira.crossref.error.element"
+msgstr "ELEMEN"
+
+msgid "plugins.importexport.opdoira.crossref.error.code"
+msgstr "CODE"
+
+msgid "plugins.importexport.opdoira.crossref.error.details"
+msgstr "Keperluan berikut tidak dipenuhi"
+
+msgid "plugins.importexport.opdoira.crossref.error.number"
+msgstr "Bilangan ralat"
+
+msgid "plugins.importexport.opdoira.crossref.error.cause"
+msgstr ""
+"Sebab: fail tidak sah kerana tidak memenuhi keperluan OP DOI RA dan/atau "
+"Crossref."
+
+msgid "plugins.importexport.opdoira.crossref"
+msgstr ""
+"Deposit ke Crossref. (Perkhidmatan ini mesti didayakan untuk akaun anda.)"
+
+msgid "plugins.importexport.opdoira.senderTask.name"
+msgstr "tugas pendaftaran automatik OP DOI RA"
+
+msgid "plugins.importexport.opdoira.workOrProduct"
+msgstr ""
+"NB: DOI yang diberikan kepada artikel akan dieksport ke OP DOI RA sebagai <a "
+"href=\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\""
+">'berfungsi'</a>. DOI yang diberikan kepada gali akan dieksport sebagai <a "
+"href=\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\""
+">'manifestasi'</a>."
+
+msgid "plugins.importexport.opdoira.settings.form.testMode.description"
+msgstr ""
+"Gunakan API ujian OP DOI RA (testing environment) untuk pendaftaran DOI. Jangan "
+"lupa untuk membuang pilihan ini untuk produksi."
+
+msgid "plugins.importexport.opdoira.settings.form.automaticRegistration.description"
+msgstr ""
+"OJS akan mendaftarkan DOI yang ditugaskan secara automatik ke OP DOI RA. Harap "
+"maklum bahawa proses ini mungkin memerlukan sedikit masa selepas penerbitan ("
+"mis. Bergantung pada konfigurasi cronjob anda). Anda boleh memeriksa semua "
+"DOI yang tidak berdaftar."
+
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs.label"
+msgstr "Eksport terbitan sebagai"
+
+msgid "plugins.importexport.opdoira.settings.form.manifestation"
+msgstr "manifestasi"
+
+msgid "plugins.importexport.opdoira.settings.form.work"
+msgstr "karya"
+
+#, fuzzy
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs"
+msgstr ""
+"Sila pilih sama ada anda mahu mengeksport isu sebagai <a href=\"https://"
+"ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">\"berfungsi\" atau "
+"\"manifestasi\"</a>."
+
+msgid "plugins.importexport.opdoira.settings.form.publicationCountry"
+msgstr "Pilih negara yang akan diberitahu sebagai 'negara penerbitan' ke OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmailRequired"
+msgstr "Sila masukkan e-mel hubungan teknikal yang sah."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmail"
+msgstr "E-mel"
+
+msgid "plugins.importexport.opdoira.settings.form.fromNameRequired"
+msgstr "Sila masukkan orang hubungan teknikal."
+
+msgid "plugins.importexport.opdoira.settings.form.fromName"
+msgstr "Sila Hubungi"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompanyRequired"
+msgstr ""
+"Sila masukkan institusi yang secara teknikal bertanggungjawab untuk eksport "
+"DOI (mis. Institusi yang menghoskan pelayan web anda)."
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompany"
+msgstr "Institusi"
+
+msgid "plugins.importexport.opdoira.settings.form.fromFields"
+msgstr "Orang yang akan dihubungi oleh OP DOI RA sekiranya ada pertanyaan teknikal:"
+
+msgid "plugins.importexport.opdoira.settings.form.registrantNameRequired"
+msgstr "Sila masukkan institusi yang didaftarkan di OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.registrantName"
+msgstr "Nama institusi yang didaftarkan di OP DOI RA"
+
+msgid "plugins.importexport.opdoira.settings.form.usernameRequired"
+msgstr ""
+"Sila masukkan nama pengguna OP DOI RA anda. Nama pengguna mungkin tidak "
+"mengandungi kolon."
+
+msgid "plugins.importexport.opdoira.settings.form.username"
+msgstr "Nama pengguna"
+
+msgid "plugins.importexport.opdoira.settings.form.description"
+msgstr "Sila konfigurasikan plugin eksport OP DOI RA:"
+
+msgid "plugins.importexport.opdoira.intro"
+msgstr ""
+"Jika anda ingin mendaftar DOI dengan OP DOI RA, sila ikut arahan pada <a href="
+"\"https://ra.publications.europa.eu/doi_howto.htm\" target=\"_blank\">laman utama OP DOI RA</"
+"a> untuk menerima nama pengguna dan kata laluan.\n"
+"Jika anda tidak mempunyai nama pengguna dan kata laluan anda sendiri, anda "
+"masih boleh mengeksport ke dalam format XML OP DOI RA (Onix untuk DOI) tetapi "
+"anda tidak boleh mendaftarkan DOI anda dengan OP DOI RA dari dalam OJS.\n"
+"Sila ambil perhatian bahawa kata laluan akan disimpan sebagai teks biasa, "
+"iaitu tidak disulitkan, disebabkan oleh keperluan perkhidmatan pendaftaran "
+"OP DOI RA."
+
+msgid "plugins.importexport.opdoira.description"
+msgstr ""
+"Eksport terbitan, artikel dan metadata galley dalam format Onix untuk DOI "
+"(O4DOI) dan daftarkan DOI dengan agensi pendaftaran OP DOI RA."
+
+msgid "plugins.importexport.opdoira.displayName"
+msgstr "Plugin Eksport/Pendaftaran OP DOI RA"
