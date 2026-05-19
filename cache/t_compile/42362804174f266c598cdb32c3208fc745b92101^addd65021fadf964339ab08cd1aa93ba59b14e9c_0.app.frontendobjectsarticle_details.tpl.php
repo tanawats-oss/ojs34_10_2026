@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2026-05-15 07:55:40
+/* Smarty version 4.3.1, created on 2026-05-19 02:13:55
   from 'app:frontendobjectsarticle_details.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6a06d17cddfed0_85520128',
+  'unifunc' => 'content_6a0bc76335c1d8_43044291',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/objects/galley_link.tpl' => 2,
   ),
 ),false)) {
-function content_6a06d17cddfed0_85520128 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a0bc76335c1d8_43044291 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <?php if (!$_smarty_tpl->tpl_vars['heading']->value) {?>
  	<?php $_smarty_tpl->_assignInScope('heading', "h3");?>
  <?php }?>

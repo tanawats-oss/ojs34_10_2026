@@ -1,0 +1,29 @@
+<?php $exp = 1810690457; $val = array (
+  'domain' => NULL,
+  'plural-forms' => NULL,
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'emails.datasetDeleteNotification.name' => 'Dataset deletion notification',
+      'emails.datasetDeleteNotification.description' => 'Email template used to notify the author about the research data deleting.',
+      'emails.datasetDeleteNotification.subject' => 'Research data delete notification',
+      'emails.datasetDeleteNotification.body' => 'The research data from the manuscript submission "{$submissionTitle}" has been removed from the {$dataverseName} repository.<br />
+<br />
+One of the possible reasons for this is that the submitted files do not qualify as research data.<br />
+<br />
+Access the submission and review the data statement options in the <a href="{$dataStatementUrl}"> Data Statement </a> tab.',
+      'emails.dataverseTokenExpiration.name' => 'Dataverse API Key Expiration',
+      'emails.dataverseTokenExpiration.description' => 'Email template to notify the administrator about the Dataverse API key expiration',
+      'emails.dataverseTokenExpiration.subject' => 'Dataverse API Key Expiration',
+      'emails.dataverseTokenExpiration.body' => 'Dear Administrator of <em>{$contextName}</em><br />
+<br />
+The token that enables integration between <em>{$contextName}</em> and the Dataverse repository <em>{$dataverseName}</em> will expire in {$keyExpirationDate}.<br />
+<br />
+To ensure that the integration between the platforms continues to work correctly, make sure to generate a new token and update it in the Dataverse plugin settings before {$keyExpirationDate}.<br />
+<br />
+If you have any questions, please contact the technical support team that maintains the platforms.<br />
+',
+    ),
+  ),
+);

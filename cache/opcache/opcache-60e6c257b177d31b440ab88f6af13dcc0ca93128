@@ -1,0 +1,16 @@
+<?php $exp = 1810690457; $val = array (
+  'domain' => NULL,
+  'plural-forms' => NULL,
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.generic.authorsHistory.displayName' => 'Authors History',
+      'plugins.generic.authorsHistory.description' => 'This plugin adds a tab in the submission view, where all submissions from the contributors are filled',
+      'plugins.generic.authorsHistory.pages' => 'Page(s)',
+      'plugins.generic.authorsHistory.noORCID' => 'No ORCID given',
+      'plugins.generic.authorsHistory.noPublications' => 'No submissions were found with this ORCID or e-mail',
+      'plugins.generic.authorsHistory.orcid' => 'ORCID',
+    ),
+  ),
+);

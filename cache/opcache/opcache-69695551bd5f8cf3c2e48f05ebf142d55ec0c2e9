@@ -1,0 +1,13 @@
+<?php $exp = 1810690457; $val = array (
+  'domain' => NULL,
+  'plural-forms' => NULL,
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.block.keywordCloud.displayName' => 'Keyword Cloud Block',
+      'plugins.block.keywordCloud.description' => 'This plugin provides a tag cloud of article keywords.',
+      'plugins.block.keywordCloud.title' => 'Keywords',
+    ),
+  ),
+);
