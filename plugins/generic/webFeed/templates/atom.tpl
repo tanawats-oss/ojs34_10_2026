@@ -70,7 +70,7 @@
 						{/foreach}{* summary identifiers *}
 						&lt;br /&gt;
 					{/if}
-					{$publication->getLocalizedData('abstract')|strip|escape:"html"}
+					{$publication->getLocalizedData('abstract')|default:""|strip|escape:"html"}
 				</summary>
 			{/if}
 

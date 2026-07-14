@@ -1,0 +1,49 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@layer components {
+	input {
+		@apply rounded-md;
+		@apply border-gray-300;
+		@apply shadow-sm;
+		@apply focus:border-indigo-300;
+		@apply focus:ring;
+		@apply focus:ring-indigo-200;
+		@apply focus:ring-opacity-50;
+	}
+}
+
+@layer base {
+	@font-face {
+		font-family: 'Comic Sans';
+		src: url('../../fonts/ComicSans-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Comic Neue';
+		src: url('../../fonts/ComicNeue-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Cardo';
+		src: url('../../fonts/Cardo-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Cormorant';
+		src: url('../../fonts/Cormorant-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Old Standard TT';
+		src: url('../../fonts/OldStandardTT-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: 'Roboto Serif';
+		src: url('../../fonts/RobotoSerif-VariableFont.ttf');
+	}
+}

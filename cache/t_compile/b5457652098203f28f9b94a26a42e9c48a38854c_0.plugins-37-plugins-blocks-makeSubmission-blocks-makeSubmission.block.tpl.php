@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2026-05-19 02:09:18
+/* Smarty version 4.3.1, created on 2026-07-14 08:18:00
   from 'plugins-37-plugins-blocks-makeSubmission-blocks-makeSubmission:block.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6a0bc64ec70496_17069266',
+  'unifunc' => 'content_6a55f0b8197a25_47238705',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6a0bc64ec70496_17069266 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a55f0b8197a25_47238705 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="pkp_block block_make_submission">
 	<h2 class="pkp_screen_reader">
 		<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"plugins.block.makeSubmission.linkLabel"),$_smarty_tpl ) );?>

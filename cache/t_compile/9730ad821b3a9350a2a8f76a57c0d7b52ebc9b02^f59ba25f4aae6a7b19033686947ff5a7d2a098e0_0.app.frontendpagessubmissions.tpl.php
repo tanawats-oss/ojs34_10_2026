@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2026-05-19 02:39:00
+/* Smarty version 4.3.1, created on 2026-07-14 08:22:16
   from 'app:frontendpagessubmissions.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6a0bcd44818ba0_07772188',
+  'unifunc' => 'content_6a55f1b842edc2_32777110',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'core:frontend/pages/submissions.tpl' => 1,
   ),
 ),false)) {
-function content_6a0bcd44818ba0_07772188 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6a55f1b842edc2_32777110 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_capture->open($_smarty_tpl, 'default', "submissionChecklistAfterContent", null);?>
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['sections']->value, 'section');

@@ -1,0 +1,38 @@
+<?php $exp = 1815552783; $val = array (
+  'domain' => NULL,
+  'plural-forms' => NULL,
+  'messages' => 
+  array (
+    '' => 
+    array (
+      'plugins.themes.material.name' => 'Material Theme',
+      'plugins.themes.material.description' => 'This theme implements the material theme.',
+      'plugins.themes.material.option.font.label' => 'Font',
+      'plugins.themes.material.option.colour.label' => 'Colour',
+      'plugins.themes.material.option.colour.description' => 'Choose a colour for the header.',
+      'plugins.themes.material.option.showDescriptionInJournalIndex.option' => 'Show the journal summary on the homepage.',
+      'plugins.themes.material.option.useHomepageImageAsHeader.label' => 'Header Background Image',
+      'plugins.themes.material.option.useHomepageImageAsHeader.description' => 'When a homepage image has been uploaded, display it in the background of the header instead of it\'s usual position on the homepage.',
+      'plugins.themes.material.option.useHomepageImageAsHeader.option' => 'Show the homepage image as the header background.',
+      'plugins.themes.material.option.displayStats.label' => 'Usage statistics display options',
+      'plugins.themes.material.option.displayStats.none' => 'Do not display submission usage statistics chart for reader.',
+      'plugins.themes.material.option.displayStats.bar' => 'Use bar type of the chart for usage statistics display.',
+      'plugins.themes.material.option.displayStats.line' => 'Use line type of the chart for usage statistics display.',
+      'plugins.themes.material.displayStats.monthInitials' => 'Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec',
+      'plugins.themes.material.displayStats.downloads' => 'Downloads',
+      'plugins.themes.material.displayStats.noStats' => 'Download data is not yet available.',
+      'plugins.themes.material.makeSubmission' => 'Send article',
+      'plugins.themes.material.option.disablePrefixAndTitle.label' => 'Disable article title prefix',
+      'plugins.themes.material.option.disablePrefixAndTitle.description' => 'Disable article title prefix.',
+      'plugins.themes.material.option.disablePrefixAndTitle.option' => 'Disable article title prefix.',
+      'plugins.themes.material.option.disableArticleSubtitle.label' => 'Disable article subtitle',
+      'plugins.themes.material.option.disableArticleSubtitle.description' => 'Disable article subtitle.',
+      'plugins.themes.material.option.disableArticleSubtitle.option' => 'Disable article subtitle.',
+      'plugins.themes.material.option.issueArchiveColumns.label' => 'Number of columns in Issue Archive page',
+      'plugins.themes.material.option.issueArchiveColumns.description' => 'Insert number of columns, the value should be positive number',
+      'plugins.themes.material.option.primaryMenu.label' => 'Primary menu',
+      'plugins.themes.material.option.primaryMenu.vertical' => 'Vertical',
+      'plugins.themes.material.option.primaryMenu.horizontal' => 'Horizontal',
+    ),
+  ),
+);

@@ -96,7 +96,9 @@ class WebFeedGatewayPlugin extends GatewayPlugin
         $submissions = $submissions->getMany();
         $latestDate ??= $submissions->first()?->getData('lastModified');
         $submissions = $submissions->map(fn (Submission $submission) => ['submission' => $submission, 'identifiers' => $this->getIdentifiers($submission)]);
-        $userGroups = UserGroup::withContextIds([$context->getId()])->get();
+       $userGroups = Repo::userGroup()->getCollector()
+    ->filterByContextIds([$context->getId()])
+    ->getMany();
 
         $applicationIdentifier = strtolower(preg_replace('/[^a-z]/i', '', Application::getName()));
         TemplateManager::getManager($request)
@@ -135,7 +137,7 @@ class WebFeedGatewayPlugin extends GatewayPlugin
                     'feedUrl' => $request->getRequestUrl(),
                     'userGroups' => $userGroups,
                     'includeIdentifiers' => $includeIdentifiers,
-                    'language' => LocaleConversion::toBcp47(Locale::getLocale()),
+                    'language' => str_replace(['_', '@'], '-', Locale::getLocale()),
                 ]
             )
             ->setHeaders(['content-type: ' . static::FEED_MIME_TYPE[$feedType] . '; charset=utf-8'])

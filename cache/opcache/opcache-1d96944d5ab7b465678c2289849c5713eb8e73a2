@@ -1,4 +1,4 @@
-<?php $exp = 1779240798; $val = array (
+<?php $exp = 1784103183; $val = array (
   'PKP\\observers\\events\\SubmissionDeleted' => 
   array (
     0 => 'PKP\\observers\\listeners\\RemoveSubmissionFromSearchIndex@handle',
