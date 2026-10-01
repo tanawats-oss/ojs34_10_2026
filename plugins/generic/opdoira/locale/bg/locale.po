@@ -1,0 +1,150 @@
+# Adapted Translation for OP DOI RA plugin. Based on
+# Cyril Kamburov <cc@intermedia.bg>, 2022.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-08-18 18:33+0000\n"
+"Last-Translator: Cyril Kamburov <cc@intermedia.bg>\n"
+"Language-Team: Bulgarian <http://translate.pkp.sfu.ca/projects/plugins/medra/"
+"bg_BG/>\n"
+"Language: bg_BG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13.1\n"
+
+msgid "plugins.importexport.opdoira.description"
+msgstr ""
+"Експортиране на метаданни за брой , статия и оформление във формат Onix за "
+"DOI (O4DOI) и регистриране на DOI в агенцията за регистрация на OP DOI RA."
+
+msgid "plugins.importexport.opdoira.displayName"
+msgstr "Добавка (плъгин) за OP DOI RA Експорт/Регистрация"
+
+msgid "plugins.importexport.opdoira.cliUsage"
+msgstr ""
+"Употреба: \n"
+"{$scriptName} {$pluginName} export [xmlFileName] [journal_path] "
+"{issues|articles|galleys} objectId1 [objectId2] ...\n"
+"{$scriptName} {$pluginName} register [journal_path] {issues|articles|galleys}"
+" objectId1 [objectId2] ...\n"
+
+msgid "plugins.importexport.opdoira.crossref.error.description"
+msgstr "ОПИСАНИЕ"
+
+msgid "plugins.importexport.opdoira.crossref.error.element"
+msgstr "ЕЛЕМЕНТ"
+
+msgid "plugins.importexport.opdoira.crossref.error.code"
+msgstr "КОД"
+
+msgid "plugins.importexport.opdoira.crossref.error.details"
+msgstr "Не бяха изпълнени следните изисквания"
+
+msgid "plugins.importexport.opdoira.crossref.error.number"
+msgstr "Брой грешки"
+
+msgid "plugins.importexport.opdoira.crossref.error.cause"
+msgstr ""
+"Причина: файлът не е валиден по отношение на изискванията на OP DOI RA и/или "
+"Crossref."
+
+msgid "plugins.importexport.opdoira.crossref"
+msgstr ""
+"Депозит към Crossref. (Тази услуга трябва да е активирана за вашия акаунт.)"
+
+msgid "plugins.importexport.opdoira.senderTask.name"
+msgstr "Задача за автоматична регистрация в OP DOI RA"
+
+msgid "plugins.importexport.opdoira.workOrProduct"
+msgstr ""
+"NB: DOI, присвоени на статии, ще бъдат експортирани в OP DOI RA като <a href="
+"\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'работи - "
+"works'</a>. DOI, присвоени на типографии, ще бъдат експортирани като <a href="
+"\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'изгледи - "
+"manifestations'</a>."
+
+msgid "plugins.importexport.opdoira.settings.form.testMode.description"
+msgstr ""
+"Използвайте тестовия API на OP DOI RA (среда за тестване) за регистрация на DOI. "
+"Моля, не забравяйте да премахнете тази опция за работа в реална среда."
+
+msgid "plugins.importexport.opdoira.settings.form.automaticRegistration.description"
+msgstr ""
+"OJS ще регистрира автоматично присвоени DOI в OP DOI RA. Моля, имайте предвид, "
+"че това може да отнеме кратко време след публикуването за обработка (напр. в "
+"зависимост от конфигурацията на cronjob). Можете да проверите за всички "
+"нерегистрирани DOI."
+
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs.label"
+msgstr "Експортиране на броеве като"
+
+msgid "plugins.importexport.opdoira.settings.form.manifestation"
+msgstr "изглед (manifestation)"
+
+msgid "plugins.importexport.opdoira.settings.form.work"
+msgstr "работа (work)"
+
+#, fuzzy
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs"
+msgstr ""
+"Моля, изберете дали искате да експортирате броеве като <a href=\"https://ra."
+"publications.europa.eu/metada_specs.htm\" target=\"_blank\">\"работи - works\" или "
+"\"изгледи - manifestations\"</a>."
+
+msgid "plugins.importexport.opdoira.settings.form.publicationCountry"
+msgstr ""
+"Моля, изберете държавата, която да бъде подадена като „държава на публикация“"
+" към OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmailRequired"
+msgstr "Моля, въведете валиден имейл за технически контакт."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmail"
+msgstr "Имейл"
+
+msgid "plugins.importexport.opdoira.settings.form.fromNameRequired"
+msgstr "Моля, въведете лице за технически контакт."
+
+msgid "plugins.importexport.opdoira.settings.form.fromName"
+msgstr "Лице за контакт"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompanyRequired"
+msgstr ""
+"Моля, въведете институцията, която е технически отговорна за експортирането "
+"на DOI (напр. институцията, която хоства вашия уеб сървър)."
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompany"
+msgstr "Институция"
+
+msgid "plugins.importexport.opdoira.settings.form.fromFields"
+msgstr "Лице, с което OP DOI RA ще се свърже в случай на технически запитвания:"
+
+msgid "plugins.importexport.opdoira.settings.form.registrantNameRequired"
+msgstr "Моля, въведете институцията, която е регистрирана в OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.registrantName"
+msgstr "Името на институцията, регистрирана в OP DOI RA"
+
+msgid "plugins.importexport.opdoira.settings.form.usernameRequired"
+msgstr ""
+"Моля, въведете вашето потребителско име за OP DOI RA. Потребителското име не "
+"може да съдържа двоеточия."
+
+msgid "plugins.importexport.opdoira.settings.form.description"
+msgstr "Моля, конфигурирайте OP DOI RA добавката (плъгин) за експортиране:"
+
+msgid "plugins.importexport.opdoira.intro"
+msgstr ""
+"Ако искате да регистрирате DOI с OP DOI RA, моля, следвайте указанията на <a "
+"href=\"https://ra.publications.europa.eu/doi_howto.htm\" target=\"_blank\">страницата на "
+"OP DOI RA</a> за да получите потребителско име и парола. \n"
+"Ако нямате собствено потребителско име и парола, която все още ще можете да "
+"експортирате във формат OP DOI RA XML (Onix за DOI) но не можете да регистрирате "
+"вашите DOI с OP DOI RA от OJS. \n"
+"Моля, имайте предвид, че паролата ще бъде запазена като обикновен текст, "
+"т.е. не е криптирана, поради изискванията на услугата за регистрация на "
+"OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.username"
+msgstr "Потребител"

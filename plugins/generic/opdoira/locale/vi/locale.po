@@ -1,0 +1,125 @@
+# Adapted Translation for OP DOI RA plugin. Based on
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-04-29 07:38+0000\n"
+"Last-Translator: Tran Ngoc Trung <khuchatthienduong@gmail.com>\n"
+"Language-Team: Vietnamese <http://translate.pkp.sfu.ca/projects/ojs/"
+"importexport-medra/vi_VN/>\n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+msgid "plugins.importexport.opdoira.settings.form.automaticRegistration.description"
+msgstr ""
+"OJS sẽ tự động đăng ký DOIs được gán cho OP DOI RA. Xin lưu ý rằng việc này có "
+"thể mất một khoảng thời gian ngắn sau khi xuất bản để xử lý (ví dụ: tùy "
+"thuộc vào cấu hình cronjob của bạn). Bạn có thể kiểm tra tất cả các DOI chưa "
+"đăng ký."
+
+msgid "plugins.importexport.opdoira.settings.form.testMode.description"
+msgstr ""
+"Sử dụng API thử nghiệm OP DOI RA (môi trường thử nghiệm) để đăng ký DOI. Xin "
+"đừng quên loại bỏ tùy chọn này khi xuất bản."
+
+msgid "plugins.importexport.opdoira.workOrProduct"
+msgstr ""
+"NB: DOIs được gán cho các bài viết sẽ được xuất sang OP DOI RA như <a href=\""
+"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'works'</a>. "
+"DOIs assigned to galleys will be exported as <a href=\"https://"
+"ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'manifestations'</a>."
+
+msgid "plugins.importexport.opdoira.senderTask.name"
+msgstr "nhiệm vụ đăng ký tự động OP DOI RA"
+
+msgid "plugins.importexport.opdoira.cliUsage"
+msgstr ""
+"Usage: \n"
+"{$scriptName} {$pluginName} xuất [xmlFileName] [journal_path] "
+"{issues|articles|galleys} objectId1 [objectId2] ...\n"
+"{$scriptName} {$pluginName} đăng ký [journal_path] {issues|articles|galleys} "
+"objectId1 [objectId2] ...\n"
+
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs.label"
+msgstr "Các số xuất như"
+
+msgid "plugins.importexport.opdoira.settings.form.manifestation"
+msgstr "Manifestation"
+
+msgid "plugins.importexport.opdoira.settings.form.work"
+msgstr "Work"
+
+#, fuzzy
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs"
+msgstr ""
+"Vui lòng chọn xem bạn có muốn xuất các số như <a href=\"https://"
+"ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'works' or 'manifestations'</a>."
+
+msgid "plugins.importexport.opdoira.settings.form.publicationCountry"
+msgstr ""
+"Vui lòng chọn quốc gia để được thông báo là 'quốc gia xuất bản' cho OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmailRequired"
+msgstr "Vui lòng nhập email liên hệ kỹ thuật hợp lệ."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmail"
+msgstr "E-mail"
+
+msgid "plugins.importexport.opdoira.settings.form.fromNameRequired"
+msgstr "Vui lòng nhập một người liên hệ kỹ thuật."
+
+msgid "plugins.importexport.opdoira.settings.form.fromName"
+msgstr "Người liên hệ"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompanyRequired"
+msgstr ""
+"Vui lòng nhập tổ chức chịu trách nhiệm về mặt kỹ thuật cho xuất DOI (ví dụ: "
+"tổ chức lưu trữ máy chủ web của bạn)."
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompany"
+msgstr "Tổ chức"
+
+msgid "plugins.importexport.opdoira.settings.form.fromFields"
+msgstr "Người được OP DOI RA liên hệ trong trường hợp có thắc mắc về kỹ thuật:"
+
+msgid "plugins.importexport.opdoira.settings.form.registrantNameRequired"
+msgstr "Vui lòng nhập tổ chức được đăng ký tại OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.registrantName"
+msgstr "Tên của tổ chức đăng ký tại OP DOI RA"
+
+msgid "plugins.importexport.opdoira.settings.form.usernameRequired"
+msgstr ""
+"Vui lòng nhập username OP DOI RA của bạn. Username có thể không chứa dấu hai "
+"chấm."
+
+msgid "plugins.importexport.opdoira.settings.form.username"
+msgstr "Tên người dùng (username)"
+
+msgid "plugins.importexport.opdoira.settings.form.description"
+msgstr "Vui lòng cấu hình plugin xuất OP DOI RA:"
+
+msgid "plugins.importexport.opdoira.intro"
+msgstr ""
+"\n"
+"\t\tNếu bạn muốn đăng ký DOIs với OP DOI RA, vui lòng làm theo hướng dẫn trên\n"
+"\t\t<a href=\"https://ra.publications.europa.eu/doi_howto.htm\" target=\"_blank\">Trang "
+"chủ OP DOI RA</a>\n"
+"\t\tđể nhận username và mật khẩu. Nếu bạn không có username và mật khẩu của "
+"riêng bạn\n"
+"\t\tbạn vẫn có thể xuất sang định dạng OP DOI RA XML (Onix cho DOI)\n"
+"\t\tnhưng bạn không thể đăng ký DOIs của mình với OP DOI RA từ trong OJS.\n"
+"\t\tXin lưu ý rằng mật khẩu sẽ được lưu dưới dạng văn bản thuần, tức là "
+"không được mã hóa, do\n"
+"\t\tcác yêu cầu dịch vụ đăng ký OP DOI RA.\n"
+"\t"
+
+msgid "plugins.importexport.opdoira.description"
+msgstr ""
+"Xuất số, siêu dữ liệu bài báo và bản in ở định dạng Onix cho định dạng DOI "
+"(O4DOI) và đăng ký DOIs với cơ quan đăng ký OP DOI RA."
+
+msgid "plugins.importexport.opdoira.displayName"
+msgstr "Plugin đăng ký/xuất OP DOI RA"

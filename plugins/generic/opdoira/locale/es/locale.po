@@ -1,0 +1,135 @@
+# Adapted Translation for OP DOI RA plugin. Based on
+# Jordi LC <jordi.lacruz@uab.cat>, 2021, 2024.
+# Marc Bria <marc.bria@gmail.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19T11:05:41+00:00\n"
+"PO-Revision-Date: 2024-04-20 03:00+0000\n"
+"Last-Translator: Jordi LC <jordi.lacruz@uab.cat>\n"
+"Language-Team: Spanish <http://translate.pkp.sfu.ca/projects/plugins/medra/"
+"es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.18.2\n"
+
+msgid "plugins.importexport.opdoira.displayName"
+msgstr "Módulo de exportación/registro de OP DOI RA"
+
+msgid "plugins.importexport.opdoira.description"
+msgstr "Exportar metadatos de un número, un artículo y una galerada en formato Onix para DOI (O4DOI) y registrar los DOI en la agencia de registro OP DOI RA."
+
+msgid "plugins.importexport.opdoira.intro"
+msgstr ""
+"Si desea registrar los DOI con OP DOI RA, siga las instrucciones de la <a href="
+"\"https://ra.publications.europa.eu/doi_howto.htm\" target=\"_blank\">página de inicio de "
+"OP DOI RA</a> para recibir un nombre de usuario/a y una contraseña.\n"
+"Si no dispone de nombre de usuario/a y contraseña también podrá exportar en "
+"formato XML OP DOI RA (Onix para DOI), pero no podrá registrar sus DOI en OP DOI RA "
+"desde OJS.\n"
+"Tenga en cuenta que su contraseña se guardará como texto sin formato, es "
+"decir, sin encriptar, debido a los requisitos del servicio de registro en "
+"OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.description"
+msgstr "Configure el módulo de exportación OP DOI RA:"
+
+msgid "plugins.importexport.opdoira.settings.form.username"
+msgstr "Nombre de usuario/a"
+
+msgid "plugins.importexport.opdoira.settings.form.usernameRequired"
+msgstr ""
+"Introduzca su nombre de usuario/a OP DOI RA. El nombre de usuario/a no puede "
+"contener dos puntos."
+
+msgid "plugins.importexport.opdoira.settings.form.registrantName"
+msgstr "Nombre de la institución registrada en OP DOI RA"
+
+msgid "plugins.importexport.opdoira.settings.form.registrantNameRequired"
+msgstr "Introduzca la institución registrada en OP DOI RA."
+
+msgid "plugins.importexport.opdoira.settings.form.fromFields"
+msgstr "Persona de contacto en caso de que OP DOI RA realice consultas técnicas:"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompany"
+msgstr "Institución"
+
+msgid "plugins.importexport.opdoira.settings.form.fromCompanyRequired"
+msgstr ""
+"Introduzca la institución responsable técnicamente de la exportación DOI (p. "
+"ej. la institución que hospeda el servidor web)."
+
+msgid "plugins.importexport.opdoira.settings.form.fromName"
+msgstr "Persona de contacto"
+
+msgid "plugins.importexport.opdoira.settings.form.fromNameRequired"
+msgstr "Introduzca una persona técnica de contacto."
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmail"
+msgstr "Correo electrónico"
+
+msgid "plugins.importexport.opdoira.settings.form.fromEmailRequired"
+msgstr "Introduzca un correo electrónico de contacto técnico válido."
+
+msgid "plugins.importexport.opdoira.settings.form.publicationCountry"
+msgstr "Elija el país que aparecerá como 'país de publicación' en OP DOI RA."
+
+#, fuzzy
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs"
+msgstr "Elija si desea exportar los números como <a href=\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'obras' o 'manifestaciones'</a>."
+
+msgid "plugins.importexport.opdoira.settings.form.work"
+msgstr "Obra"
+
+msgid "plugins.importexport.opdoira.settings.form.manifestation"
+msgstr "Manifestación"
+
+msgid "plugins.importexport.opdoira.workOrProduct"
+msgstr "Nota: Los DOI asignados a los artículos se exportarán a OP DOI RA como <a href=\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'obras'</a>. Los DOI asignados a las galeradas se exportarán como <a href=\"https://ra.publications.europa.eu/metada_specs.htm\" target=\"_blank\">'manifestación'</a>."
+
+msgid "plugins.importexport.opdoira.cliUsage"
+msgstr ""
+"Uso:\n"
+"{$scriptName} {$pluginName} export [xmlFileName] [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...\n"
+"{$scriptName} {$pluginName} register [journal_path] {issues|articles|galleys} objectId1 [objectId2] ...\n"
+""
+
+msgid "plugins.importexport.opdoira.settings.form.exportIssuesAs.label"
+msgstr "Los números se exportan como"
+
+msgid "plugins.importexport.opdoira.settings.form.automaticRegistration.description"
+msgstr "OJS registrará automáticamente los DOI en OP DOI RA. Tenga en cuenta que este proceso puede llevar un poco de tiempo tras la publicación (p. ej., en función de la configuración cron). Puede comprobar todos los DOI que no se han registrado."
+
+msgid "plugins.importexport.opdoira.settings.form.testMode.description"
+msgstr "Utilice la API de prueba OP DOI RA (entorno de prueba) para registrar los DOI. No olvide desactivar esta opción en la versión de producción."
+
+msgid "plugins.importexport.opdoira.senderTask.name"
+msgstr "Tarea de registro automático de OP DOI RA"
+
+msgid "plugins.importexport.opdoira.crossref.error.description"
+msgstr "DESCRIPCIÓN"
+
+msgid "plugins.importexport.opdoira.crossref.error.element"
+msgstr "ELEMENTO"
+
+msgid "plugins.importexport.opdoira.crossref.error.code"
+msgstr "CÓDIGO"
+
+msgid "plugins.importexport.opdoira.crossref.error.details"
+msgstr "No se han alcanzado los siguientes requisitos"
+
+msgid "plugins.importexport.opdoira.crossref.error.number"
+msgstr "Número de errores"
+
+msgid "plugins.importexport.opdoira.crossref.error.cause"
+msgstr ""
+"Causa: el archivo no es válido con respecto a los requerimientos de OP DOI RA y/"
+"o Crossref."
+
+msgid "plugins.importexport.opdoira.crossref"
+msgstr ""
+"Depositar en Crossref (es necesaria una cuenta para disfrutar del servicio)"

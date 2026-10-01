@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filterConfig SYSTEM "../../../../lib/pkp/dtd/filterConfig.dtd">
+
+<!--
+  * plugins/generic/opdoira/filter/filterConfig.xml
+  *
+  * Copyright (c) 2014-2024 Simon Fraser University
+  * Copyright (c) 2003-2024 John Willinsky
+  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+  *
+  * Filter Configuration.
+  -->
+<filterConfig>
+    <filterGroups>
+        <!-- OP DOI RA XML issue output -->
+        <filterGroup
+            symbolic="issue=>opdoira-xml"
+            displayName="plugins.importexport.opdoira.displayName"
+            description="plugins.importexport.opdoira.description"
+            inputType="class::classes.issue.Issue[]"
+            outputType="xml::schema(http://ra.publications.europa.eu/schema/onix/DOIMetadata/2.0/ONIX_DOIMetadata_2.0.xsd)" />
+        <!-- OP DOI RA XML article output -->
+        <filterGroup
+            symbolic="article=>opdoira-xml"
+            displayName="plugins.importexport.opdoira.displayName"
+            description="plugins.importexport.opdoira.description"
+            inputType="class::classes.submission.Submission[]"
+            outputType="xml::schema(http://ra.publications.europa.eu/schema/onix/DOIMetadata/2.0/ONIX_DOIMetadata_2.0.xsd)" />
+    </filterGroups>
+    <filters>
+        <!-- OP DOI RA XML issue output -->
+        <filter
+            inGroup="issue=>opdoira-xml"
+            class="APP\plugins\generic\opdoira\filter\IssueOPdoiraXmlFilter"
+            isTemplate="0" />
+        <!-- OP DOI RA XML article output -->
+        <filter
+            inGroup="article=>opdoira-xml"
+            class="APP\plugins\generic\opdoira\filter\ArticleOPdoiraXmlFilter"
+            isTemplate="0" />
+    </filters>
+</filterConfig>
