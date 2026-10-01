@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 1. หากเข้าผ่านหน้าแรก (IP เปล่าๆ) หรือ index.html/index.php ให้ Rewrite ไปที่ /ojs/ ทันที
+    RewriteRule ^$ ojs/ [L]
+    RewriteRule ^index\.(html|php)$ ojs/ [L]
+
+    # 2. ส่ง Request อื่นๆ ที่ไม่ได้อยู่ในโฟลเดอร์ /ojs/ ไปยัง /ojs/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/ojs/
+    RewriteRule ^(.*)$ ojs/$1 [L]
+</IfModule>

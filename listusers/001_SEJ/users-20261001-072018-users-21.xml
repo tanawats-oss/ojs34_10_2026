@@ -1,0 +1,2193 @@
+<?xml version="1.0"?>
+<PKPUsers xmlns="http://pkp.sfu.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca pkp-users.xsd">
+    <user_groups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pkp.sfu.ca pkp-users.xsd">
+        <user_group>
+            <role_id>16</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>true</permit_metadata_edit>
+            <name locale="en_US">Journal manager</name>
+            <abbrev locale="en_US">JM</abbrev>
+            <stage_assignments/>
+        </user_group>
+        <user_group>
+            <role_id>16</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>true</permit_metadata_edit>
+            <name locale="en_US">Journal editor</name>
+            <abbrev locale="en_US">JE</abbrev>
+            <stage_assignments>1:3:4:5</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>16</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>true</permit_metadata_edit>
+            <name locale="en_US">Production editor</name>
+            <abbrev locale="en_US">ProdE</abbrev>
+            <stage_assignments>4:5</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>17</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>true</permit_metadata_edit>
+            <name locale="en_US">Section editor</name>
+            <abbrev locale="en_US">SecE</abbrev>
+            <stage_assignments>1:3:4:5</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>17</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Guest editor</name>
+            <abbrev locale="en_US">GE</abbrev>
+            <stage_assignments>1:3:4:5</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>4097</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Copyeditor</name>
+            <abbrev locale="en_US">CE</abbrev>
+            <stage_assignments>4</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>4097</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Designer</name>
+            <abbrev locale="en_US">Design</abbrev>
+            <stage_assignments>5</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>4097</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Funding coordinator</name>
+            <abbrev locale="en_US">FC</abbrev>
+            <stage_assignments>1:3</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>4097</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Indexer</name>
+            <abbrev locale="en_US">IND</abbrev>
+            <stage_assignments>5</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>4097</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Layout Editor</name>
+            <abbrev locale="en_US">LE</abbrev>
+            <stage_assignments>5</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>4097</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Marketing and sales coordinator</name>
+            <abbrev locale="en_US">MS</abbrev>
+            <stage_assignments>4</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>4097</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Proofreader</name>
+            <abbrev locale="en_US">PR</abbrev>
+            <stage_assignments>5</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>65536</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>true</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Author</name>
+            <abbrev locale="en_US">AU</abbrev>
+            <stage_assignments>1:3:4:5</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>65536</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Translator</name>
+            <abbrev locale="en_US">Trans</abbrev>
+            <stage_assignments>1:3:4:5</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>4096</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>true</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Reviewer</name>
+            <abbrev locale="en_US">R</abbrev>
+            <stage_assignments>3</stage_assignments>
+        </user_group>
+        <user_group>
+            <role_id>1048576</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>true</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Reader</name>
+            <abbrev locale="en_US">Read</abbrev>
+            <stage_assignments/>
+        </user_group>
+        <user_group>
+            <role_id>2097152</role_id>
+            <context_id>21</context_id>
+            <is_default>true</is_default>
+            <show_title>false</show_title>
+            <permit_self_registration>false</permit_self_registration>
+            <permit_metadata_edit>false</permit_metadata_edit>
+            <name locale="en_US">Subscription Manager</name>
+            <abbrev locale="en_US">SubM</abbrev>
+            <stage_assignments/>
+        </user_group>
+    </user_groups>
+    <users>
+        <user>
+            <givenname locale="en_US">chaiporn chai</givenname>
+            <familyname locale="en_US">addoddorn</familyname>
+            <country>TH</country>
+            <email>chaiporn2517@gmail.com</email>
+            <username>chaiporn</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>9f2d3ec3cf0d10a58db0599e125406be</value>
+            </password>
+            <date_registered>2019-10-30 09:11:56</date_registered>
+            <date_last_login>2019-12-03 13:00:48</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0949039040</phone>
+            <mailing_address>&lt;span&gt;199/19 &#xE16;.&#xE21;&#xE34;&#xE15;&#xE23;&#xE20;&#xE32;&#xE1E; &#xE15;.&#xE43;&#xE19;&#xE40;&#xE21;&#xE37;&#xE2D;&#xE07; &#xE2D;.&#xE40;&#xE21;&#xE37;&#xE2D;&#xE07; &#xE08;.&#xE02;&#xE2D;&#xE19;&#xE41;&#xE01;&#xE48;&#xE19; 40000&lt;/span&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Natapat</givenname>
+            <familyname locale="en_US">Areerakulkan</familyname>
+            <affiliation locale="en_US">Dhurakij Pundit university</affiliation>
+            <email>yunpined@gmail.com</email>
+            <username>yunpined</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>942b1b66429568d549c7a0d00d80a62c</value>
+            </password>
+            <date_registered>2015-12-28 06:29:33</date_registered>
+            <date_last_login>2019-06-14 09:11:13</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Pattarapong</givenname>
+            <familyname locale="en_US">Asnachinda</familyname>
+            <country>TH</country>
+            <email>pattarapong@eng.buu.ac.th</email>
+            <biography locale="en_US">Head, Department of Civil Engineering</biography>
+            <username>pattarapong</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>b09f690a28feb4bccd6350d1eaa5b841</value>
+            </password>
+            <date_registered>2016-09-26 13:52:49</date_registered>
+            <date_last_login>2017-08-24 14:44:58</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>+66866295570</phone>
+            <mailing_address>&lt;p&gt;Dr.Pattarapong Asnachinda&lt;/p&gt;&lt;p&gt;Department of Civil Engineering&lt;/p&gt;&lt;p&gt;Faculty of Engineering, Burapha University&lt;/p&gt;&lt;p&gt;169 Long-Haad Bangsaen Beach Road, Saensuk&lt;/p&gt;&lt;p&gt;Muang, Chonburi, 20131&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Tossaporn</givenname>
+            <familyname locale="en_US">Assawarungsri</familyname>
+            <country>TH</country>
+            <email>tossaporn.as@gmail.com</email>
+            <username>porres</username>
+            <password is_disabled="true" must_change="true" encryption="">
+                <value>b29118c4ffd6a83be937a3fead7eaf5c</value>
+            </password>
+            <date_registered>2016-04-18 10:55:46</date_registered>
+            <date_last_login>2017-07-10 21:29:24</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0971820058</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Vacahrapoom</givenname>
+            <familyname locale="en_US">Benjaoran</familyname>
+            <country>TH</country>
+            <email>vacharapoom@sut.ac.th</email>
+            <username>vacharapoom</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>06a664d1ad96b0751c997b5ac8040b74</value>
+            </password>
+            <date_registered>2019-10-15 12:03:45</date_registered>
+            <date_last_login>2020-01-21 08:51:13</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">editorial</givenname>
+            <familyname locale="en_US">board</familyname>
+            <affiliation locale="en_US">&#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE28;&#xE23;&#xE35;&#xE19;&#xE04;&#xE23;&#xE34;&#xE19;&#xE17;&#xE23;&#xE27;&#xE34;&#xE42;&#xE23;&#xE12;</affiliation>
+            <country>TH</country>
+            <email>kampol@swu.ac.th</email>
+            <biography locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE44;&#xE1F;&#xE1F;&#xE49;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE28;&#xE23;&#xE35;&#xE19;&#xE04;&#xE23;&#xE34;&#xE19;&#xE17;&#xE23;&#xE27;&#xE34;&#xE42;&#xE23;&#xE12;</biography>
+            <username>kampol</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>732abd5a4669331f6300fcb272d428d2</value>
+            </password>
+            <date_registered>2015-07-01 18:16:44</date_registered>
+            <date_last_login>2021-09-18 18:54:14</date_last_login>
+            <date_last_email>2016-09-28 18:03:24</date_last_email>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Journal manager</user_group_ref>
+            <user_group_ref>Journal editor</user_group_ref>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Prin</givenname>
+            <familyname locale="en_US">Boonkanit</familyname>
+            <country>TH</country>
+            <email>prin.b@rmutp.ac.th</email>
+            <username>prin_bo</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>5082f9c63ef2bbaa61ac4990f50c2f75</value>
+            </password>
+            <date_registered>2020-03-19 13:55:33</date_registered>
+            <date_last_login>2020-07-08 10:49:52</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0879995505</phone>
+            <mailing_address>prin.b@rmutp.ac.th</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Nipon -</givenname>
+            <familyname locale="en_US">Boonkumkrong</familyname>
+            <affiliation locale="en_US">Srinakharinwirot University</affiliation>
+            <country>TH</country>
+            <email>nipon413@hotmail.com</email>
+            <username>nipon413</username>
+            <password is_disabled="true" must_change="true" encryption="">
+                <value>74e4e86ade9756447b73032b0c0bb1f3</value>
+            </password>
+            <date_registered>2018-03-06 08:23:13</date_registered>
+            <date_last_login>2019-07-14 12:49:29</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>081-344-5216</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <review_interests>, Automatic control, passivity-based control, Boundary control, Aeroelasticity</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">Thipaphan</givenname>
+            <familyname locale="en_US">Boonmee</familyname>
+            <affiliation locale="en_US">Kasetsart University Laboratory school</affiliation>
+            <country>TH</country>
+            <email>sk_1324@hotmail.com</email>
+            <biography locale="en_US">Bangkok</biography>
+            <username>thipaphan13</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>3f0b10a9c9671203765e7e9571e77b88</value>
+            </password>
+            <date_registered>2016-08-02 11:14:25</date_registered>
+            <date_last_login>2016-08-02 15:00:05</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>089-6842563</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Pracha</givenname>
+            <familyname locale="en_US">Bunyawanicahkul</familyname>
+            <country>TH</country>
+            <email>prachabu@swu.ac.th</email>
+            <username>prachabu</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>3a638760c9586e2fcdb88671ccb8d582</value>
+            </password>
+            <date_registered>2011-01-31 10:55:09</date_registered>
+            <date_last_login>2011-02-02 13:08:47</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>Department of Mechanical Engineering, Faculty of Engineer, Srinakharinwirot University, Ongkarak, Nakhonnayok</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Journal editor</user_group_ref>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Krit</givenname>
+            <familyname locale="en_US">Chaimoon</familyname>
+            <affiliation locale="en_US">Mahasarakham University</affiliation>
+            <country>TH</country>
+            <email>k.chaimoon@msu.ac.th</email>
+            <biography locale="en_US">Faculty of Engineering</biography>
+            <username>kritchaimoon</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>75fb7bf421d4698234c2cbb32cf610bf</value>
+            </password>
+            <date_registered>2016-07-02 00:13:14</date_registered>
+            <date_last_login>2019-04-01 15:37:58</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0898402515</phone>
+            <mailing_address>&lt;p&gt;&lt;span lang="TH"&gt;&#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE21;&#xE2B;&#xE32;&#xE2A;&#xE32;&#xE23;&#xE04;&#xE32;&#xE21;&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span lang="TH"&gt;&#xE15;.&#xE02;&#xE32;&#xE21;&#xE40;&#xE23;&#xE35;&#xE22;&#xE07; &#xE2D;.&#xE01;&#xE31;&#xE19;&#xE17;&#xE23;&#xE27;&#xE34;&#xE0A;&#xE31;&#xE22;&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span lang="TH"&gt;&#xE08;.&#xE21;&#xE2B;&#xE32;&#xE2A;&#xE32;&#xE23;&#xE04;&#xE32;&#xE21; &lt;/span&gt;&lt;span&gt;44150&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&#xA0;&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Adirake</givenname>
+            <familyname locale="en_US">Chainawakul</familyname>
+            <email>adirake@rmutl.ac.th</email>
+            <username>adirake</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>8afaa8f308e11a7a9b35fce99ca478f3</value>
+            </password>
+            <date_registered>2017-08-20 14:22:39</date_registered>
+            <date_last_login>2018-05-21 16:24:23</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Nuttakarn</givenname>
+            <familyname locale="en_US">Chaisomboon</familyname>
+            <affiliation locale="en_US">Faculty of Engineering, Srinakharinwirot University</affiliation>
+            <country>TH</country>
+            <email>nuttakorn@g.swu.ac.th</email>
+            <username>nuttakorn</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>222c9c3f75783668ad850b13cdb1bdcb</value>
+            </password>
+            <date_registered>2017-09-27 14:32:10</date_registered>
+            <date_last_login>2017-09-27 16:07:43</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Journal manager</user_group_ref>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">tanayut</givenname>
+            <familyname locale="en_US">chaithongrat</familyname>
+            <country>TH</country>
+            <email>Tny.ctr@gmail.com</email>
+            <username>tanayut18</username>
+            <signature locale="en_US">&#xE18;&#xE19;&#xE32;&#xE22;&#xE38;&#xE17;&#xE18; &#xE44;&#xE0A;&#xE22;&#xE18;&#xE07;&#xE23;&#xE31;&#xE15;&#xE19;&#xE4C;</signature>
+            <password is_disabled="false" must_change="false" encryption="">
+                <value>$2y$10$lMKqQr2Ss302aa4Ogs47muKkiRov4RYAAgD8IiXz25RHqKMovDPxW</value>
+            </password>
+            <date_registered>2017-12-01 00:43:07</date_registered>
+            <date_last_login>2026-09-29 14:42:17</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;span&gt;Department of Civil Engineering Khon Kaen University&lt;br /&gt;&lt;/span&gt;&lt;span class="style10"&gt;&lt;span style="color: #000000; font-size: x-small;"&gt;&lt;span&gt; Mittapap Road, Amphur Muang, Khon Kaen 40002 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</mailing_address>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Chettha</givenname>
+            <familyname locale="en_US">Chamnanlor</familyname>
+            <affiliation locale="en_US">Faculty of Engineering at Sriracha, Kasetsart University, Sriracha Campus</affiliation>
+            <country>TH</country>
+            <email>chettha@eng.src.ku.ac.th</email>
+            <username>chchamnanlor</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>524971c36ed8969c3ce06a34c504f946</value>
+            </password>
+            <date_registered>2017-09-08 16:39:10</date_registered>
+            <date_last_login>2021-06-20 00:04:51</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>038 354580 ext 2833</phone>
+            <mailing_address>199 Moo 6, Tungsukla, Sukhumvit Rd., Si Racha,&#xA0; Chonburi, 20230</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Suppakarn</givenname>
+            <familyname locale="en_US">Chansareewittaya</familyname>
+            <affiliation locale="en_US">Computer Engineering&#xD;
+School of Information Technology&#xD;
+Mae Fah Luang University</affiliation>
+            <country>TH</country>
+            <email>suppakarn.cha@mfu.ac.th</email>
+            <biography locale="en_US">&lt;p&gt;&lt;span&gt;I graduated B.Eng in Electrical Engineering from King Mongkut's Institue of Technology Ladkrabang (KMITL) in 2001. &lt;/span&gt;&lt;br /&gt;&lt;span&gt;After that, I graduated from Chiang Mai university (CMU) for M.Eng and Ph.D. in Electrical Engineering, 2007 and 2016 respectively.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;My research interests are embedded system, robotics, optimization methods, heuristics methods, power system, and other fields in electrical engineering.&lt;/span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;</biography>
+            <username>suppakarn_c</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>474b9c96b9865284fd90d100d15ae7ba</value>
+            </password>
+            <date_registered>2018-04-20 07:14:38</date_registered>
+            <date_last_login>2018-05-23 19:38:48</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>053916756</phone>
+            <mailing_address>&lt;p&gt;School of Information Technology&lt;/p&gt;&lt;p&gt;Mae Fah Luang University&lt;/p&gt;&lt;p&gt;333 M.1, Thasud, Muang&lt;/p&gt;&lt;p&gt;Chiang Rai, 57100&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+            <review_interests>Power System Analysis, Optimization technique, Electrical Engineering, Embedded system</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">Piti</givenname>
+            <familyname locale="en_US">Chantruthai</familyname>
+            <country>TH</country>
+            <email>pchantruthai@gmail.com</email>
+            <username>pipe</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>5e55e2f7987342b30b614fd1637b1cb7</value>
+            </password>
+            <date_registered>2016-07-12 15:57:14</date_registered>
+            <date_last_login>2018-12-05 18:40:20</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0812711303</phone>
+            <mailing_address>&lt;p&gt;Program of Civil Technology&lt;/p&gt;&lt;p&gt;Faculty of Industrial Technology&lt;/p&gt;&lt;p&gt;Nakhon Si Thammarat Rajabhat University&lt;/p&gt;&lt;p&gt;Muang District&lt;/p&gt;&lt;p&gt;Nakhon Si Thammarat 80280&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Soravit</givenname>
+            <familyname locale="en_US">Chotvisut</familyname>
+            <affiliation locale="en_US">Department of Mechanical Engineering Technology, Collage of Industrial Technology, King Mongkut's University of Technology North Bangkok (KMUTNB)</affiliation>
+            <email>soravit.chotvisut@gmail.com</email>
+            <username>soravitchvs</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>51293b2017c8dd3d3e337d6f18b11a40</value>
+            </password>
+            <date_registered>2017-12-18 23:14:07</date_registered>
+            <date_last_login>2018-02-10 16:27:41</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;p&gt;186/1 Soi Bangkhunnon 29, Khwaeng Bangkhunnon, Khet Bangkok Noi, Bangkok 10700&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Chokchai</givenname>
+            <familyname locale="en_US">Chuenwattanapraniti</familyname>
+            <affiliation locale="en_US">Burapha University</affiliation>
+            <email>chokchai@eng.buu.ac.th</email>
+            <username>chokchai17</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>9376026430de8d7ca24f243bd5e66255</value>
+            </password>
+            <date_registered>2016-07-14 10:13:33</date_registered>
+            <date_last_login>2016-07-14 10:13:33</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Sirikul -</givenname>
+            <familyname locale="en_US">Chunsawang</familyname>
+            <affiliation locale="en_US">Rangsit University</affiliation>
+            <country>TH</country>
+            <email>sirikul@rsu.ac.th</email>
+            <biography locale="en_US">&lt;p&gt;C&lt;em&gt;hemical Engineering Department &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;br /&gt;&lt;/em&gt;&lt;/p&gt;&lt;div&gt;&lt;em&gt;Lecturers&lt;br /&gt;&lt;/em&gt;&lt;/div&gt;</biography>
+            <username>sirikul</username>
+            <signature locale="en_US">Sirikul Chunsawang</signature>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>6db18295f586449fc4124d61f6a8ca42</value>
+            </password>
+            <date_registered>2018-11-07 17:00:53</date_registered>
+            <date_last_login>2019-04-12 07:23:46</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>08 1658 3096</phone>
+            <mailing_address>&lt;p&gt;C&lt;em&gt;hemical Engineering Department &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;College of Engineering &lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;Rangsit University Muang-Ake Paholyothin RD. Pathumthani 12000&lt;/em&gt;&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+            <review_interests>&#xE23;&#xE28;. &#xE14;&#xE23;. &#xE08;&#xE34;&#xE23;&#xE01;&#xE32;&#xE19;&#xE15;&#xE4C; &#xE40;&#xE21;&#xE37;&#xE2D;&#xE07;&#xE19;&#xE32;&#xE42;&#xE1E;&#xE18;&#xE34;&#xE4C;</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">Apichart</givenname>
+            <familyname locale="en_US">Chutpongcharoen</familyname>
+            <country>TH</country>
+            <email>s5903017810111@kmutnb.ac.th</email>
+            <username>jscombo</username>
+            <password is_disabled="false" must_change="false" encryption="">
+                <value>$2y$10$BIxmG1xVtIDa3Xq.4bIlTORaBQmel/uyG.IzdnHPhG8o.skxNJVL6</value>
+            </password>
+            <date_registered>2019-10-09 11:17:42</date_registered>
+            <date_last_login>2024-05-18 07:08:41</date_last_login>
+            <inline_help>false</inline_help>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Witthaya</givenname>
+            <familyname locale="en_US">Daodon</familyname>
+            <affiliation locale="en_US">Rajamangala University of Technology Isan, Nakhon Ratchasima</affiliation>
+            <country>TH</country>
+            <email>witthaya.da@rmuti.ac.th</email>
+            <username>witthaya_dao</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>1294de35bc70275a7a5842166c7f1bbd</value>
+            </password>
+            <date_registered>2018-06-05 13:36:40</date_registered>
+            <date_last_login>2018-07-16 18:12:38</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0-4423-3000 Ext.3330</phone>
+            <mailing_address>&lt;p&gt;Department of Industrial Engineering, Faculty of Engineering and Architecture, Rajamangala University of Technology Isan, 744 Suranarai Rd., Muang, Nakhon Ratchasima, 30000&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Patchayaporn -</givenname>
+            <familyname locale="en_US">Doungkom</familyname>
+            <affiliation locale="en_US">Department of Mechanical Engineering Faculty of Engineering Thammsat University</affiliation>
+            <country>TH</country>
+            <email>Patchayaporndoungkom@gmail.com</email>
+            <url>http://www.me.engr.tu.ac.th/</url>
+            <username>patchayaporndoungkom</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>27c53fb168ce583c5e43cd2a3835dee1</value>
+            </password>
+            <date_registered>2016-04-08 11:28:49</date_registered>
+            <date_last_login>2018-12-28 17:30:07</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>085-916-4978</phone>
+            <mailing_address>Department of Mechanical Engineering  Thammasat University, KlongLuang, Pathumthani, 12120 Thailand</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Surat</givenname>
+            <familyname locale="en_US">Hona</familyname>
+            <affiliation locale="en_US">Faculty of Engineering, Srinakharinwirot University</affiliation>
+            <country>TH</country>
+            <email>surat@g.swu.ac.th</email>
+            <username>surat</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>bf4342f9bb42fad52976b883cb6bd6d8</value>
+            </password>
+            <date_registered>2015-10-22 14:48:05</date_registered>
+            <date_last_login>2015-10-22 14:48:05</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Journal editor</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Prasopchopk</givenname>
+            <familyname locale="en_US">Hothongkham</familyname>
+            <country>TH</country>
+            <email>prasopchok.hot@gmail.com</email>
+            <username>prasopchok</username>
+            <signature locale="en_US">prasopchok</signature>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>f0a3e791cd95ca7f14141cb4aeb0d484</value>
+            </password>
+            <date_registered>2017-09-03 17:50:25</date_registered>
+            <date_last_login>2017-09-03 17:53:45</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Arnon</givenname>
+            <familyname locale="en_US">Isaramongkolrak</familyname>
+            <affiliation locale="en_US">Nakhonpathom Rajabhat University</affiliation>
+            <country>TH</country>
+            <email>anone_91@hotmail.com</email>
+            <username>anon_13057</username>
+            <signature locale="en_US">arnon</signature>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>403ab25b83e5388ba7773c86cd709746</value>
+            </password>
+            <date_registered>2018-03-17 18:21:56</date_registered>
+            <date_last_login>2018-05-24 21:29:51</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0909841082</phone>
+            <mailing_address>department of electrical engineering no. 85 malaiman road, Nakhonpathom 73000</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Srisakdi</givenname>
+            <familyname locale="en_US">Jangjit</familyname>
+            <affiliation locale="en_US">Kasetsart University Chalermphrakiat Sakon Nakhon Province Campus</affiliation>
+            <country>TH</country>
+            <email>seesak.j@hotmail.com</email>
+            <biography locale="en_US">Department of Electrical and Computer Engineering</biography>
+            <username>srisakdi</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>6bbb1a729cb5cb58ccf11c2aea1b9bcc</value>
+            </password>
+            <date_registered>2015-11-18 13:13:41</date_registered>
+            <date_last_login>2015-11-18 13:13:42</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>+6665822952</phone>
+            <mailing_address>Faculty of Science and Engineering, Kasetsart University Chalermphrakiat Sakon Nakhon Province Campus,&lt;span&gt;59 Moo 1 Cheng-Cruer Mueng District Sakon Nakhon Province,&lt;/span&gt;&lt;span&gt;THAILAND 47000&lt;/span&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+            <review_interests>Power System Analysis, Optimization technique, Electrical Machines, Power Engineering, Electrical Engineering</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">Suchart</givenname>
+            <familyname locale="en_US">Janjornmanit</familyname>
+            <affiliation locale="en_US">Chiangmai University</affiliation>
+            <country>TH</country>
+            <email>suchart@rmutl.ac.th</email>
+            <username>suchartjjmn</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>f8f7bab5c6faa8d493f664d92936a7e4</value>
+            </password>
+            <date_registered>2017-05-24 07:45:45</date_registered>
+            <date_last_login>2017-05-24 07:58:51</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0824850566</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Surachai Narrat</givenname>
+            <familyname locale="en_US">Jansri</familyname>
+            <affiliation locale="en_US">chaiyaphum rajabhat university</affiliation>
+            <country>TH</country>
+            <email>k_aew474@yahoo.com</email>
+            <username>k_aew474</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>c9c639d67ae65ebb64d3415f4e28c054</value>
+            </password>
+            <date_registered>2016-10-27 06:33:06</date_registered>
+            <date_last_login>2017-06-29 15:26:17</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;p&gt;Major of General Science, Faculty of Education, Chaiyaphum Rajabhat University&lt;/p&gt;&lt;p&gt;167 Na-Fai Muang&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">jaruwat</givenname>
+            <familyname locale="en_US">jareanjit</familyname>
+            <country>TH</country>
+            <email>j.jaruwat@gmail.com</email>
+            <username>jaruwatra</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>ac1db16bfc73f5238875dcf85016360f</value>
+            </password>
+            <date_registered>2015-11-03 13:13:26</date_registered>
+            <date_last_login>2015-12-15 22:09:40</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>086-6856747</phone>
+            <mailing_address>&lt;p&gt;&#xE1C;&#xE28;. &#xE14;&#xE23;. &#xE08;&#xE32;&#xE23;&#xE38;&#xE27;&#xE31;&#xE12;&#xE19;&#xE4C; &#xE40;&#xE08;&#xE23;&#xE34;&#xE0D;&#xE08;&#xE34;&#xE15;&lt;/p&gt;&lt;p&gt;&#xE2A;&#xE32;&#xE02;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07;&#xE01;&#xE25; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;&lt;/p&gt;&lt;p&gt;&#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE23;&#xE32;&#xE0A;&#xE21;&#xE07;&#xE04;&#xE25;&#xE28;&#xE23;&#xE35;&#xE27;&#xE34;&#xE0A;&#xE31;&#xE22; &#xE40;&#xE25;&#xE02;&#xE17;&#xE35;&#xE48; 1 &#xE16;&#xE19;&#xE19;&#xE23;&#xE32;&#xE0A;&#xE14;&#xE33;&#xE40;&#xE19;&#xE34;&#xE19;&#xE19;&#xE2D;&#xE01;&lt;/p&gt;&lt;p&gt;&#xE15;&#xE33;&#xE1A;&#xE25;&#xE1A;&#xE48;&#xE2D;&#xE22;&#xE32;&#xE07; &#xE2D;&#xE33;&#xE40;&#xE20;&#xE2D;&#xE40;&#xE21;&#xE37;&#xE2D;&#xE07; &#xE08;&#xE31;&#xE07;&#xE2B;&#xE27;&#xE31;&#xE14;&#xE2A;&#xE07;&#xE02;&#xE25;&#xE32; 90000&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+            <review_interests>Renewable Energy, Thermal Technology, Solar Energy, Energy Technology</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">Sompop -</givenname>
+            <familyname locale="en_US">Jarungthammachote</familyname>
+            <affiliation locale="en_US">Faculty of Engineering at Sriracha, Kasetsart University Sriracha campus</affiliation>
+            <country>TH</country>
+            <email>sompop.j@ku.th</email>
+            <username>sompop_j</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>deae4bbda27a9dd0a01797317a6412d8</value>
+            </password>
+            <date_registered>2016-09-12 09:03:48</date_registered>
+            <date_last_login>2017-05-16 10:37:16</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0894468216</phone>
+            <mailing_address>Faculty of Engineering at Sriracha, Sukhumvit Road, Tungsukhal, Sriracha, Chonburi</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Weeraphan</givenname>
+            <familyname locale="en_US">Jiammeepreecha</familyname>
+            <country>TH</country>
+            <email>weeraphan.ji@rmuti.ac.th</email>
+            <username>weeraphan</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>bc362c4f42b8b575f3c8878be11ad8d6</value>
+            </password>
+            <date_registered>2016-09-23 15:44:21</date_registered>
+            <date_last_login>2019-04-02 16:23:09</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>091-779-0935</phone>
+            <mailing_address>Department of Civil Engineering, Faculty of Engineering and Architecture, Rajamangala University of Technology Isan, Nakhon Ratchasima, 30000, Thailand&lt;div id="_mcePaste" class="mcePaste" style="position: absolute; left: -10000px; top: 0px; width: 1px; he</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">john doe</givenname>
+            <familyname locale="en_US">john doe</familyname>
+            <affiliation locale="en_US">john doe</affiliation>
+            <country>AS</country>
+            <email>tahubulat@gmail.com</email>
+            <username>tahubulat</username>
+            <password is_disabled="false" must_change="false" encryption="">
+                <value>$2y$10$v45dOd3v2oMxsAKMmwZhJeO75IKha6xWC8zP2hIzjdTP2Xe6Y81s6</value>
+            </password>
+            <date_registered>2024-05-29 21:28:51</date_registered>
+            <date_last_login>2024-05-29 21:28:51</date_last_login>
+            <inline_help>true</inline_help>
+            <user_group_ref>Author</user_group_ref>
+            <review_interests>tahubulat</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">kamolphan</givenname>
+            <familyname locale="en_US">jongkongkawutthi</familyname>
+            <email>kamolphan.jongkongkawutth@g.swu.ac.th</email>
+            <username>kamolphan</username>
+            <signature locale="en_US">Srinakharinwirot University</signature>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>76b157fa9a03f5f535e1c2b31be77a94</value>
+            </password>
+            <date_registered>2017-11-18 19:55:41</date_registered>
+            <date_last_login>2018-02-14 21:18:20</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">sommas</givenname>
+            <familyname locale="en_US">kaewluan</familyname>
+            <email>sommas@swu.ac.th</email>
+            <username>sommask</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>4bb81011959aa8338a816435709b6271</value>
+            </password>
+            <date_registered>2012-12-03 09:39:41</date_registered>
+            <date_last_login>2012-12-03 09:39:41</date_last_login>
+            <inline_help>false</inline_help>
+            <auth_id>1</auth_id>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">sommas</givenname>
+            <familyname locale="en_US">kaewluan</familyname>
+            <country>TH</country>
+            <email>sommask@gmail.com</email>
+            <username>sommas_k</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>b964837b4d22d16a79a17b72d42b719e</value>
+            </password>
+            <date_registered>2012-12-03 09:50:17</date_registered>
+            <date_last_login>2012-12-03 09:50:17</date_last_login>
+            <inline_help>false</inline_help>
+            <auth_id>1</auth_id>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Nichanach</givenname>
+            <familyname locale="en_US">Katemukda</familyname>
+            <affiliation locale="en_US">Kasetsart University, Bangkok, Thailand</affiliation>
+            <country>TH</country>
+            <email>nan28249@hotmail.com</email>
+            <biography locale="en_US">&lt;p&gt;Ph.D student of Industrail Engineering at Kasetsart University, Thailand.&lt;/p&gt;</biography>
+            <username>nichanach</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>4dbfaaf6555ad6b0967f86bf0938395e</value>
+            </password>
+            <date_registered>2016-09-22 16:08:48</date_registered>
+            <date_last_login>2016-11-04 14:32:00</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Mr.WUTTISAN -</givenname>
+            <familyname locale="en_US">KHIOWTHONG</familyname>
+            <country>TH</country>
+            <email>ahallowman68@hotmail.com</email>
+            <url>http://www.ubu.ac.th</url>
+            <username>k_wuttisan_2562</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>03707c3153ede6f781c348a73f776feb</value>
+            </password>
+            <date_registered>2019-07-05 23:22:36</date_registered>
+            <date_last_login>2019-07-05 23:22:37</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0906086321</phone>
+            <mailing_address>&lt;p&gt;Mr.WUTTISAN KHIOWTHONG&lt;/p&gt;&lt;p&gt;72/3 Moo 24 Pracha Road, Muang Det Subdistrict, Det Udom District,Amphoe Det Udom, Ubon Ratchathani Province, Thailand 34160&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Anuchit</givenname>
+            <familyname locale="en_US">Khongrit</familyname>
+            <affiliation locale="en_US">Nakhon Ratchasima Rajabhat University&#xD;
+ 340 Suranarai Road, Nai Mueang Sub-district, Mueang Nakhonratchasima District, Nakhonratchasima Province, 30000</affiliation>
+            <country>TH</country>
+            <email>anuchit.kh@nrru.ac.th</email>
+            <username>anuchit1985</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>dccf8bdc5f7fb711e5544806a90f816e</value>
+            </password>
+            <date_registered>2018-07-24 21:19:54</date_registered>
+            <date_last_login>2018-07-24 21:19:54</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>085-8603339</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">kusalin</givenname>
+            <familyname locale="en_US">kitpongnikorn</familyname>
+            <email>kusalin.kit@gmail.com</email>
+            <username>kusalin_kit</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>daf74cd9c7504c51aae1e4c0c8e67f65</value>
+            </password>
+            <date_registered>2017-11-24 16:21:06</date_registered>
+            <date_last_login>2017-11-24 16:21:06</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0909879595</phone>
+            <mailing_address>212/19 &#xE0B;.&#xE40;&#xE1E;&#xE0A;&#xE23;&#xE1A;&#xE38;&#xE23;&#xE35; 5 &#xE40;&#xE02;&#xE15;&#xE23;&#xE32;&#xE0A;&#xE40;&#xE17;&#xE27;&#xE35; &#xE01;&#xE17;&#xE21; 10400</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Oran</givenname>
+            <familyname locale="en_US">Kittithreerapronchai</familyname>
+            <affiliation locale="en_US">Chulalongkoran University</affiliation>
+            <country>TH</country>
+            <email>oran.k@chula.ac.th</email>
+            <url>http://www.ie.eng.chula.ac.th/~oran</url>
+            <username>koran</username>
+            <signature locale="en_US">Oran Kittithreerapronchai</signature>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>2b2392d7406b4fa1fa1327fa2d704008</value>
+            </password>
+            <date_registered>2017-06-14 09:27:34</date_registered>
+            <date_last_login>2017-06-14 09:27:34</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>022186832</phone>
+            <mailing_address>Department of Industrial Engineering&#xD;
+Chulalongkorn University&#xD;
+Bangkok 10200</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Punravee</givenname>
+            <familyname locale="en_US">Kongboontiam</familyname>
+            <affiliation locale="en_US">Faculty of Architecture and Environmental Design, Maejo University</affiliation>
+            <country>TH</country>
+            <email>punravee@gmail.com</email>
+            <username>punravee</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>7e86ff0afafd57b5dc7bb62cca631a6a</value>
+            </password>
+            <date_registered>2019-01-18 10:57:39</date_registered>
+            <date_last_login>2019-01-18 10:57:39</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0817833335</phone>
+            <mailing_address>Faculty of Architecture and Environmental Design, Maejo University, Chiang Mai, Thailand, 50290</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+            <review_interests>Infrastructure, Energy Policy, Civil engineering, Transportation</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">Duangrudee</givenname>
+            <familyname locale="en_US">Kositgittiwong</familyname>
+            <country>TH</country>
+            <email>duangrudee.kos@kmutt.ac.th</email>
+            <username>duangrudee_k</username>
+            <password is_disabled="true" must_change="true" encryption="">
+                <value>c20bde15b1f56edcfbb23b073e7ec74d</value>
+            </password>
+            <date_registered>2016-04-09 12:46:29</date_registered>
+            <date_last_login>2016-04-09 12:46:29</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0868979164</phone>
+            <mailing_address>&lt;p&gt;Civil Engineering Department, King Mongkut's University of Technology Thonburi&lt;/p&gt;&lt;p&gt;126 Pracha Utit Rd., Bangmod, Thung Kru, Bangkok 10140&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Don</givenname>
+            <familyname locale="en_US">Krue-Hom</familyname>
+            <email>d57_57@hotmail.com</email>
+            <username>don57</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>4c2e77ec398c2baaaffa18bf6d7f2175</value>
+            </password>
+            <date_registered>2016-04-04 11:41:37</date_registered>
+            <date_last_login>2016-04-04 11:41:37</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0867577244</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Anan</givenname>
+            <familyname locale="en_US">Kruesubthaworn</familyname>
+            <affiliation locale="en_US">Faculty of Applied Science and Engineering, Khon Kaen University, Nong Khai Campus, Nong Khai, Thailand</affiliation>
+            <country>TH</country>
+            <email>anankr@kku.ac.th</email>
+            <username>anankr</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>c9c5fa9c58c9c11c98365094bacffc70</value>
+            </password>
+            <date_registered>2015-08-26 14:46:19</date_registered>
+            <date_last_login>2015-09-24 08:58:57</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Amnouy</givenname>
+            <familyname locale="en_US">Kumboon</familyname>
+            <country>TH</country>
+            <email>k_amnouy@hotmail.com</email>
+            <username>kumboon_amnouy</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>c22e55523fca6cbd5485f710031c4e0b</value>
+            </password>
+            <date_registered>2019-04-23 16:51:15</date_registered>
+            <date_last_login>2019-04-24 11:08:13</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0980974287</phone>
+            <mailing_address>&lt;p&gt;Rajamangala University of Technology&lt;/p&gt; Lanna Chiangrai 99 moo 10&#xA0;&lt;span&gt;Sai Khao, Pan, Chiang Rai, Thailand, 57120&lt;/span&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Yuttana</givenname>
+            <familyname locale="en_US">Kumsuwan</familyname>
+            <affiliation locale="en_US">Chiang Mai University</affiliation>
+            <country>TH</country>
+            <email>yt@eng.cmu.ac.th</email>
+            <username>yuttana_kumsuwan</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>7f4eb742a91e8fffa47e40021fd5d972</value>
+            </password>
+            <date_registered>2016-01-07 13:32:05</date_registered>
+            <date_last_login>2017-12-21 18:31:30</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>+66-5394-4135 to 4140</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">werayoot -</givenname>
+            <familyname locale="en_US">Lahamornchaiyakul</familyname>
+            <country>TH</country>
+            <email>werayootrmutl@gmail.com</email>
+            <url>https://web.facebook.com/</url>
+            <username>werayoot</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>8fd3367899cee92065431fa8a5d02595</value>
+            </password>
+            <date_registered>2020-02-13 13:16:12</date_registered>
+            <date_last_login>2020-02-13 13:16:15</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0620621219</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Athiwat</givenname>
+            <familyname locale="en_US">Leenatham</familyname>
+            <email>athiwat.lnt@gmail.com</email>
+            <biography locale="en_US">&lt;p&gt;Bachelor Degree:Industrial Engineering KMUTNB,Bkk Thailand&lt;/p&gt;&lt;p&gt;Master Degree:Industrial Management Engineering&#xA0;KMUTNB,Bkk Thailand&lt;/p&gt;&lt;p&gt;&#xA0;&lt;/p&gt;</biography>
+            <username>athiwat_l</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>48eaaa276cc050e3b82842538d2c63da</value>
+            </password>
+            <date_registered>2016-01-15 18:03:15</date_registered>
+            <date_last_login>2019-04-01 11:53:42</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>081-7971915</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Watanyu</givenname>
+            <familyname locale="en_US">Meesrisuk</familyname>
+            <affiliation locale="en_US">Department of Electrical Engineering, Nakhon Pathom Rajabhat University</affiliation>
+            <country>TH</country>
+            <email>liverpoolfome@gmail.com</email>
+            <username>watanyu</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>2c537920b61a24c6a524ede7ecae98e2</value>
+            </password>
+            <date_registered>2018-04-08 21:25:30</date_registered>
+            <date_last_login>2018-07-05 13:45:12</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Mr.Arkhom</givenname>
+            <familyname locale="en_US">Moungkhaodaeng</familyname>
+            <email>arkhomm@g.swu.ac.th</email>
+            <username>arkhomm</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>de2f77a39eee7ad9caf783931b1b83a2</value>
+            </password>
+            <date_registered>2015-08-26 15:48:14</date_registered>
+            <date_last_login>2015-08-26 15:48:14</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">sonesaksit</givenname>
+            <familyname locale="en_US">niempaseuth</familyname>
+            <email>sonesaksit86@hotmail.com</email>
+            <username>sonesaksit</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>3fbd2d971b368de0222abd5b53338d27</value>
+            </password>
+            <date_registered>2016-12-14 20:38:00</date_registered>
+            <date_last_login>2017-05-05 13:44:24</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0990204344</phone>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Anuchit</givenname>
+            <familyname locale="en_US">Nirapai</familyname>
+            <affiliation locale="en_US">Rangsit University</affiliation>
+            <country>TH</country>
+            <email>anuchit.ni@rsu.ac.th</email>
+            <username>anuchit</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>50f289110c4da6f3759105b4ceac979e</value>
+            </password>
+            <date_registered>2019-08-24 13:54:55</date_registered>
+            <date_last_login>2019-08-24 13:54:55</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0847899964</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Thawatchai</givenname>
+            <familyname locale="en_US">Ounjaijom</familyname>
+            <country>TH</country>
+            <email>tounjaijom@gmail.com</email>
+            <biography locale="en_US">Department of Mechanical Engineering</biography>
+            <username>tounjaijom</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>d8f65d3599d15f12356fcb62a2dfb3c3</value>
+            </password>
+            <date_registered>2017-05-11 17:07:35</date_registered>
+            <date_last_login>2018-11-21 09:57:49</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>+66840479465</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+            <review_interests>Mechanical behavior, Finite Element Analysis</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">Anuwat</givenname>
+            <familyname locale="en_US">Pachanawan</familyname>
+            <country>TH</country>
+            <email>a.pachanawan@gmail.com</email>
+            <username>nutractor99</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>ddabee8ba21601fc01a4add5f134f553</value>
+            </password>
+            <date_registered>2016-08-30 21:02:49</date_registered>
+            <date_last_login>2017-12-21 23:09:31</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0626465339</phone>
+            <mailing_address>&lt;p&gt;123 Mittraparp Road, Muang District Khon Kaen, 40002&lt;/p&gt;&lt;p&gt;Energy Management and Conservation Office Faculty of Engineering, Khon Kaen University&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Somchai</givenname>
+            <familyname locale="en_US">Pathomsiri</familyname>
+            <country>TH</country>
+            <email>egspt@yahoo.com</email>
+            <username>drsomchai</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>aa23f8bd5eceab54954aba1ebb860ff7</value>
+            </password>
+            <date_registered>2020-01-13 12:30:23</date_registered>
+            <date_last_login>2020-10-18 18:47:15</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>028892138 Ext 6396-7</phone>
+            <mailing_address>&lt;p&gt;Department of Civil and Environmental Engineering&lt;/p&gt;&lt;p&gt;Faculty of Engineering&lt;/p&gt;&lt;p&gt;Mahidol University&lt;/p&gt;&lt;p&gt;25/25 Phutthamonthon 4 Road,&lt;/p&gt;&lt;p&gt;Salaya, Phutthamnonthon,&lt;/p&gt;&lt;p&gt;Nakornpathom 73170&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+            <review_interests>Management,  Transportation, Civil engineering, Logistics and Supply Chain, Construction</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">Supapap</givenname>
+            <familyname locale="en_US">Patsinghasanee</familyname>
+            <country>TH</country>
+            <email>supapap.p@dwr.mail.go.th</email>
+            <username>supapap</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>603be9032a5a588213be3e13922f34fe</value>
+            </password>
+            <date_registered>2020-04-15 08:57:51</date_registered>
+            <date_last_login>2020-05-16 13:45:39</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>+66897724611</phone>
+            <mailing_address>Department of Water Resources, 180/3, Rama 6 Road, Soi 34, Phraya Thai, Pharya Thai, Bangkok, 10400</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Parinya</givenname>
+            <familyname locale="en_US">Pattanawasanporn</familyname>
+            <affiliation locale="en_US">Department of Industrial Engineering, &#xD;
+Faculty of Engineering at Kamphaeng Saen, &#xD;
+Kasetsart University Kamphaeng Saen Campus</affiliation>
+            <country>TH</country>
+            <email>fengpypa@ku.ac.th</email>
+            <username>parinyap</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>909061f65e6399b2a541718b3498a507</value>
+            </password>
+            <date_registered>2018-08-24 16:31:36</date_registered>
+            <date_last_login>2019-01-10 03:13:31</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0959494970</phone>
+            <mailing_address>&lt;p&gt;1 Moo 6&lt;/p&gt;&lt;p&gt;Department of Industrial Engineering,&lt;/p&gt;&lt;p&gt;Faculty of Engineering at Kamphaeng Saen,&lt;/p&gt;&lt;p&gt;Kasetsart University Kamphaeng Saen Campus&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Parinya</givenname>
+            <familyname locale="en_US">Pattanawasanporn</familyname>
+            <affiliation locale="en_US">Parinya  Pattanawasanporn&#xD;
+1  Moo 6 Department of Industrial Engineering &#xD;
+Faculty of Engineering at Kamphaeng Saen &#xD;
+Kasetsart University Kamphaeng Saen Campus 73140, Thailand</affiliation>
+            <country>TH</country>
+            <email>parinya.pa@ku.th</email>
+            <biography locale="en_US">&lt;p&gt;Parinya&#xA0; Pattanawasanporn&lt;/p&gt;&lt;p&gt;1&#xA0; Moo 6 Department of Industrial Engineering&#xA0;Faculty of Engineering at Kamphaeng Saen&#xA0;Kasetsart University Kamphaeng Saen Campus 73140, Thailand&lt;/p&gt;&lt;p&gt;&lt;strong&gt;fengpypa@ku.ac.th&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;parinya.pa@ku.th&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;&lt;a href="mailto:Blue_ienu@hotmail.com"&gt;&lt;strong&gt;Blue_ienu@hotmail.com&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt; &lt;/strong&gt;&lt;/p&gt; &lt;strong&gt;&lt;br /&gt; &lt;/strong&gt; &lt;p&gt;&lt;strong&gt; &lt;/strong&gt;&lt;/p&gt;</biography>
+            <username>fengpypa</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>73f059ffc2f3ac10934302cb385422ed</value>
+            </password>
+            <date_registered>2019-04-06 16:20:57</date_registered>
+            <date_last_login>2019-04-06 16:20:58</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0959494970</phone>
+            <mailing_address>&lt;p&gt;Parinya&#xA0; Pattanawasanporn&lt;/p&gt;&lt;p&gt;1&#xA0; Moo 6 Department of Industrial Engineering&#xA0;Faculty of Engineering at Kamphaeng Saen&#xA0;Kasetsart University Kamphaeng Saen Campus 73140, Thailand&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Angkhaladeth</givenname>
+            <familyname locale="en_US">Phommseng</familyname>
+            <country>TH</country>
+            <email>Dethphms@gmail.com</email>
+            <username>angkhaladeth33</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>5ce220f8a327fb08f67807255ee826cc</value>
+            </password>
+            <date_registered>2016-06-12 10:10:21</date_registered>
+            <date_last_login>2016-06-12 10:10:21</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Busaba</givenname>
+            <familyname locale="en_US">Phruksaphanrat</familyname>
+            <affiliation locale="en_US">Thammasat University</affiliation>
+            <email>lbusaba@engr.tu.ac.th</email>
+            <username>lbusaba</username>
+            <password is_disabled="false" must_change="false" encryption="">
+                <value>$2y$10$ys6w89ls9xKJjNAkwc4CuOHs52KE9c/JleTXTx/.GQ7sZuPYCJaxm</value>
+            </password>
+            <date_registered>2016-01-12 17:37:41</date_registered>
+            <date_last_login>2025-02-12 10:12:38</date_last_login>
+            <inline_help>false</inline_help>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Khathapon</givenname>
+            <familyname locale="en_US">Pinpatthanapong</familyname>
+            <country>TH</country>
+            <email>katrapol@hotmail.com</email>
+            <username>katrapol</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>c6523de62430dddac70f9494c0de59dc</value>
+            </password>
+            <date_registered>2017-06-08 11:49:30</date_registered>
+            <date_last_login>2017-06-08 11:49:30</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0876630509</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">pothong</givenname>
+            <familyname locale="en_US">praneetponkrang</familyname>
+            <affiliation locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32; &#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07;&#xE01;&#xE25; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;.&#xE28;&#xE23;&#xE35;&#xE19;&#xE04;&#xE23;&#xE34;&#xE19;&#xE17;&#xE23;&#xE27;&#xE34;&#xE42;&#xE23;&#xE12;</affiliation>
+            <country>TH</country>
+            <email>pttmbj@hotmail.com</email>
+            <username>gs581150026</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>c92410d4ce1d956827d2560bed38959a</value>
+            </password>
+            <date_registered>2016-09-14 08:53:50</date_registered>
+            <date_last_login>2020-07-21 12:20:33</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0880808859</phone>
+            <mailing_address>&#xE21;.&#xE23;&#xE32;&#xE0A;&#xE20;&#xE31;&#xE0F;&#xE23;&#xE33;&#xE44;&#xE1E;&#xE1E;&#xE23;&#xE23;&#xE13;&#xE35; 41 &#xE21;.5 &#xE15;.&#xE17;&#xE48;&#xE32;&#xE0A;&#xE49;&#xE32;&#xE07; &#xE2D;.&#xE40;&#xE21;&#xE37;&#xE2D;&#xE07; &#xE08;.&#xE08;&#xE31;&#xE19;&#xE17;&#xE1A;&#xE38;&#xE23;&#xE35; 22000</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">yupaporn</givenname>
+            <familyname locale="en_US">prapai</familyname>
+            <affiliation locale="en_US">Faculty of EngineeringSrinakharinwirot University</affiliation>
+            <email>yupapornp@g.swu.ac.th</email>
+            <username>sr105r</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>3bef1ef379a50893c09e4114906a2747</value>
+            </password>
+            <date_registered>2012-05-30 09:22:08</date_registered>
+            <date_last_login>2020-06-04 10:52:45</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>081-340-9331</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Journal manager</user_group_ref>
+            <user_group_ref>Journal editor</user_group_ref>
+            <user_group_ref>Production editor</user_group_ref>
+            <user_group_ref>Section editor</user_group_ref>
+            <user_group_ref>Guest editor</user_group_ref>
+            <user_group_ref>Copyeditor</user_group_ref>
+            <user_group_ref>Designer</user_group_ref>
+            <user_group_ref>Funding coordinator</user_group_ref>
+            <user_group_ref>Indexer</user_group_ref>
+            <user_group_ref>Layout Editor</user_group_ref>
+            <user_group_ref>Marketing and sales coordinator</user_group_ref>
+            <user_group_ref>Proofreader</user_group_ref>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Translator</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+            <user_group_ref>Reader</user_group_ref>
+            <user_group_ref>Subscription Manager</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">yupaporn</givenname>
+            <familyname locale="en_US">prapai</familyname>
+            <email>yupapornp@swu.ac.th</email>
+            <username>yupapornp</username>
+            <password is_disabled="false" must_change="false" encryption="">
+                <value>$2y$10$dnsmnLzA6rejV8SmX27Fd..Y8sDbCbUcFtXr1bbCO66aXtO55.mCG</value>
+            </password>
+            <date_registered>2012-05-30 09:23:58</date_registered>
+            <date_last_login>2023-04-21 03:21:39</date_last_login>
+            <date_last_email>2018-06-15 17:00:08</date_last_email>
+            <inline_help>false</inline_help>
+            <user_group_ref>Journal manager</user_group_ref>
+            <user_group_ref>Journal editor</user_group_ref>
+            <user_group_ref>Production editor</user_group_ref>
+            <user_group_ref>Section editor</user_group_ref>
+            <user_group_ref>Guest editor</user_group_ref>
+            <user_group_ref>Copyeditor</user_group_ref>
+            <user_group_ref>Designer</user_group_ref>
+            <user_group_ref>Funding coordinator</user_group_ref>
+            <user_group_ref>Indexer</user_group_ref>
+            <user_group_ref>Layout Editor</user_group_ref>
+            <user_group_ref>Marketing and sales coordinator</user_group_ref>
+            <user_group_ref>Proofreader</user_group_ref>
+            <user_group_ref>Translator</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+            <user_group_ref>Reader</user_group_ref>
+            <user_group_ref>Subscription Manager</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">KUEKRIT</givenname>
+            <familyname locale="en_US">PROMSUI</familyname>
+            <country>TH</country>
+            <email>kuek-rit@outlook.com</email>
+            <username>amankris</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>8b22aa1645d0f6420e1447b0cab8c246</value>
+            </password>
+            <date_registered>2015-02-19 12:29:44</date_registered>
+            <date_last_login>2017-04-18 13:14:24</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0872229875</phone>
+            <mailing_address>21/1 &#xE21;.15 &#xE15;.&#xE42;&#xE19;&#xE19;&#xE15;&#xE32;&#xE25; &#xE2D;.&#xE17;&#xE48;&#xE32;&#xE2D;&#xE38;&#xE40;&#xE17;&#xE19; &#xE08;.&#xE19;&#xE04;&#xE23;&#xE1E;&#xE19;&#xE21; 48120</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">ankana</givenname>
+            <familyname locale="en_US">punlor</familyname>
+            <email>ank_pun@yahoo.com</email>
+            <username>ankana</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>f82bf24a717871c295c23c5bb3731184</value>
+            </password>
+            <date_registered>2016-09-28 12:48:20</date_registered>
+            <date_last_login>2016-09-28 12:48:20</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Songsak</givenname>
+            <familyname locale="en_US">PUTTRAWUTICHAI</familyname>
+            <affiliation locale="en_US">Department of Irrigation Engineering&#xD;
+Faculty of Engineering at Kamphaengsean&#xD;
+Kasetsart University&#xD;
+Nakhon Pathom&#xD;
+THAILAND</affiliation>
+            <country>TH</country>
+            <email>songsak.tee@gmail.com</email>
+            <username>songsak_tee</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>0aa3b3c570c111ef8d867f8d41ec34d3</value>
+            </password>
+            <date_registered>2016-08-08 11:21:24</date_registered>
+            <date_last_login>2016-09-02 13:23:00</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>081-8998524</phone>
+            <mailing_address>Department of Irrigation EngineeringFaculty of Engineering at KamphaengseanKasetsart UniversityNakhon PathomTHAILAND&lt;br /&gt;73140</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Thaneeya</givenname>
+            <familyname locale="en_US">Rangseesuriyachai</familyname>
+            <country>TH</country>
+            <email>thaneeya.r@en.rmutt.ac.th</email>
+            <username>thaneeya_p</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>fc96e64fd74d580b73a4a51f5b16db08</value>
+            </password>
+            <date_registered>2019-12-04 14:29:37</date_registered>
+            <date_last_login>2020-02-17 11:25:22</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0817339150</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Panudet</givenname>
+            <familyname locale="en_US">Saengseedam</familyname>
+            <country>TH</country>
+            <email>panudech_mie@yahoo.com</email>
+            <username>panudet</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>a27fb14ad2e5dfc9bf9d384700abffc8</value>
+            </password>
+            <date_registered>2015-11-30 14:21:39</date_registered>
+            <date_last_login>2015-12-02 10:59:58</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0855541460</phone>
+            <mailing_address>1038/28 Phahonyothin Road Jompon Jatujak Bangkok 10900</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Jedsada</givenname>
+            <familyname locale="en_US">Saijai</familyname>
+            <affiliation locale="en_US">Department of Electrical Engineering,&#xD;
+Faculty of Engineering, Burapha University, Chonburi, Thailand</affiliation>
+            <country>TH</country>
+            <email>jedsada@eng.buu.ac.th</email>
+            <username>jedsada101</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>b537c0dce6ab492ee4505f0bf4720b83</value>
+            </password>
+            <date_registered>2017-05-03 20:35:44</date_registered>
+            <date_last_login>2018-08-08 11:13:46</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0865377886</phone>
+            <mailing_address>&lt;p&gt;Department of Electrical Engineering, Faculty of Engineering, Burapha University, Chonburi, Thailand 20131&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <review_interests>, reliability, Fault diagnosis, Automatic control</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">chiranut</givenname>
+            <familyname locale="en_US">sangiamsak</familyname>
+            <affiliation locale="en_US">Khon Kaen University</affiliation>
+            <email>chiranut@kku.ac.th</email>
+            <username>chiranut</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>a90664bb00849c8d35f662fa0698fc3e</value>
+            </password>
+            <date_registered>2017-07-11 07:04:33</date_registered>
+            <date_last_login>2017-11-09 11:42:33</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;p&gt;Department of Electrical Engineering,&lt;/p&gt;&lt;p&gt;Khon Kaen University&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Kullaya</givenname>
+            <familyname locale="en_US">Saricheewin</familyname>
+            <affiliation locale="en_US">Rajamangala University of Technology Thanyaburi</affiliation>
+            <country>TH</country>
+            <email>kullaya.s@en.rmutt.ac.th</email>
+            <username>kullaya</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>ac21abcd79350c298f226482c7713e2b</value>
+            </password>
+            <date_registered>2019-09-06 00:00:29</date_registered>
+            <date_last_login>2019-09-06 00:00:30</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0815952624</phone>
+            <mailing_address>Department of Civil Engineering, Faculty of Engineering, Rajamangala University of Technology Thanyaburi, Klong 6, Thanyaburi, Pathum Thani</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">tanawat</givenname>
+            <familyname locale="en_US">sertsuvalkul</familyname>
+            <country>TH</country>
+            <email>tanawats@g.swu.ac.th</email>
+            <biography locale="en_US">&amp;lt;br data-mce-bogus="1"&amp;gt;</biography>
+            <username>tanawats</username>
+            <signature locale="en_US">&amp;lt;br data-mce-bogus="1"&amp;gt;</signature>
+            <password is_disabled="false" must_change="false" encryption="">
+                <value>$2y$10$k7cQy3aRus6EF3SrF0bzb.tP9jzgpBuPNYlP7xdHxt.wpSaYseAy2</value>
+            </password>
+            <date_registered>2026-09-15 04:42:52</date_registered>
+            <date_last_login>2026-10-01 05:59:46</date_last_login>
+            <inline_help>true</inline_help>
+            <mailing_address>&amp;lt;br data-mce-bogus="1"&amp;gt;</mailing_address>
+            <user_group_ref>Journal manager</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Sarawut</givenname>
+            <familyname locale="en_US">Sirikasemsuk</familyname>
+            <email>sirikasemsuk@gmail.com</email>
+            <username>sirikasemsuk</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>1a90838ad11de1055a2b91ff4eb42834</value>
+            </password>
+            <date_registered>2020-01-02 15:28:30</date_registered>
+            <date_last_login>2020-01-02 15:28:30</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">treerapot</givenname>
+            <familyname locale="en_US">siripirote</familyname>
+            <affiliation locale="en_US">Srinakharinwirot University</affiliation>
+            <country>TH</country>
+            <email>treerapot_eng@yahoo.com</email>
+            <username>earthja</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>f599031930427ad2407b3d792c8d077e</value>
+            </password>
+            <date_registered>2015-10-06 11:54:20</date_registered>
+            <date_last_login>2016-07-01 12:24:48</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Vannee</givenname>
+            <familyname locale="en_US">Sooksatra</familyname>
+            <country>TH</country>
+            <email>vannee@rsu.ac.th</email>
+            <username>vansook2502</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>b54f9f452ab8e236f8e0d1626037e820</value>
+            </password>
+            <date_registered>2018-03-14 22:58:56</date_registered>
+            <date_last_login>2019-07-01 23:39:00</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0891423479</phone>
+            <mailing_address>71/255 &#xE40;&#xE2D;&#xE01;&#xE1B;&#xE23;&#xE30;&#xE08;&#xE34;&#xE21;3/3, &#xE16;&#xE19;&#xE19;&#xE1E;&#xE2B;&#xE25;&#xE42;&#xE22;&#xE18;&#xE34;&#xE19;, &#xE15;&#xE33;&#xE1A;&#xE25;&#xE2B;&#xE25;&#xE31;&#xE01;&#xE2B;&#xE01;, &#xE2D;&#xE33;&#xE40;&#xE20;&#xE2D;&#xE40;&#xE21;&#xE37;&#xE2D;&#xE07;, &#xE1B;&#xE17;&#xE38;&#xE21;&#xE18;&#xE32;&#xE19;&#xE35;12000</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Jedsadaporn</givenname>
+            <familyname locale="en_US">Sreepakdee</familyname>
+            <affiliation locale="en_US">Department of Industrial Education and Technology, Faculty of Engineering,&#xD;
+Rajamangala University of Technology Lanna</affiliation>
+            <email>jedsadaporn@rmutl.ac.th</email>
+            <username>janathankley</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>34ab3f3b6727cff951e4f4f4216c9d09</value>
+            </password>
+            <date_registered>2018-08-16 10:56:56</date_registered>
+            <date_last_login>2018-12-14 11:59:19</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">kanokporn</givenname>
+            <familyname locale="en_US">sripathomswat</familyname>
+            <country>TH</country>
+            <email>kanokpos@yahoo.com</email>
+            <username>kanokporns</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>879b3ee98025c84b1ce24417ca2a538e</value>
+            </password>
+            <date_registered>2015-09-15 19:13:26</date_registered>
+            <date_last_login>2016-02-08 11:08:57</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0804455415</phone>
+            <mailing_address>&lt;p&gt;College of Industrial Technology, KMUTNB&lt;/p&gt;&lt;p&gt;1518 Pracharat 1 Road,&lt;/p&gt;&lt;p&gt;Wongsawang, Bang Sue, Bangkok 10800&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Sirirat</givenname>
+            <familyname locale="en_US">Srisakunwan</familyname>
+            <affiliation locale="en_US">Centre of Logistics Management and Healthcare Supply Chain (LogHealth), Mahidol University</affiliation>
+            <country>TH</country>
+            <email>srisakunwan.s@hotmail.com</email>
+            <biography locale="en_US">Researcher, Centre of Logistics Management and Healthcare Supply Chain (LogHealth), Faculty of Engineering.&#xA0;Mahidol University Thailand.</biography>
+            <username>sirirat1987</username>
+            <signature locale="en_US">Sirirat.S</signature>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>be1c77933027fe04703da62f2eaeeed2</value>
+            </password>
+            <date_registered>2019-07-17 20:46:47</date_registered>
+            <date_last_login>2019-11-15 13:31:20</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0969745545</phone>
+            <mailing_address>&lt;p&gt;Centre of Logistics Management and Healthcare Supply Chain (LogHealth), Faculty of Engineering&lt;/p&gt;&lt;p&gt;25/25 Phuttamonthon 4 Road, Salaya, NakhonPathom 73170, Thailand&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Jirayut</givenname>
+            <familyname locale="en_US">Suebsuk</familyname>
+            <country>TH</country>
+            <email>j.suebsuk@gmail.com</email>
+            <username>jirayut4</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>d315c347178b027fe774abd25c9f3db8</value>
+            </password>
+            <date_registered>2016-05-23 23:14:30</date_registered>
+            <date_last_login>2016-07-03 21:04:04</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0837398434</phone>
+            <mailing_address>&lt;p&gt;Department of Civil Engineering, Faculty of Engineering and Architecture,&#xA0;Rajamangala University of Technology Isan&lt;/p&gt;&lt;p&gt;744 Suranarai Rd., Maung District, Nakhon Ratchasima 30000&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Natee</givenname>
+            <familyname locale="en_US">Suriyanon</familyname>
+            <email>nsuriyan@hotmail.com</email>
+            <username>nsuriyan</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>24fded60125c503b62672c6a2f1e74dc</value>
+            </password>
+            <date_registered>2019-11-09 15:01:47</date_registered>
+            <date_last_login>2020-02-24 14:51:47</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0818474882</phone>
+            <mailing_address>&lt;p&gt;&lt;span&gt;Civil Engineering Department&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Mahanakorn University&lt;/p&gt;&lt;p&gt;&lt;span&gt;140 Cheumsampan Rd, &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;Nongchok, Bangkok, Thailand 10530&lt;/span&gt;&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Anan</givenname>
+            <familyname locale="en_US">Sutapun</familyname>
+            <affiliation locale="en_US">Chulalongkorn University</affiliation>
+            <email>anansutapun@gmail.com</email>
+            <username>anstp1</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>6ee96544f27b9295c642d43c280fab2c</value>
+            </password>
+            <date_registered>2017-07-18 15:47:18</date_registered>
+            <date_last_login>2022-01-18 10:47:31</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0830729432</phone>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">administrator</givenname>
+            <familyname locale="en_US">swu ejournal</familyname>
+            <email>ojs@swu.ac.th</email>
+            <username>administrator</username>
+            <password is_disabled="false" must_change="false" encryption="">
+                <value>$2y$10$g5uXnhNhPDVnUE0oCYcMcuwxFjOU531LolCS60hI8qHYay6p5oReK</value>
+            </password>
+            <date_registered>2008-02-11 16:07:38</date_registered>
+            <date_last_login>2026-10-01 00:59:23</date_last_login>
+            <date_last_email>2022-02-10 14:34:01</date_last_email>
+            <inline_help>false</inline_help>
+            <user_group_ref>Journal manager</user_group_ref>
+            <user_group_ref>Journal editor</user_group_ref>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Ditthaphat</givenname>
+            <familyname locale="en_US">Tanpradit</familyname>
+            <country>TH</country>
+            <email>ditthaphat.t@mail.rmutk.ac.th</email>
+            <username>ditthaphat</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>48da5e660b49b79fdb519b6cdeb6def4</value>
+            </password>
+            <date_registered>2019-11-21 11:51:56</date_registered>
+            <date_last_login>2019-11-21 11:51:57</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>No.2 Nang Lin Chee Road, Thungmahamek, Sathorn, Bangkok, 10120</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Chaiyapong</givenname>
+            <familyname locale="en_US">Thepprasit</familyname>
+            <affiliation locale="en_US">Department of Irrigation Engineering&#xD;
+Faculty of Engineering at Kamphaeng Saen&#xD;
+Kasetsart University&#xD;
+Kamphaeng Saen Campus</affiliation>
+            <email>fengcpth@ku.ac.th</email>
+            <username>tomnew99</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>4ad5baf8f090cfda5c3146d4ae82ae6e</value>
+            </password>
+            <date_registered>2017-09-03 15:28:55</date_registered>
+            <date_last_login>2018-07-17 11:20:33</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Sudpratthana</givenname>
+            <familyname locale="en_US">Thirati</familyname>
+            <email>sudpratthanat@gmail.com</email>
+            <username>thirati</username>
+            <password is_disabled="true" must_change="true" encryption="">
+                <value>9abe36637a39bfc9bf2b06273403ee66</value>
+            </password>
+            <date_registered>2018-01-11 08:14:21</date_registered>
+            <date_last_login>2018-01-11 08:14:22</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE4C;Nuttee</givenname>
+            <familyname locale="en_US">Thungsuk</familyname>
+            <affiliation locale="en_US">Southeast Asia University</affiliation>
+            <country>TH</country>
+            <email>tonsai8996@yahoo.com</email>
+            <username>tonsai8996</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>709818be5e0d0087023685f39a8b8c6d</value>
+            </password>
+            <date_registered>2019-03-13 12:08:41</date_registered>
+            <date_last_login>2019-07-24 08:45:24</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">SAKULTALA</givenname>
+            <familyname locale="en_US">WANNAPAKHE</familyname>
+            <country>TH</country>
+            <email>sakultala.w@fitm.kmutnb.ac.th</email>
+            <username>sakultalaw</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>efa61b2a0c9224c51c6a2c420f13817f</value>
+            </password>
+            <date_registered>2016-05-25 11:40:43</date_registered>
+            <date_last_login>2019-05-17 10:54:27</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>037217310</phone>
+            <mailing_address>&lt;p&gt;&lt;em&gt;Department of Agricultural Engineering for Industry, Faculty of Industrial Technology&lt;/em&gt; &lt;em&gt;and Management, King Mongkut&#x2019;s University of Technology North Bangkok, 129 Moo 21, Tumbol Noen-Hom, Amphur Muang, Prachinburi Province, 25230, Thailand&lt;/</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Wittaya</givenname>
+            <familyname locale="en_US">Wongklang</familyname>
+            <country>TH</country>
+            <email>wittaya_won@nstru.ac.th</email>
+            <username>wittaya_w</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>f2944252b4da0b05bc00c140f644e6d9</value>
+            </password>
+            <date_registered>2019-12-06 11:03:44</date_registered>
+            <date_last_login>2019-12-06 11:03:44</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Thadsanee</givenname>
+            <familyname locale="en_US">Yaowarat</familyname>
+            <affiliation locale="en_US">Department of Computer Science, Faculty of Science, King Mongkut&#x2019;s Institute of Technology Ladkrabang, Chalongkrung Road, Ladkrabang, Bangkok 10520</affiliation>
+            <country>TH</country>
+            <email>57050238@kmitl.ac.th</email>
+            <username>57050238</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>167cd6bb320b1c35a88944c35b39289d</value>
+            </password>
+            <date_registered>2018-05-07 20:30:14</date_registered>
+            <date_last_login>2018-05-07 20:30:15</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0972832084</phone>
+            <mailing_address>&lt;span&gt;&lt;span&gt;499 &#xE2B;&#xE21;&#xE39;&#xE48; 2 &#xE15;&#xE33;&#xE1A;&#xE25;&#xE2B;&#xE19;&#xE2D;&#xE07;&#xE23;&#xE30;&#xE22;&#xE34;&#xE1A;&#xE2D;&#xE33;&#xE40;&#xE20;&#xE2D;&#xE14;&#xE2D;&#xE19;&#xE40;&#xE08;&#xE14;&#xE35;&#xE22;&#xE4C;&#xE2A;&#xE38;&#xE1E;&#xE23;&#xE23;&#xE13;&#xE1A;&#xE38;&#xE23;&#xE35; 72170&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">Ekkachai</givenname>
+            <familyname locale="en_US">Yooprasertchai</familyname>
+            <email>ekkachai_y@rmutt.ac.th</email>
+            <username>ekkachai_y</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>851e054d3bf3cda1242f2c6638f9f82b</value>
+            </password>
+            <date_registered>2017-06-13 20:18:30</date_registered>
+            <date_last_login>2018-04-03 00:13:58</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;p&gt;&lt;span&gt;Division of Civil Engineering&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;Faculty of Technical Education &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;Rajamangala University of Technology Thanyaburi &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;39 Moo1, Rangsit-Nakhonnayok Rd. Klong6, Thanyaburi Pathum Thani 12110&lt;/span&gt;&lt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE13;&#xE10;&#xE32;</givenname>
+            <familyname locale="en_US">&#xE04;&#xE38;&#xE1B;&#xE15;&#xE31;&#xE29;&#xE40;&#xE10;&#xE35;&#xE22;&#xE23;</familyname>
+            <affiliation locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE2D;&#xE38;&#xE15;&#xE2A;&#xE32;&#xE2B;&#xE01;&#xE23;&#xE23;&#xE21; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE23;&#xE32;&#xE0A;&#xE21;&#xE07;&#xE04;&#xE25;&#xE18;&#xE31;&#xE0D;&#xE1A;&#xE38;&#xE23;&#xE35;</affiliation>
+            <country>TH</country>
+            <email>natha.k@en.rmutt.ac.th</email>
+            <biography locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE2D;&#xE38;&#xE15;&#xE2A;&#xE32;&#xE2B;&#xE01;&#xE23;&#xE23;&#xE21; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE23;&#xE32;&#xE0A;&#xE21;&#xE07;&#xE04;&#xE25;&#xE18;&#xE31;&#xE0D;&#xE1A;&#xE38;&#xE23;&#xE35;</biography>
+            <username>natha</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>f0068214471ecfeea56101d60357b09c</value>
+            </password>
+            <date_registered>2016-02-11 14:12:07</date_registered>
+            <date_last_login>2016-02-18 08:25:12</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&#xE23;&#xE28;.&#xE14;&#xE23;.&#xE13;&#xE10;&#xE32; &#xE04;&#xE38;&#xE1B;&#xE15;&#xE31;&#xE29;&#xE40;&#xE10;&#xE35;&#xE22;&#xE23; &#xE41;&#xE1C;&#xE19;&#xE01;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE17;&#xE32;&#xE07;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21; &#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE2D;&#xE38;&#xE15;&#xE2A;&#xE32;&#xE2B;&#xE01;&#xE32;&#xE23; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE23;&#xE32;&#xE0A;&#xE21;&#xE07;&#xE04;&#xE25;&#xE18;&#xE31;&#xE0D;&#xE1A;&#xE38;&#xE23;&#xE35; 39 &#xE2B;&#xE21;&#xE39;&#xE48; 1 &#xE16;.&#xE23;&#xE31;&#xE07;&#xE2A;&#xE34;&#xE15;-&#xE19;&#xE04;&#xE23;&#xE19;&#xE32;&#xE22;&#xE01; &#xE2D;.&#xE18;&#xE31;&#xE0D;&#xE1A;&#xE38;&#xE23;&#xE35; &#xE08;.&#xE1B;&#xE17;&#xE38;&#xE21;&#xE18;&#xE32;&#xE19;&#xE35; 12110</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE2D;&#xE19;&#xE38;&#xE27;&#xE31;&#xE12;&#xE19;&#xE4C;</givenname>
+            <familyname locale="en_US">&#xE08;&#xE32;&#xE07;&#xE27;&#xE19;&#xE34;&#xE0A;&#xE40;&#xE25;&#xE34;&#xE28;</familyname>
+            <affiliation locale="en_US">&#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE2A;&#xE16;&#xE32;&#xE1A;&#xE31;&#xE19;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE1E;&#xE23;&#xE30;&#xE08;&#xE2D;&#xE21;&#xE40;&#xE01;&#xE25;&#xE49;&#xE32;&#xE40;&#xE08;&#xE49;&#xE32;&#xE04;&#xE38;&#xE13;&#xE17;&#xE2B;&#xE32;&#xE23;&#xE25;&#xE32;&#xE14;&#xE01;&#xE23;&#xE30;&#xE1A;&#xE31;&#xE07;</affiliation>
+            <country>TH</country>
+            <email>jkjanuwat@gmail.com</email>
+            <biography locale="en_US">&#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE2A;&#xE16;&#xE32;&#xE1A;&#xE31;&#xE19;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE1E;&#xE23;&#xE30;&#xE08;&#xE2D;&#xE21;&#xE40;&#xE01;&#xE25;&#xE49;&#xE32;&#xE40;&#xE08;&#xE49;&#xE32;&#xE04;&#xE38;&#xE13;&#xE17;&#xE2B;&#xE32;&#xE23;&#xE25;&#xE32;&#xE14;&#xE01;&#xE23;&#xE30;&#xE1A;&#xE31;&#xE07;</biography>
+            <username>kjanuwat</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>b5808825c8c87c84e8cbd7631425d3ff</value>
+            </password>
+            <date_registered>2016-01-19 18:21:28</date_registered>
+            <date_last_login>2016-03-17 11:07:36</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE2A;&#xE38;&#xE23;&#xE31;&#xE15;&#xE19;&#xE4C;</givenname>
+            <familyname locale="en_US">&#xE15;&#xE23;&#xE31;&#xE22;&#xE27;&#xE19;&#xE1E;&#xE07;&#xE28;&#xE4C;</familyname>
+            <affiliation locale="en_US">&#xE41;&#xE1C;&#xE19;&#xE01;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE17;&#xE32;&#xE07;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21; &#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE2D;&#xE38;&#xE15;&#xE2A;&#xE32;&#xE2B;&#xE01;&#xE32;&#xE23; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE23;&#xE32;&#xE0A;&#xE21;&#xE07;&#xE04;&#xE25;&#xE18;&#xE31;&#xE0D;&#xE1A;&#xE38;&#xE23;&#xE35;</affiliation>
+            <country>TH</country>
+            <email>surat.t@en.rmutt.ac.th</email>
+            <biography locale="en_US">&#xE41;&#xE1C;&#xE19;&#xE01;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE17;&#xE32;&#xE07;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21; &#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE2D;&#xE38;&#xE15;&#xE2A;&#xE32;&#xE2B;&#xE01;&#xE32;&#xE23; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE23;&#xE32;&#xE0A;&#xE21;&#xE07;&#xE04;&#xE25;&#xE18;&#xE31;&#xE0D;&#xE1A;&#xE38;&#xE23;&#xE35;</biography>
+            <username>suratt</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>62f2021a697c97dcbc59948048af0df0</value>
+            </password>
+            <date_registered>2016-02-09 20:25:39</date_registered>
+            <date_last_login>2016-03-14 13:01:53</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&#xE1C;&#xE28;.&#xE2A;&#xE38;&#xE23;&#xE31;&#xE15;&#xE19;&#xE4C; &#xE15;&#xE23;&#xE31;&#xE22;&#xE27;&#xE19;&#xE1E;&#xE07;&#xE28;&#xE4C;&#xE41;&#xE1C;&#xE19;&#xE01;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE17;&#xE32;&#xE07;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21; &#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE2D;&#xE38;&#xE15;&#xE2A;&#xE32;&#xE2B;&#xE01;&#xE32;&#xE23; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE23;&#xE32;&#xE0A;&#xE21;&#xE07;&#xE04;&#xE25;&#xE18;&#xE31;&#xE0D;&#xE1A;&#xE38;&#xE23;&#xE35;39 &#xE2B;&#xE21;&#xE39;&#xE48; 1 &#xE16;.&#xE23;&#xE31;&#xE07;&#xE2A;&#xE34;&#xE15;-&#xE19;&#xE04;&#xE23;&#xE19;&#xE32;&#xE22;&#xE01; &#xE2D;.&#xE18;&#xE31;&#xE0D;&#xE1A;&#xE38;&#xE23;&#xE35; &#xE08;.&#xE1B;&#xE17;&#xE38;&#xE21;&#xE18;&#xE32;&#xE19;&#xE35; 12110</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE27;&#xE38;&#xE12;&#xE34;&#xE1E;&#xE25;</givenname>
+            <familyname locale="en_US">&#xE18;&#xE32;&#xE23;&#xE32;&#xE18;&#xE35;&#xE23;&#xE40;&#xE28;&#xE23;&#xE29;&#xE10;&#xE4C;</familyname>
+            <affiliation locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE44;&#xE1F;&#xE1F;&#xE49;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE28;&#xE23;&#xE35;&#xE19;&#xE04;&#xE23;&#xE34;&#xE19;&#xE17;&#xE23;&#xE27;&#xE34;&#xE42;&#xE23;&#xE12;</affiliation>
+            <country>TH</country>
+            <email>vuttipon@g.swu.ac.th</email>
+            <biography locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE44;&#xE1F;&#xE1F;&#xE49;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE28;&#xE23;&#xE35;&#xE19;&#xE04;&#xE23;&#xE34;&#xE19;&#xE17;&#xE23;&#xE27;&#xE34;&#xE42;&#xE23;&#xE12;</biography>
+            <username>vuttipon</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>5cae7834337cfc38ff7f493879de1127</value>
+            </password>
+            <date_registered>2016-01-25 10:33:28</date_registered>
+            <date_last_login>2017-11-27 11:49:04</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE1A;&#xE38;&#xE0D;&#xE17;&#xE23;&#xE31;&#xE1E;&#xE22;&#xE4C;</givenname>
+            <familyname locale="en_US">&#xE1E;&#xE32;&#xE19;&#xE34;&#xE0A;&#xE01;&#xE32;&#xE23;</familyname>
+            <affiliation locale="en_US">&#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE19;&#xE40;&#xE23;&#xE28;&#xE27;&#xE23;</affiliation>
+            <country>TH</country>
+            <email>boonsub.pa@gmail.com</email>
+            <username>boonsubpa</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>14c317fbafbf25c784ab5222cd5bf2bc</value>
+            </password>
+            <date_registered>2015-12-28 15:10:51</date_registered>
+            <date_last_login>2016-04-21 13:48:09</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>055963945</phone>
+            <mailing_address>&#xE2A;&#xE33;&#xE19;&#xE31;&#xE01;&#xE07;&#xE32;&#xE19;&#xE40;&#xE25;&#xE02;&#xE32;&#xE19;&#xE38;&#xE01;&#xE32;&#xE23; &#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE42;&#xE25;&#xE08;&#xE34;&#xE2A;&#xE15;&#xE34;&#xE01;&#xE2A;&#xE4C;&#xE41;&#xE25;&#xE30;&#xE42;&#xE0B;&#xE48;&#xE2D;&#xE38;&#xE1B;&#xE32;&#xE17;&#xE32;&#xE19; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE19;&#xE40;&#xE23;&#xE28;&#xE27;&#xE23; &#xE0A;&#xE31;&#xE49;&#xE19; 4 &#xE2D;&#xE32;&#xE04;&#xE32;&#xE23;&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE44;&#xE1F;&#xE1F;&#xE49;&#xE32;&#xE41;&#xE25;&#xE30;&#xE04;&#xE2D;&#xE21;&#xE1E;&#xE34;&#xE27;&#xE40;&#xE15;&#xE2D;&#xE23;&#xE4C; &#xE15;&#xE33;&#xE1A;&#xE25;&#xE17;&#xE48;&#xE32;&#xE42;&#xE1E;&#xE18;&#xE34;&#xE4C; &#xE2D;&#xE33;&#xE40;&#xE20;&#xE2D;&#xE40;&#xE21;&#xE37;&#xE2D;&#xE07; &#xE08;&#xE31;&#xE07;&#xE2B;&#xE27;&#xE31;&#xE14;&#xE1E;&#xE34;&#xE29;&#xE13;&#xE39;&#xE42;&#xE25;&#xE01; 65000</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE1B;&#xE23;&#xE35;&#xE14;&#xE32;</givenname>
+            <familyname locale="en_US">&#xE1E;&#xE34;&#xE0A;&#xE22;&#xE32;&#xE1E;&#xE31;&#xE19;&#xE18;&#xE4C;</familyname>
+            <affiliation locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE42;&#xE22;&#xE18;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE0A;&#xE35;&#xE22;&#xE07;&#xE43;&#xE2B;&#xE21;&#xE48;</affiliation>
+            <country>TH</country>
+            <email>preda@eng.cmu.ac.th</email>
+            <username>preda</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>4ddc507c7aef06c12a236baf93591449</value>
+            </password>
+            <date_registered>2015-12-28 15:13:15</date_registered>
+            <date_last_login>2016-01-25 10:06:39</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>053944156 &#xE15;&#xE48;&#xE2D; 127</phone>
+            <mailing_address>&#xE2D;&#xE32;&#xE04;&#xE32;&#xE23;&#xE1A;&#xE31;&#xE13;&#xE11;&#xE34;&#xE15;&#xE28;&#xE36;&#xE01;&#xE29;&#xE32; &#xE2B;&#xE49;&#xE2D;&#xE07; 17-201 &#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE42;&#xE22;&#xE18;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE0A;&#xE35;&#xE22;&#xE07;&#xE43;&#xE2B;&#xE21;&#xE48;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE01;&#xE24;&#xE29;&#xE13;&#xE4C;&#xE0A;&#xE19;&#xE21;&#xE4C;</givenname>
+            <familyname locale="en_US">&#xE20;&#xE39;&#xE21;&#xE34;&#xE01;&#xE34;&#xE15;&#xE15;&#xE34;&#xE1E;&#xE34;&#xE0A;&#xE0D;&#xE4C;</familyname>
+            <affiliation locale="en_US">&#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xD;
+&#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE23;&#xE32;&#xE0A;&#xE21;&#xE07;&#xE04;&#xE25;&#xE18;&#xE31;&#xE0D;&#xE1A;&#xE38;&#xE23;&#xE35;</affiliation>
+            <country>TH</country>
+            <email>krischonme@gmail.com</email>
+            <biography locale="en_US">&#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE23;&#xE32;&#xE0A;&#xE21;&#xE07;&#xE04;&#xE25;&#xE18;&#xE31;&#xE0D;&#xE1A;&#xE38;&#xE23;&#xE35;</biography>
+            <username>krischonme</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>c73b24273a734a0c67cfb7a7a97db96b</value>
+            </password>
+            <date_registered>2016-01-19 18:19:36</date_registered>
+            <date_last_login>2016-02-20 13:33:49</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>025493403</phone>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE04;&#xE13;&#xE34;&#xE15;</givenname>
+            <familyname locale="en_US">&#xE21;&#xE32;&#xE19;&#xE30;&#xE18;&#xE38;&#xE23;&#xE30;</familyname>
+            <affiliation locale="en_US">Department of Mechanical Engineering, Faculty of Engineering at Kamphaeng Saen, Kasetsart University, Kamphaeng Saen campus</affiliation>
+            <country>TH</country>
+            <email>kanitmana@gmail.com</email>
+            <username>kanitmana</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>8efd0b163364105a1e9eb61e4f21a791</value>
+            </password>
+            <date_registered>2019-01-27 10:24:13</date_registered>
+            <date_last_login>2019-01-27 10:24:13</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE40;&#xE04;&#xE23;&#xE37;&#xE48;&#xE2D;&#xE07;&#xE01;&#xE25; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE01;&#xE33;&#xE41;&#xE1E;&#xE07;&#xE41;&#xE2A;&#xE19; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE01;&#xE29;&#xE15;&#xE23;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE40;&#xE02;&#xE15;&#xE01;&#xE33;&#xE41;&#xE1E;&#xE07;&#xE41;&#xE2A;&#xE19; &#xE40;&#xE25;&#xE02;&#xE17;&#xE35;&#xE48; 1 &#xE2B;&#xE21;&#xE39;&#xE48; 6 &#xE15;.&#xE01;&#xE33;&#xE41;&#xE1E;&#xE07;&#xE41;&#xE2A;&#xE19; &#xE2D;.&#xE01;&#xE33;&#xE41;&#xE1E;&#xE07;&#xE41;&#xE2A;&#xE19; &#xE08;.&#xE19;&#xE04;&#xE23;&#xE1B;&#xE10;&#xE21; 73140&#xD;
+&#xE40;&#xE25;&#xE02;&#xE1C;&#xE39;&#xE49;&#xE40;&#xE2A;&#xE35;&#xE22;&#xE20;&#xE32;&#xE29;&#xE35; &#xE21;&#xE01;.  0994000159382</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE0A;&#xE27;&#xE40;&#xE25;&#xE02;</givenname>
+            <familyname locale="en_US">&#xE27;&#xE13;&#xE34;&#xE0A;&#xE40;&#xE27;&#xE17;&#xE34;&#xE19;</familyname>
+            <affiliation locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE42;&#xE22;&#xE18;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE01;&#xE29;&#xE15;&#xE23;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;</affiliation>
+            <country>TH</country>
+            <email>fengclv@ku.ac.th</email>
+            <username>fengclv</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>25aea3399d29adb580280af5280e244c</value>
+            </password>
+            <date_registered>2015-12-28 15:07:03</date_registered>
+            <date_last_login>2016-01-13 08:00:44</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>027970999 ext. 1320</phone>
+            <mailing_address>&#xE2D;&#xE32;&#xE04;&#xE32;&#xE23; 9 &#xE2B;&#xE49;&#xE2D;&#xE07; 9412 &#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE42;&#xE22;&#xE18;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE01;&#xE29;&#xE15;&#xE23;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE21;&#xE13;&#xE11;&#xE25;&#xE35;</givenname>
+            <familyname locale="en_US">&#xE28;&#xE32;&#xE2A;&#xE19;&#xE19;&#xE31;&#xE19;&#xE17;&#xE19;&#xE4C;</familyname>
+            <affiliation locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE2D;&#xE38;&#xE15;&#xE2A;&#xE32;&#xE2B;&#xE01;&#xE32;&#xE23; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE18;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;</affiliation>
+            <country>TH</country>
+            <email>nmontale@engr.tu.ac.th</email>
+            <biography locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE2D;&#xE38;&#xE15;&#xE2A;&#xE32;&#xE2B;&#xE01;&#xE32;&#xE23; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE18;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;</biography>
+            <username>nmontale</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>c25517e33c2a86c9ef5554019661dbbb</value>
+            </password>
+            <date_registered>2016-02-05 10:28:06</date_registered>
+            <date_last_login>2016-02-05 10:28:06</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE40;&#xE2A;&#xE0E;&#xE10;&#xE32;</givenname>
+            <familyname locale="en_US">&#xE28;&#xE32;&#xE2A;&#xE19;&#xE19;&#xE31;&#xE19;&#xE17;&#xE19;&#xE4C;</familyname>
+            <affiliation locale="en_US">Department of Civil Engineering, Faculty of Engineering, Srinakharinwirot</affiliation>
+            <country>TH</country>
+            <email>e41stomos@gmail.com</email>
+            <biography locale="en_US">Department of Civel Engineering, Faculty of Engineering, Srinakharinwirot</biography>
+            <username>e41stomos</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>07616a56be7e8138d114f77f714627d7</value>
+            </password>
+            <date_registered>2016-02-05 10:19:40</date_registered>
+            <date_last_login>2016-02-05 10:19:40</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE1B;&#xE23;&#xE34;&#xE0D;&#xE0D;&#xE32;</givenname>
+            <familyname locale="en_US">&#xE2A;&#xE07;&#xE27;&#xE19;&#xE2A;&#xE31;&#xE15;&#xE22;&#xE4C;</familyname>
+            <affiliation locale="en_US">&#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;&#xE41;&#xE25;&#xE30;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35; &#xE2A;&#xE16;&#xE32;&#xE1A;&#xE31;&#xE19;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE1B;&#xE31;&#xE0D;&#xE0D;&#xE32;&#xE20;&#xE34;&#xE27;&#xE31;&#xE12;&#xE19;&#xE4C;</affiliation>
+            <country>TH</country>
+            <email>sanguansat@yahoo.com</email>
+            <biography locale="en_US">&#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;&#xE41;&#xE25;&#xE30;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35; &#xE2A;&#xE16;&#xE32;&#xE1A;&#xE31;&#xE19;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE1B;&#xE31;&#xE0D;&#xE0D;&#xE32;&#xE20;&#xE34;&#xE27;&#xE31;&#xE12;&#xE19;&#xE4C;</biography>
+            <username>sanguansat</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>488d6c60905ac4bfb557f128d1f357fc</value>
+            </password>
+            <date_registered>2016-02-09 20:59:19</date_registered>
+            <date_last_login>2016-03-10 18:47:58</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&#xE1C;&#xE28;.&#xE14;&#xE23;.&#xE1B;&#xE23;&#xE34;&#xE0D;&#xE0D;&#xE32; &#xE2A;&#xE07;&#xE27;&#xE19;&#xE2A;&#xE31;&#xE15;&#xE22;&#xE4C;&#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;&#xE41;&#xE25;&#xE30;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35; &#xE2A;&#xE16;&#xE32;&#xE1A;&#xE31;&#xE19;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE1B;&#xE31;&#xE0D;&#xE0D;&#xE32;&#xE20;&#xE34;&#xE27;&#xE31;&#xE12;&#xE19;&#xE4C;85/1 &#xE2B;&#xE21;&#xE39;&#xE48; 2 &#xE16;.&#xE41;&#xE08;&#xE49;&#xE07;&#xE27;&#xE31;&#xE12;&#xE19;&#xE30; &#xE15;.&#xE1A;&#xE32;&#xE07;&#xE15;&#xE25;&#xE32;&#xE14; &#xE2D;.&#xE1B;&#xE32;&#xE01;&#xE40;&#xE01;&#xE23;&#xE47;&#xE14; &#xE08;&#xE31;&#xE07;&#xE2B;&#xE27;&#xE31;&#xE14; &#xE19;&#xE19;&#xE17;&#xE1A;&#xE38;&#xE23;&#xE35; 11120</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE01;&#xE34;&#xE15;&#xE15;&#xE34;&#xE0A;&#xE31;&#xE22;</givenname>
+            <familyname locale="en_US">&#xE2D;&#xE18;&#xE34;&#xE01;&#xE38;&#xE25;&#xE23;&#xE31;&#xE15;&#xE19;&#xE4C;</familyname>
+            <country>TH</country>
+            <email>kittichai.athi@gmail.com</email>
+            <username>kittichai-athi1</username>
+            <signature locale="en_US">&#xE01;&#xE34;&#xE15;&#xE15;&#xE34;&#xE0A;&#xE31;&#xE22; &#xE2D;&#xE18;&#xE34;&#xE01;&#xE38;&#xE25;&#xE23;&#xE31;&#xE15;&#xE19;&#xE4C;</signature>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>948b43969ebab4739190e85221b32945</value>
+            </password>
+            <date_registered>2019-04-10 13:31:29</date_registered>
+            <date_last_login>2019-05-24 11:13:12</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0891059971</phone>
+            <mailing_address>&lt;p&gt;42 &#xE16;&#xE19;&#xE19;&#xE2A;&#xE38;&#xE02;&#xE32;&#xE27;&#xE14;&#xE35; &#xE15;&#xE33;&#xE1A;&#xE25;&#xE1A;&#xE49;&#xE32;&#xE19;&#xE42;&#xE1B;&#xE48;&#xE07; &#xE2D;&#xE33;&#xE40;&#xE20;&#xE2D;&#xE1A;&#xE49;&#xE32;&#xE19;&#xE42;&#xE1B;&#xE48;&#xE07; &#xE08;&#xE31;&#xE07;&#xE2B;&#xE27;&#xE31;&#xE14;&#xE23;&#xE32;&#xE0A;&#xE1A;&#xE38;&#xE23;&#xE35;&lt;/p&gt;&lt;p&gt;70110&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+            <review_interests>, Logistics and Supply Chain, Productivity Improvement, Information system</review_interests>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE1A;&#xE31;&#xE13;&#xE11;&#xE34;&#xE15; &#xE1A;&#xE31;&#xE13;&#xE11;&#xE34;&#xE15;</givenname>
+            <familyname locale="en_US">&#xE2D;&#xE34;&#xE19;&#xE17;&#xE23;&#xE35;&#xE22;&#xE4C;&#xE21;&#xE35;&#xE28;&#xE31;&#xE01;&#xE14;&#xE34;&#xE4C;</familyname>
+            <affiliation locale="en_US">&#xE2A;&#xE16;&#xE32;&#xE1A;&#xE31;&#xE19;&#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE1B;&#xE31;&#xE0D;&#xE0D;&#xE32;&#xE20;&#xE34;&#xE27;&#xE31;&#xE12;&#xE19;&#xE4C;&#xD;
+85/1 &#xE2B;&#xE21;&#xE39;&#xE48;2 &#xE16;&#xE19;&#xE19;&#xE41;&#xE08;&#xE49;&#xE07;&#xE27;&#xE31;&#xE12;&#xE19;&#xE30; &#xE15;&#xE33;&#xE1A;&#xE25;&#xE1A;&#xE32;&#xE07;&#xE15;&#xE25;&#xE32;&#xE14; &#xE2D;&#xE33;&#xE40;&#xE20;&#xE2D;&#xE1B;&#xE32;&#xE01;&#xE40;&#xE01;&#xE23;&#xE47;&#xE14; &#xE08;&#xE31;&#xE07;&#xE2B;&#xE27;&#xE31;&#xE14;&#xE19;&#xE19;&#xE17;&#xE1A;&#xE38;&#xE23;&#xE35; 11120</affiliation>
+            <country>TH</country>
+            <email>bundit086@hotmail.com</email>
+            <username>bundit086</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>4e15c7bb57dd54b468476b930f79a15c</value>
+            </password>
+            <date_registered>2018-04-13 12:23:41</date_registered>
+            <date_last_login>2018-04-13 12:23:41</date_last_login>
+            <inline_help>false</inline_help>
+            <phone>0866669129</phone>
+            <mailing_address>&lt;p&gt;&#xE1A;&#xE31;&#xE13;&#xE11;&#xE34;&#xE15; &#xE2D;&#xE34;&#xE19;&#xE17;&#xE23;&#xE35;&#xE22;&#xE4C;&#xE21;&#xE35;&#xE28;&#xE31;&#xE01;&#xE14;&#xE34;&#xE4C;&lt;br /&gt;4 &#xE2B;&#xE21;&#xE39;&#xE48; 7 &#xE15;.&#xE1A;&#xE32;&#xE07;&#xE01;&#xE23;&#xE30;&#xE17;&#xE36;&#xE01; &#xE2D;.&#xE2A;&#xE32;&#xE21;&#xE1E;&#xE23;&#xE32;&#xE19; &#xE08;.&#xE19;&#xE04;&#xE23;&#xE1B;&#xE10;&#xE21; 73210&lt;/p&gt;&lt;p&gt;086-666-9129&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">paiboon</givenname>
+            <familyname locale="en_US">&#xE31;amphuan</familyname>
+            <country>TH</country>
+            <email>paiboon.y@en.rmutt.ac.th</email>
+            <biography locale="en_US">&lt;p&gt;Department of Industrial Engineering, Faculty of Engineering,&lt;/p&gt;&lt;p&gt;Rajamangala University of Technology Thanyaburi, Pathumtani, 12110&lt;/p&gt;</biography>
+            <username>paiboony</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>8587c5c276aaf937dca7007afe54cb2c</value>
+            </password>
+            <date_registered>2018-06-14 22:57:47</date_registered>
+            <date_last_login>2018-06-14 22:59:33</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;p&gt;Department of Industrial Engineering, Faculty of Engineering,&lt;/p&gt; &lt;p&gt;Rajamangala University of Technology Thanyaburi, Pathumtani, 12110&lt;/p&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE15;&#xE23;&#xE31;&#xE22;&#xE23;&#xE31;&#xE15;&#xE19;&#xE4C;</givenname>
+            <familyname locale="en_US">&#xE40;&#xE01;&#xE34;&#xE14;&#xE42;&#xE20;&#xE04;&#xE17;&#xE23;&#xE31;&#xE1E;&#xE22;&#xE4C;</familyname>
+            <affiliation locale="en_US">Chulalongkorn University</affiliation>
+            <country>TH</country>
+            <email>trirat.ki@gmail.com</email>
+            <username>5970170721</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>06ab7bd5e6e46f6301518a94a1632e32</value>
+            </password>
+            <date_registered>2018-05-07 20:18:51</date_registered>
+            <date_last_login>2018-05-09 22:16:12</date_last_login>
+            <inline_help>false</inline_help>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE10;&#xE01;&#xE25;&#xE1E;&#xE31;&#xE28;</givenname>
+            <familyname locale="en_US">&#xE40;&#xE08;&#xE19;&#xE08;&#xE34;&#xE27;&#xE31;&#xE12;&#xE19;&#xE01;&#xE38;&#xE25;</familyname>
+            <affiliation locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE42;&#xE22;&#xE18;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE2A;&#xE22;&#xE32;&#xE21;</affiliation>
+            <email>thakonlaphat.jen@siam.edu</email>
+            <biography locale="en_US">&#xE2D;.&#xE14;&#xE23;.&#xE10;&#xE01;&#xE25;&#xE1E;&#xE31;&#xE28; &#xE40;&#xE08;&#xE19;&#xE08;&#xE34;&#xE27;&#xE31;&#xE12;&#xE19;&#xE01;&#xE38;&#xE25; &#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE42;&#xE22;&#xE18;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;</biography>
+            <username>thakonlaphat</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>4070f5257eb790ff9aca404f96b977bc</value>
+            </password>
+            <date_registered>2016-02-17 09:39:07</date_registered>
+            <date_last_login>2016-03-10 09:07:39</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&#xE2D;.&#xE14;&#xE23;.&#xE10;&#xE01;&#xE25;&#xE1E;&#xE31;&#xE28; &#xE40;&#xE08;&#xE19;&#xE08;&#xE34;&#xE27;&#xE31;&#xE12;&#xE19;&#xE01;&#xE38;&#xE25; &#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE42;&#xE22;&#xE18;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE2A;&#xE22;&#xE32;&#xE21; 38 &#xE16;.&#xE40;&#xE1E;&#xE0A;&#xE23;&#xE40;&#xE01;&#xE29;&#xE21; &#xE41;&#xE02;&#xE27;&#xE07;&#xE1A;&#xE32;&#xE07;&#xE2B;&#xE27;&#xE49;&#xE32; &#xE40;&#xE02;&#xE15;&#xE20;&#xE32;&#xE29;&#xE35;&#xE40;&#xE08;&#xE23;&#xE34;&#xE0D; &#xE01;&#xE23;&#xE38;&#xE07;&#xE40;&#xE17;&#xE1E;&#xE2F; 10160 &#xE42;&#xE17;&#xE23;. &#xE21;&#xE37;&#xE2D;&#xE16;&#xE37;&#xE2D; 081907004 &#xE40;&#xE1A;&#xE2D;&#xE23;&#xE4C;&#xE20;&#xE32;&#xE04; 0-2457-0068 &#xE15;&#xE48;&#xE2D; 5128</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE27;&#xE23;&#xE38;&#xE13;&#xE28;&#xE31;&#xE01;&#xE14;&#xE34;&#xE4C;</givenname>
+            <familyname locale="en_US">&#xE40;&#xE25;&#xE35;&#xE48;&#xE22;&#xE21;&#xE41;&#xE2B;&#xE25;&#xE21;</familyname>
+            <affiliation locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE42;&#xE22;&#xE18;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE18;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;</affiliation>
+            <country>TH</country>
+            <email>iwarounsak@tu.ac.th</email>
+            <biography locale="en_US">&#xE20;&#xE32;&#xE04;&#xE27;&#xE34;&#xE0A;&#xE32;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE42;&#xE22;&#xE18;&#xE32; &#xE04;&#xE13;&#xE30;&#xE27;&#xE34;&#xE28;&#xE27;&#xE01;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE18;&#xE23;&#xE23;&#xE21;&#xE28;&#xE32;&#xE2A;&#xE15;&#xE23;&#xE4C;</biography>
+            <username>iwarounsak</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>26d76a0f99e6b3e3bb5e7aed91a37044</value>
+            </password>
+            <date_registered>2016-02-05 10:24:47</date_registered>
+            <date_last_login>2016-02-05 10:24:47</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE28;&#xE23;&#xE31;&#xE0D;&#xE0D;&#xE32;</givenname>
+            <familyname locale="en_US">&#xE40;&#xE2D;&#xE01;&#xE1A;&#xE38;&#xE15;&#xE23;</familyname>
+            <affiliation locale="en_US">&#xE2A;&#xE48;&#xE27;&#xE19;&#xE01;&#xE32;&#xE23;&#xE04;&#xE25;&#xE31;&#xE07; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE28;&#xE23;&#xE35;&#xE19;&#xE04;&#xE23;&#xE34;&#xE19;&#xE17;&#xE23;&#xE27;&#xE34;&#xE42;&#xE23;&#xE12;</affiliation>
+            <country>TH</country>
+            <email>sarunyabee@hotmail.com</email>
+            <username>sarunyabee</username>
+            <password is_disabled="false" must_change="false" encryption="">
+                <value>$2y$10$SyflBy1lRdh6PV.bMThzC.llKnyHrhP0dnvbvO2TD1KRZ6V4zo6TG</value>
+            </password>
+            <date_registered>2023-02-01 02:35:54</date_registered>
+            <date_last_login>2023-06-13 09:30:32</date_last_login>
+            <inline_help>true</inline_help>
+            <user_group_ref>Author</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE13;&#xE20;&#xE31;&#xE17;&#xE23;</givenname>
+            <familyname locale="en_US">&#xE42;&#xE1E;&#xE18;&#xE34;&#xE4C;&#xE27;&#xE31;&#xE19;</familyname>
+            <affiliation locale="en_US">&#xE04;&#xE13;&#xE30;&#xE27;&#xE31;&#xE12;&#xE19;&#xE18;&#xE23;&#xE23;&#xE21;&#xE2A;&#xE34;&#xE48;&#xE07;&#xE41;&#xE27;&#xE14;&#xE25;&#xE49;&#xE2D;&#xE21;&#xE41;&#xE25;&#xE30;&#xE01;&#xE32;&#xE23;&#xE17;&#xE48;&#xE2D;&#xE07;&#xE40;&#xE17;&#xE35;&#xE48;&#xE22;&#xE27;&#xE40;&#xE0A;&#xE34;&#xE07;&#xE19;&#xE34;&#xE40;&#xE27;&#xE28; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE28;&#xE23;&#xE35;&#xE19;&#xE04;&#xE23;&#xE34;&#xE19;&#xE17;&#xE23;&#xE27;&#xE34;&#xE42;&#xE23;&#xE12;</affiliation>
+            <country>TH</country>
+            <email>naphat@g.swu.ac.th</email>
+            <biography locale="en_US">&#xE04;&#xE13;&#xE30;&#xE27;&#xE31;&#xE12;&#xE19;&#xE18;&#xE23;&#xE23;&#xE21;&#xE2A;&#xE34;&#xE48;&#xE07;&#xE41;&#xE27;&#xE14;&#xE25;&#xE49;&#xE2D;&#xE21;&#xE41;&#xE25;&#xE30;&#xE01;&#xE32;&#xE23;&#xE17;&#xE48;&#xE2D;&#xE07;&#xE40;&#xE17;&#xE35;&#xE48;&#xE22;&#xE27;&#xE40;&#xE0A;&#xE34;&#xE07;&#xE19;&#xE34;&#xE40;&#xE27;&#xE28; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE28;&#xE23;&#xE35;&#xE19;&#xE04;&#xE23;&#xE34;&#xE19;&#xE17;&#xE23;&#xE27;&#xE34;&#xE42;&#xE23;&#xE12;</biography>
+            <username>naphat</username>
+            <password is_disabled="false" must_change="false" encryption="">
+                <value>$2y$10$Y/.zDBa8xnY6RO1bqqCpn.ryTtK5/RdUr18E.xDDP2oOxJdakDhra</value>
+            </password>
+            <date_registered>2016-02-08 18:41:00</date_registered>
+            <date_last_login>2026-07-06 22:56:45</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+        <user>
+            <givenname locale="en_US">&#xE40;&#xE01;&#xE35;&#xE22;&#xE23;&#xE15;&#xE34;&#xE28;&#xE31;&#xE01;&#xE14;&#xE34;&#xE4C;</givenname>
+            <familyname locale="en_US">&#xE43;&#xE2B;&#xE21;&#xE48;&#xE40;&#xE08;&#xE23;&#xE34;&#xE0D;&#xE19;&#xE38;&#xE01;&#xE39;&#xE25;</familyname>
+            <affiliation locale="en_US">&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE2A;&#xE32;&#xE23;&#xE2A;&#xE19;&#xE40;&#xE17;&#xE28;&#xE41;&#xE25;&#xE30;&#xE01;&#xE32;&#xE23;&#xE2A;&#xE37;&#xE48;&#xE2D;&#xE2A;&#xE32;&#xE23; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE23;&#xE31;&#xE07;&#xE2A;&#xE34;&#xE15;</affiliation>
+            <country>TH</country>
+            <email>kiatti_m@hotmail.com</email>
+            <biography locale="en_US">&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE40;&#xE17;&#xE04;&#xE42;&#xE19;&#xE42;&#xE25;&#xE22;&#xE35;&#xE2A;&#xE32;&#xE23;&#xE2A;&#xE19;&#xE40;&#xE17;&#xE28;&#xE41;&#xE25;&#xE30;&#xE01;&#xE32;&#xE23;&#xE2A;&#xE37;&#xE48;&#xE2D;&#xE2A;&#xE32;&#xE23; &#xE21;&#xE2B;&#xE32;&#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE23;&#xE31;&#xE07;&#xE2A;&#xE34;&#xE15;</biography>
+            <username>kiatti_m</username>
+            <password is_disabled="true" must_change="false" encryption="">
+                <value>916f53a1a5e55f983c3385cfb2663717</value>
+            </password>
+            <date_registered>2016-02-09 14:03:00</date_registered>
+            <date_last_login>2016-03-01 23:57:12</date_last_login>
+            <inline_help>false</inline_help>
+            <mailing_address>&lt;html /&gt;</mailing_address>
+            <disabled_reason>Inactive user (last login before 2023)</disabled_reason>
+            <user_group_ref>Reviewer</user_group_ref>
+        </user>
+    </users>
+</PKPUsers>
